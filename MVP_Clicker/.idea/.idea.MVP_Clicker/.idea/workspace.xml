@@ -75,7 +75,7 @@
       <workItem from="1670498596582" duration="4213000" />
       <workItem from="1670503509106" duration="789000" />
       <workItem from="1670504332595" duration="899000" />
-      <workItem from="1670505266021" duration="4026000" />
+      <workItem from="1670505266021" duration="4752000" />
     </task>
     <servers />
   </component>
@@ -98,37 +98,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/EntryPoint.cs</url>
-          <line>22</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\EntryPoint.cs" initialLine="23" containingFunctionPresentation="method 'OnDestroy'">
-            <startOffsets>
-              <option value="569" />
-            </startOffsets>
-            <endOffsets>
-              <option value="591" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/EntryPoint.cs</url>
-          <line>16</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\EntryPoint.cs" initialLine="17" containingFunctionPresentation="method 'Start'">
-            <startOffsets>
-              <option value="413" />
-            </startOffsets>
-            <endOffsets>
-              <option value="440" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
