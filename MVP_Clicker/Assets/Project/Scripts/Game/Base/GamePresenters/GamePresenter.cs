@@ -11,8 +11,9 @@ namespace Project.Scripts.Game.Base.GamePresenters
         private readonly List<IDisposable> _presenters = new();
         public GamePresenter(IGameModels models, IGameViews views)
         {
-            _presenters.Add(new CameraPresenter(views.Camera, models.CameraModel));
-            
+            _presenters.Add(new CameraPresenter(views.CameraView, models.CameraModel));
+            _presenters.Add(new CanvasPresenter(views.CanvasView, models.CanvasModel));
+
         }
         public void Dispose()
         {
