@@ -1,17 +1,18 @@
-using Project.Scripts.Game.Areas.Models.CameraModel;
+using Project.Scripts.Game.Areas.Models.Camera;
 using Project.Scripts.Game.Areas.Models.Canvas;
+using UnityEngine;
 
 namespace Project.Scripts.Game.Base.GameModels
 {
-    public class GameModels: IGameModels
+    public class GameModels : IGameModels
     {
         public ICameraModel CameraModel { get; }
-        public ICanvasModel CanvasModel { get; }
+        public IMainMenuModel MainMenuModel { get; }
 
         public GameModels()
         {
             CameraModel = new CameraModel();
-            CanvasModel = new CanvasModel();
+            MainMenuModel = new MainMenuModel();
         }
     }
 }

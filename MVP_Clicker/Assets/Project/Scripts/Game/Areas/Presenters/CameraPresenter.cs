@@ -1,11 +1,11 @@
 using System;
 using Project.Scripts.Core.ViewCreate;
-using Project.Scripts.Game.Areas.Models.CameraModel;
+using Project.Scripts.Game.Areas.Models.Camera;
 using Project.Scripts.Game.Areas.Views.CameraView;
 
 namespace Project.Scripts.Game.Areas.Presenters
 {
-    public class CameraPresenter: IDisposable
+    public class CameraPresenter : IDisposable
     {
         private readonly ICameraModel _cameraModel;
         private readonly IViewBox<ICameraView> _cameraViewBox;
@@ -14,7 +14,7 @@ namespace Project.Scripts.Game.Areas.Presenters
         {
             _cameraModel = cameraModel;
             _cameraViewBox = cameraView.CreateObject();
-            
+
             AddListeners();
         }
 
@@ -22,7 +22,7 @@ namespace Project.Scripts.Game.Areas.Presenters
         {
             _cameraViewBox.GetView.SetPosition(_cameraModel.Position);
         }
-        
+
         private void AddListeners()
         {
             _cameraModel.Updated += OnUpdated;

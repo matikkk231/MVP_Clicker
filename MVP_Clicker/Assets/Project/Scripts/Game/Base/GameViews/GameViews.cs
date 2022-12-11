@@ -5,12 +5,12 @@ using UnityEngine;
 
 namespace Project.Scripts.Game.Base.GameViews
 {
-    public class GameViews: MonoBehaviour, IGameViews
+    public class GameViews : MonoBehaviour, IGameViews
     {
         [SerializeField] private CameraView _cameraPrefab;
-        [SerializeField] private CanvasView _canvasPrefab;
-        
+        [SerializeField] private MainMenuView mainMenuPrefab;
+
         public IViewCreate<ICameraView> CameraView => new ViewCreate<CameraView>(_cameraPrefab);
-        public IViewCreate<ICanvasView> CanvasView => new ViewCreate<CanvasView>(_canvasPrefab);
+        public IViewCreate<IMainMenuView> CanvasView => new ViewCreate<MainMenuView>(mainMenuPrefab);
     }
 }

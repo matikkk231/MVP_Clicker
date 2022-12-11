@@ -10,10 +10,5 @@ namespace Project.Scripts.Core.ViewCreate
         {
             GetView = view;
         }
-
-        public void Destroy()
-        {
-            GameObject.Destroy(GetView);
-        }
     }
 }

@@ -12,6 +12,7 @@ namespace Project.Scripts.Game
         private GameModels _models;
 
         private GamePresenter _presenters;
+
         void Start()
         {
             _models = new GameModels();

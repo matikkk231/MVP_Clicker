@@ -79,6 +79,12 @@
       <workItem from="1670571515097" duration="110000" />
       <workItem from="1670571644034" duration="5325000" />
       <workItem from="1670579787323" duration="766000" />
+      <workItem from="1670664490399" duration="2254000" />
+      <workItem from="1670668191294" duration="3319000" />
+      <workItem from="1670671584597" duration="6716000" />
+      <workItem from="1670746546169" duration="1263000" />
+      <workItem from="1670747859685" duration="2048000" />
+      <workItem from="1670749958537" duration="1304000" />
     </task>
     <servers />
   </component>
@@ -101,5 +107,29 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/ViewCreate.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Core\ViewCreate\ViewCreate.cs" initialLine="13" containingFunctionPresentation="method 'CreateObject'">
+            <startOffsets>
+              <option value="315" />
+            </startOffsets>
+            <endOffsets>
+              <option value="316" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="Frame#Project.Scripts.Game.Areas.Presenters.MoneyPresenter..ctor" memberName="viewBox" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>

@@ -8,6 +8,6 @@ namespace Project.Scripts.Game.Base.GameViews
     public interface IGameViews
     {
         IViewCreate<ICameraView> CameraView { get; }
-        IViewCreate<ICanvasView> CanvasView { get;}
+        IViewCreate<IMainMenuView> CanvasView { get; }
     }
 }
