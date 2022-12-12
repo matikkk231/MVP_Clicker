@@ -1,0 +1,1839 @@
+fileFormatVersion: 2
+guid: f57059ae11f03c44db970523443a7295
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MasterMuscleStone_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 795
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 767c3e5571bf45941be8101eff2f2773
+      internalID: 28535766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_1
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 795
+        width: 120
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6ee5c57216b864f84cbef8218ce17a
+      internalID: 2079929057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 795
+        width: 120
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ff1e09272193a4b97e1d49e358fc26
+      internalID: 1545172624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_3
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 795
+        width: 119
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dfecb22af4efc743bf04af6e4cbecc0
+      internalID: -1200135691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_4
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 795
+        width: 120
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892228f3a50068e4ea35e219205fd983
+      internalID: 377303494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_5
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 795
+        width: 120
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edff3ad5f7a3a5e428d713d3875694aa
+      internalID: -1417819325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 641
+        width: 125
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3384f4d6b7bffa348ba98d70d0b5f852
+      internalID: -195366919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_7
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 641
+        width: 128
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 324e106cd1cf4414a855c20760d6c8da
+      internalID: -1145963458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_8
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 641
+        width: 134
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a5935081089e045a3c7afbc71fd9a4
+      internalID: -1017122911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_9
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 641
+        width: 128
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4ae86cefcaabf44956084809f8b883
+      internalID: 1839491821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_10
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 641
+        width: 123
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2b3d925f58c3141afbccb1fdb976ff
+      internalID: 437761031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_11
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 641
+        width: 120
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99cdf47c547d9d1478a6c079bb9cbef2
+      internalID: 564720864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 498
+        width: 159
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb6b53d54f6bd042b749b3807fb7c6c
+      internalID: -460339064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 603
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c9bf3f8f1185b4d89dfaee14b723e2
+      internalID: -2016059915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_14
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 551
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d23e96516cb6a94b8f92b8b696b587d
+      internalID: 1986859463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_15
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 551
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0921ed748bc780a4f8b80dd2188b1ada
+      internalID: 721542554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_16
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 554
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef9186480d8c3d4990864f49a3a5874
+      internalID: -1239239262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_17
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 551
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b02cce404d6d8b4ebdd4ff3751b3e3e
+      internalID: -6348118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_18
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 554
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5258f365eb2481c45a73bb2504d9c753
+      internalID: 1820629438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_19
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 542
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7f308519830e444b3d5c75368ae736
+      internalID: -2024396298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_20
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 535
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52c877367ac05e241b3175ca023e4988
+      internalID: -1076743149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_21
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 535
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 836d9c3629d7ef846bcf40220c9017c0
+      internalID: -191046876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_22
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 535
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be34f5c0015d7e140b7d18417f4bf3d2
+      internalID: -616637424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_23
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 535
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac8572ff9812d446a2a35fbcfd5a888
+      internalID: -445248452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_24
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 535
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bac977ee2845b84c930e16034e1e7d0
+      internalID: 140933457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 535
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fabadfdedf2aaa46b71ea1dfe52acab
+      internalID: -1852346767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_26
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 514
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9ae15e9af939241bbc972d433a6d8c
+      internalID: 982072782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_27
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 363
+        width: 142
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9dab71825d0fc4ebded09a96b5647f
+      internalID: 1308355869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_28
+      rect:
+        serializedVersion: 2
+        x: 1252
+        y: 468
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b51c1319e3c4a004b8ac180cd5e6b24a
+      internalID: -2057662925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_29
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 457
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850428c817d3e3e4dbb07288721ee3d7
+      internalID: 1841529231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_30
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 478
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f70153f92831c147908a1b55452c838
+      internalID: -591852214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_31
+      rect:
+        serializedVersion: 2
+        x: 1484
+        y: 478
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 242d7e27940b922439f32de3cf5e67bd
+      internalID: -1571250584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_32
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 363
+        width: 123
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebf27e81fc654af45a66ef265e844b69
+      internalID: 2109664341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_33
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 363
+        width: 143
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9c833522c29c24b9a19deca230afd5
+      internalID: 547842244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_34
+      rect:
+        serializedVersion: 2
+        x: 982
+        y: 459
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c2003677f93ca4286f2fb3f56ee791
+      internalID: -1144073723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_35
+      rect:
+        serializedVersion: 2
+        x: 1397
+        y: 466
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0315f6960fb9db4b820a4e78b831a36
+      internalID: -1735421968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_36
+      rect:
+        serializedVersion: 2
+        x: 1485
+        y: 469
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32cac14b0e0af6042a13f8c9c48ae3e5
+      internalID: 1985030985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_37
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 465
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f4278b475409f45965b80605b7733e
+      internalID: -1149843306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_38
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 363
+        width: 120
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 131308571ebc12e459de10977c3efb27
+      internalID: 1917146850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_39
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 363
+        width: 120
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b00c69f316d9543824c8850ca5e58e
+      internalID: 987549285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_40
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 363
+        width: 119
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d0cb5816b4e9d459449dca37fe6a3e
+      internalID: -430269605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_41
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 363
+        width: 134
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f218a14008a59314a94775e920cc33f3
+      internalID: 634026235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_42
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 363
+        width: 140
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f282f95e35a33114790bde75b392aa78
+      internalID: -2009247616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_43
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 363
+        width: 141
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b202a5471956143b438a077aff52cc
+      internalID: -1418018136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_44
+      rect:
+        serializedVersion: 2
+        x: 1392
+        y: 363
+        width: 134
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f65db3327aaff4f9edba6a4d4e5edd
+      internalID: -1856498844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_45
+      rect:
+        serializedVersion: 2
+        x: 1516
+        y: 438
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2d9ed3db608cd42ad1eb2a17035ec7
+      internalID: -293357138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_46
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 187
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 042ff70595e1d2641af2fb2cdedbd243
+      internalID: -2087995143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_47
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 290
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d5388e0297f6f44a7844b324fdc6de
+      internalID: 1676575936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_48
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 187
+        width: 102
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 302cd5c9ffc1b6b4dae07657d1314ad8
+      internalID: -134687412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_49
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 213
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e45bd1d2908c04ebf0e67238ed422f
+      internalID: -1650779845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_50
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 237
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a140578e2749b50439dc36e22c67dd18
+      internalID: -895506987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_51
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 213
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf6338b4a51c8d4fa43a81f1e1ce68b
+      internalID: 1971154501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_52
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 237
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e42b2df164ddd14d961bc4e3d6e93d5
+      internalID: -411704517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_53
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 187
+        width: 99
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08130c1d6601dfe4c8b16b0088185158
+      internalID: 390608178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_54
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 214
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8d24490a9f161f408d6c4a7d92f2700
+      internalID: -732161316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_55
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 202
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72fff3496bc0bfa4ba302af0d3981c98
+      internalID: -1291466649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_56
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 212
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b29db1d85a535df49a28c5a0ebe5ab30
+      internalID: -813777135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_57
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 192
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffeeb8f1f0a3f4488fbf73200b86e95
+      internalID: -154210943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_58
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 214
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4a6869a0aaec947b86df46fb64a208
+      internalID: 528090286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_59
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 202
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4c7e5e7d1e228c4c8cd5314aca77ccf
+      internalID: -1123726172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_60
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 212
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcad2c3a696139f468b378520b7cc490
+      internalID: -1381858921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_61
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 192
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c8ac4f63652c154bb500bff9d3ae9f1
+      internalID: 1540650872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_62
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 187
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557893d6595f7c14bb464fa667364f80
+      internalID: -288231819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_63
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 187
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efdcdbb2f319b39469a47b802c658203
+      internalID: -106413899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_64
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 33
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e479f321534631542b5ae2957ee60ec7
+      internalID: -2041993034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_65
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 19
+        width: 140
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0079f21afd19748a7779c5767556ff
+      internalID: 789231373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_66
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 30
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cda9b080f64d5e141ade73dfe34ceefe
+      internalID: -1141020752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_67
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 19
+        width: 138
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9ddb562b50d8a41b812db98113d0a6
+      internalID: -826145919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_68
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 32
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db096bbf9ef9ced4c9786c0a7269a4a7
+      internalID: -1346391653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_69
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 39
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5bc0f92fb5256548b07cb697f0c1ea1
+      internalID: 1659541450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_70
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 19
+        width: 147
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21d9aee821fedba479d49cc94f0f8901
+      internalID: -1000009289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_71
+      rect:
+        serializedVersion: 2
+        x: 554
+        y: 36
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6eac3b50c744754aa8915ecb78a2170
+      internalID: 1608677919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_72
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 28
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c512ff1f81566194aa5dcc3062904cb6
+      internalID: -791622384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_73
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 30
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 844afed93287f084d875997beb418f82
+      internalID: -1060305756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_74
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 19
+        width: 148
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09ef1720dbbedef4e88ff3b7db6fe223
+      internalID: -1694411418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_75
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 19
+        width: 389
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5983858eed387ec4abbd8fdbd9093b51
+      internalID: -1252250504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_76
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 25
+        width: 11
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 550d573337c56f442b2e2e0e663e062e
+      internalID: 928865678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MasterMuscleStone_77
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 22
+        width: 21
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39308ec4fd3d264fb393c378be449cd
+      internalID: -1794062202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      MasterMuscleStone_49: -1650779845
+      MasterMuscleStone_70: -1000009289
+      MasterMuscleStone_7: -1145963458
+      MasterMuscleStone_10: 437761031
+      MasterMuscleStone_71: 1608677919
+      MasterMuscleStone_4: 377303494
+      MasterMuscleStone_26: 982072782
+      MasterMuscleStone_21: -191046876
+      MasterMuscleStone_2: 1545172624
+      MasterMuscleStone_67: -826145919
+      MasterMuscleStone_33: 547842244
+      MasterMuscleStone_8: -1017122911
+      MasterMuscleStone_25: -1852346767
+      MasterMuscleStone_15: 721542554
+      MasterMuscleStone_23: -445248452
+      MasterMuscleStone_20: -1076743149
+      MasterMuscleStone_41: 634026235
+      MasterMuscleStone_66: -1141020752
+      MasterMuscleStone_58: 528090286
+      MasterMuscleStone_45: -293357138
+      MasterMuscleStone_29: 1841529231
+      MasterMuscleStone_27: 1308355869
+      MasterMuscleStone_50: -895506987
+      MasterMuscleStone_24: 140933457
+      MasterMuscleStone_18: 1820629438
+      MasterMuscleStone_28: -2057662925
+      MasterMuscleStone_31: -1571250584
+      MasterMuscleStone_14: 1986859463
+      MasterMuscleStone_19: -2024396298
+      MasterMuscleStone_30: -591852214
+      MasterMuscleStone_32: 2109664341
+      MasterMuscleStone_53: 390608178
+      MasterMuscleStone_34: -1144073723
+      MasterMuscleStone_55: -1291466649
+      MasterMuscleStone_72: -791622384
+      MasterMuscleStone_16: -1239239262
+      MasterMuscleStone_38: 1917146850
+      MasterMuscleStone_64: -2041993034
+      MasterMuscleStone_13: -2016059915
+      MasterMuscleStone_36: 1985030985
+      MasterMuscleStone_76: 928865678
+      MasterMuscleStone_68: -1346391653
+      MasterMuscleStone_12: -460339064
+      MasterMuscleStone_46: -2087995143
+      MasterMuscleStone_42: -2009247616
+      MasterMuscleStone_56: -813777135
+      MasterMuscleStone_9: 1839491821
+      MasterMuscleStone_22: -616637424
+      MasterMuscleStone_3: -1200135691
+      MasterMuscleStone_60: -1381858921
+      MasterMuscleStone_61: 1540650872
+      MasterMuscleStone_75: -1252250504
+      MasterMuscleStone_65: 789231373
+      MasterMuscleStone_57: -154210943
+      MasterMuscleStone_1: 2079929057
+      MasterMuscleStone_73: -1060305756
+      MasterMuscleStone_77: -1794062202
+      MasterMuscleStone_43: -1418018136
+      MasterMuscleStone_47: 1676575936
+      MasterMuscleStone_74: -1694411418
+      MasterMuscleStone_62: -288231819
+      MasterMuscleStone_35: -1735421968
+      MasterMuscleStone_39: 987549285
+      MasterMuscleStone_51: 1971154501
+      MasterMuscleStone_69: 1659541450
+      MasterMuscleStone_63: -106413899
+      MasterMuscleStone_5: -1417819325
+      MasterMuscleStone_44: -1856498844
+      MasterMuscleStone_54: -732161316
+      MasterMuscleStone_11: 564720864
+      MasterMuscleStone_52: -411704517
+      MasterMuscleStone_6: -195366919
+      MasterMuscleStone_37: -1149843306
+      MasterMuscleStone_48: -134687412
+      MasterMuscleStone_40: -430269605
+      MasterMuscleStone_0: 28535766
+      MasterMuscleStone_17: -6348118
+      MasterMuscleStone_59: -1123726172
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

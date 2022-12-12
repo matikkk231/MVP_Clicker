@@ -19,10 +19,5 @@ namespace Project.Scripts.Game.Areas.Models.GameResources
                 Updated?.Invoke();
             }
         }
-
-        public MoneyModel()
-        {
-            _amountOfMoney = 0;
-        }
     }
 }
