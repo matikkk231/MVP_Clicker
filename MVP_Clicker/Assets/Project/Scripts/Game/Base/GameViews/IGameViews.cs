@@ -1,13 +1,11 @@
 using Project.Scripts.Core.ViewCreate;
-using Project.Scripts.Game.Areas.Views.CameraView;
-using Project.Scripts.Game.Areas.Views.Canvas;
-using UnityEngine;
+using Project.Scripts.Game.Areas.Camera.View;
 
 namespace Project.Scripts.Game.Base.GameViews
 {
     public interface IGameViews
     {
-        IViewCreate<ICameraView> CameraView { get; }
-        IViewCreate<IMainMenuView> CanvasView { get; }
+        IViewCreator<ICameraView> Camera { get; }
+        IViewCreator<IMainMenuView> MainMenu { get; }
     }
 }

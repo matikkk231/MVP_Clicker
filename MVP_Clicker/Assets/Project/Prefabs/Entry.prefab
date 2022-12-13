@@ -58,5 +58,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1acbb51c9bd47bbac653b874f00cc08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraPrefab: {fileID: 3926365722236359038, guid: d519a342070cf4f4ea8a110d0514ea37, type: 3}
-  _canvasPrefab: {fileID: 0}
+  _cameraPrefab: {fileID: 791431491594496277, guid: d519a342070cf4f4ea8a110d0514ea37, type: 3}
+  _mainMenuPrefab: {fileID: 0}

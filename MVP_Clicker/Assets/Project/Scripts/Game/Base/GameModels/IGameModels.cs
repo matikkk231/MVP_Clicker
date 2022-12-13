@@ -1,11 +1,10 @@
-using Project.Scripts.Game.Areas.Models.Camera;
-using Project.Scripts.Game.Areas.Models.Canvas;
+using Project.Scripts.Game.Areas.MainMenu.Model;
 
 namespace Project.Scripts.Game.Base.GameModels
 {
     public interface IGameModels
     {
-        public ICameraModel CameraModel { get; }
-        public IMainMenuModel MainMenuModel { get; }
+        ICameraModel Camera { get; }
+        IMainMenuModel MainMenu { get; }
     }
 }

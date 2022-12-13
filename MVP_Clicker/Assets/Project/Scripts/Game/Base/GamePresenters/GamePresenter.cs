@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
-using Project.Scripts.Game.Areas.Presenters;
+using Project.Scripts.Game.Areas.Camera.Presenter;
+using Project.Scripts.Game.Areas.MainMenu.Presenter;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GameViews;
 
@@ -12,8 +13,8 @@ namespace Project.Scripts.Game.Base.GamePresenters
 
         public GamePresenter(IGameModels models, IGameViews views)
         {
-            _presenters.Add(new CameraPresenter(views.CameraView, models.CameraModel));
-            _presenters.Add(new MainMenuPresenter(views.CanvasView, models.MainMenuModel));
+            _presenters.Add(new CameraPresenter(views.Camera,models.Camera));
+            _presenters.Add(new MainMenuPresenter(views.MainMenu,models.MainMenu));
         }
 
         public void Dispose()
