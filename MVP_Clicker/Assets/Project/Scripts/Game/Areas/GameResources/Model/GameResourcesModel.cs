@@ -8,7 +8,7 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
     {
         private readonly Dictionary<string, IGameResourceModel> _resources = new();
 
-        public Dictionary<string, IGameResourceModel> GameResources
+        public Dictionary<string, IGameResourceModel> Collection
         {
             get => _resources;
         }
@@ -19,7 +19,7 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
             IGameResourceModel money = new GameResourceModel("money", startAmountOfMoney);
             _resources.Add(money.ID, money);
             
-            int startAmountOfDamagePerTap = 0;
+            int startAmountOfDamagePerTap = 1;
             IGameResourceModel damagePerTap = new GameResourceModel("damagePerTap", startAmountOfDamagePerTap);
             _resources.Add(damagePerTap.ID, damagePerTap);
         }

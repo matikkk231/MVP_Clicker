@@ -10,12 +10,12 @@ namespace Project.Scripts.Core.ViewCreate
         {
             _prefab = prefab;
         }
+
         public IBoxView<T> CreateObject()
         {
             var viewObject = GameObject.Instantiate(_prefab);
             var viewBox = new BoxView<T>(viewObject);
             return viewBox;
-
         }
     }
 }

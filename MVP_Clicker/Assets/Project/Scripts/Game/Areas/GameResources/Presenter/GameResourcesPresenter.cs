@@ -18,9 +18,9 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
             _view = view;
             _model = model;
 
-            _gameResourcePresenters.Add(new GameResourcePresenter(_view.Money, _model.GameResources["money"]));
+            _gameResourcePresenters.Add(new GameResourcePresenter(_view.Money, _model.Collection["money"]));
             _gameResourcePresenters.Add(new GameResourcePresenter(_view.DamagePerTap,
-                _model.GameResources["damagePerTap"]));
+                _model.Collection["damagePerTap"]));
         }
 
         public void Dispose()

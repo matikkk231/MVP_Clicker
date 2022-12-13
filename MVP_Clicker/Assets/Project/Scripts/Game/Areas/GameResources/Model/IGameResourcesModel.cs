@@ -5,6 +5,6 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
 {
     public interface IGameResourcesModel
     {
-        Dictionary<string, IGameResourceModel> GameResources { get; }
+        Dictionary<string, IGameResourceModel> Collection { get; }
     }
 }

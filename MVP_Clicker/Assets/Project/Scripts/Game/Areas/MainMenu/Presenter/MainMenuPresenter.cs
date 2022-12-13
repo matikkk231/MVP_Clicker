@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Project.Scripts.Core.ViewCreate;
 using Project.Scripts.Game.Areas.GameResources.Presenter;
 using Project.Scripts.Game.Areas.MainMenu.Model;
+using Project.Scripts.Game.Areas.Monster.Presenter;
 using Project.Scripts.Game.Areas.Resource.Presenter;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Presenter
@@ -19,8 +20,8 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
             _boxView = viewCreator.CreateObject();
             _model = model;
           
-            _presenters.Add(new GameResourcesPresenter(_boxView.View.GameResources,_model.GameResourcesModel));
-            
+            _presenters.Add(new GameResourcesPresenter(_boxView.View.GameResources,_model.GameResources));
+            _presenters.Add(new MonsterPresenter(_boxView.View.Monster, _model.Monster));
         }
         
         public void Dispose()
