@@ -38,12 +38,5 @@ namespace Project.Scripts.Game.Areas
             _monster.Damaged += OnMonsterDamaged;
             _monster.Died += OnMonsterDied;
         }
-
-        private void RemoveListeners()
-        {
-            _monster.Damaged -= OnMonsterDamaged;
-            _monster.Died -= OnMonsterDied;
-        }
-        
     }
 }

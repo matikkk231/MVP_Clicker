@@ -13,8 +13,8 @@ namespace Project.Scripts.Game.Base.GamePresenters
 
         public GamePresenter(IGameModels models, IGameViews views)
         {
-            _presenters.Add(new CameraPresenter(views.Camera,models.Camera));
-            _presenters.Add(new MainMenuPresenter(views.MainMenu,models.MainMenu));
+            _presenters.Add(new CameraPresenter(views.Camera, models.Camera));
+            _presenters.Add(new MainMenuPresenter(views.MainMenu, models.MainMenu));
         }
 
         public void Dispose()

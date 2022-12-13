@@ -13,6 +13,5 @@ namespace Project.Scripts.Game.Areas.Monster.Model
 
         void Damage();
         void Die();
-
     }
 }

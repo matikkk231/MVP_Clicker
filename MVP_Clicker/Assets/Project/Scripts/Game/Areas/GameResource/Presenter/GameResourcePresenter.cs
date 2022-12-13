@@ -37,7 +37,6 @@ namespace Project.Scripts.Game.Areas.Resource.Presenter
         public void Dispose()
         {
             RemoveListers();
-            
         }
     }
 }

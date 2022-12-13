@@ -6,6 +6,8 @@ namespace Project.Scripts.Game.Areas.Monster.View
     {
         public event Action Damaged;
         void SetCurrentHP(int currentHP);
+
         void Damage();
+        // using in button, dont know why its gray
     }
 }

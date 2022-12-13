@@ -55,10 +55,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="2836">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="2836" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -100,7 +100,8 @@
       <workItem from="1670868054751" duration="537000" />
       <workItem from="1670922199953" duration="340000" />
       <workItem from="1670922698025" duration="8390000" />
-      <workItem from="1670933095345" duration="10249000" />
+      <workItem from="1670933095345" duration="10470000" />
+      <workItem from="1670945865089" duration="624000" />
     </task>
     <servers />
   </component>
@@ -125,36 +126,6 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/View/MonsterView.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\Monster\View\MonsterView.cs" initialLine="20" containingFunctionPresentation="method 'Damage'">
-            <startOffsets>
-              <option value="480" />
-            </startOffsets>
-            <endOffsets>
-              <option value="498" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Presenter/MonsterPresenter.cs</url>
-          <line>26</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\Monster\Presenter\MonsterPresenter.cs" initialLine="26" containingFunctionPresentation="method 'OnDamaged'">
-            <startOffsets>
-              <option value="654" />
-            </startOffsets>
-            <endOffsets>
-              <option value="670" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Project.Scripts.Game.Areas.Presenters.MoneyPresenter..ctor" memberName="viewBox" />

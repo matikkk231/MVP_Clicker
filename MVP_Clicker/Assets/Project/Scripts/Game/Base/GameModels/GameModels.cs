@@ -1,5 +1,3 @@
-
-
 using Project.Scripts.Game.Areas.MainMenu.Model;
 
 namespace Project.Scripts.Game.Base.GameModels

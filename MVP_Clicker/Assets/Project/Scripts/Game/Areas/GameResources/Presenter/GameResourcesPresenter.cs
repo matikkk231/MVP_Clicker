@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.GameResources.View;
 using Project.Scripts.Game.Areas.Resource.Presenter;
-using Unity.VisualScripting;
 
 namespace Project.Scripts.Game.Areas.GameResources.Presenter
 {

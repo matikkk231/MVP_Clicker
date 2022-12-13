@@ -7,19 +7,17 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
     {
         public IGameResourcesModel GameResources { get; }
         public IMonsterModel Monster { get; }
-        private LogicHandler _logicHandler;
+        private readonly LogicHandler _logicHandler;
 
         public MainMenuModel()
         {
             GameResources = new GameResourcesModel();
 
-            int startMonsterHP = 3;
-            int StartRewardForKilling = 1;
-            Monster = new MonsterModel(startMonsterHP, StartRewardForKilling);
+            const int startMonsterHP = 3;
+            const int startRewardForKilling = 1;
+            Monster = new MonsterModel(startMonsterHP, startRewardForKilling);
 
             _logicHandler = new LogicHandler(GameResources, Monster);
-
-
         }
     }
 }
