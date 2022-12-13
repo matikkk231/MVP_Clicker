@@ -7,7 +7,7 @@ using Unity.VisualScripting;
 
 namespace Project.Scripts.Game.Areas.GameResources.Presenter
 {
-    public class GameResourcesPresenter: IDisposable
+    public class GameResourcesPresenter : IDisposable
     {
         private readonly IGameResourcesView _view;
         private readonly IGameResourcesModel _model;
@@ -17,8 +17,10 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
         {
             _view = view;
             _model = model;
-            
-            _gameResourcePresenters.Add(new GameResourcePresenter(_view.Money,_model.GameResources["money"]));
+
+            _gameResourcePresenters.Add(new GameResourcePresenter(_view.Money, _model.GameResources["money"]));
+            _gameResourcePresenters.Add(new GameResourcePresenter(_view.DamagePerTap,
+                _model.GameResources["damagePerTap"]));
         }
 
         public void Dispose()

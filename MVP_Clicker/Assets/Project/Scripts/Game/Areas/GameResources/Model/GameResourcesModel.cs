@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Resource.Model;
+using Project.Scripts.Game.Areas.Resource.View;
 
 namespace Project.Scripts.Game.Areas.GameResources.Model
 {
@@ -17,6 +18,10 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
             int startAmountOfMoney = 0;
             IGameResourceModel money = new GameResourceModel("money", startAmountOfMoney);
             _resources.Add(money.ID, money);
+            
+            int startAmountOfDamagePerTap = 0;
+            IGameResourceModel damagePerTap = new GameResourceModel("damagePerTap", startAmountOfDamagePerTap);
+            _resources.Add(damagePerTap.ID, damagePerTap);
         }
     }
 }

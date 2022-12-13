@@ -5,5 +5,6 @@ namespace Project.Scripts.Game.Areas.GameResources.View
     public interface IGameResourcesView
     {
         IGameResourceView Money { get; }
+        IGameResourceView DamagePerTap { get; }
     }
 }
