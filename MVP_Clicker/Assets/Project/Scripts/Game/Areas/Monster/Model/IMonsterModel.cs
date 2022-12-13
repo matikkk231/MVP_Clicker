@@ -12,6 +12,7 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         int RewardForKilling { get; set; }
 
         void Damage();
+        void Die();
 
     }
 }

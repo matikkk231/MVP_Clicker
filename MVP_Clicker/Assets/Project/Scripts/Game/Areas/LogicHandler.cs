@@ -17,16 +17,33 @@ namespace Project.Scripts.Game.Areas
 
         private void OnMonsterDamaged()
         {
-            _monster.CurrentHP -= _gameResources.Collection["damagePerTap"].Amount;
+            if (_monster.CurrentHP - _gameResources.Collection["damagePerTap"].Amount > 0)
+            {
+                _monster.CurrentHP -= _gameResources.Collection["damagePerTap"].Amount;
+            }
+            else
+            {
+                _monster.Die();
+            }
         }
+
+        private void OnMonsterDied()
+        {
+            _monster.CurrentHP = _monster.FullHP;
+            _gameResources.Collection["money"].Amount += _monster.RewardForKilling;
+        }
+
         private void AddListeners()
         {
             _monster.Damaged += OnMonsterDamaged;
+            _monster.Died += OnMonsterDied;
         }
 
         private void RemoveListeners()
         {
             _monster.Damaged -= OnMonsterDamaged;
+            _monster.Died -= OnMonsterDied;
         }
+        
     }
 }

@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Project.Scripts.Core.ViewCreate
@@ -9,6 +10,10 @@ namespace Project.Scripts.Core.ViewCreate
         public BoxView(T view)
         {
             View = view;
+        }
+        public void Destroy()
+        {
+            GameObject.Destroy(View);
         }
     }
 }

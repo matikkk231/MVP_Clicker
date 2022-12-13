@@ -29,6 +29,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
             foreach (var presenter in _presenters)
             {
                 presenter.Dispose();
+                _boxView.Destroy();
             }
         }
     }

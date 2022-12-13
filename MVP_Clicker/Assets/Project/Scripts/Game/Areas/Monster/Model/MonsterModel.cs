@@ -1,5 +1,4 @@
 using System;
-using UnityEngine.PlayerLoop;
 
 namespace Project.Scripts.Game.Areas.Monster.Model
 {
@@ -47,6 +46,12 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         {
             Damaged?.Invoke();
         }
+
+        public void Die()
+        {
+            Died?.Invoke();
+        }
+
 
         public MonsterModel(int fullHp, int rewardForKilling)
         {

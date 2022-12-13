@@ -100,7 +100,7 @@
       <workItem from="1670868054751" duration="537000" />
       <workItem from="1670922199953" duration="340000" />
       <workItem from="1670922698025" duration="8390000" />
-      <workItem from="1670933095345" duration="8118000" />
+      <workItem from="1670933095345" duration="10249000" />
     </task>
     <servers />
   </component>
@@ -152,58 +152,6 @@
             </endOffsets>
           </properties>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Model/MonsterModel.cs</url>
-          <line>47</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\Monster\Model\MonsterModel.cs" initialLine="47" containingFunctionPresentation="method 'Damage'">
-            <startOffsets>
-              <option value="1011" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1029" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/LogicHandler.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\LogicHandler.cs" initialLine="14" containingFunctionPresentation="constructor 'LogicHandler'">
-            <startOffsets>
-              <option value="455" />
-            </startOffsets>
-            <endOffsets>
-              <option value="470" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/LogicHandler.cs</url>
-          <line>19</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\LogicHandler.cs" initialLine="19" containingFunctionPresentation="method 'OnMonsterDamaged'">
-            <startOffsets>
-              <option value="544" />
-            </startOffsets>
-            <endOffsets>
-              <option value="615" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Model/MonsterModel.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\Monster\Model\MonsterModel.cs" initialLine="20" containingFunctionPresentation="property 'CurrentHP'">
-            <startOffsets>
-              <option value="476" />
-            </startOffsets>
-            <endOffsets>
-              <option value="495" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

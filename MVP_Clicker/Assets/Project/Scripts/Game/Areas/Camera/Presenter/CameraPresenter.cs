@@ -35,6 +35,7 @@ namespace Project.Scripts.Game.Areas.Camera.Presenter
         public void Dispose()
         {
             RemoveListeners();
+            _boxViewWithCamera.Destroy();
         }
     }
 }
