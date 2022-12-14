@@ -8,18 +8,13 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
 {
     public class GameResourcesPresenter : IDisposable
     {
-        private readonly IGameResourcesView _view;
-        private readonly IGameResourcesModel _model;
         private readonly List<GameResourcePresenter> _gameResourcePresenters = new();
 
         public GameResourcesPresenter(IGameResourcesView view, IGameResourcesModel model)
         {
-            _view = view;
-            _model = model;
-
-            _gameResourcePresenters.Add(new GameResourcePresenter(_view.Money, _model.Collection["money"]));
-            _gameResourcePresenters.Add(new GameResourcePresenter(_view.DamagePerTap,
-                _model.Collection["damagePerTap"]));
+            _gameResourcePresenters.Add(new GameResourcePresenter(view.Money, model.Collection[model.Id.Money]));
+            _gameResourcePresenters.Add(new GameResourcePresenter(view.DamagePerTap,
+                model.Collection[model.Id.DamagePerTap]));
         }
 
         public void Dispose()

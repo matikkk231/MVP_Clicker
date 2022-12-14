@@ -1,8 +1,9 @@
+using System;
 using Project.Scripts.Game.Areas.MainMenu.Model;
 
 namespace Project.Scripts.Game.Base.GameModels
 {
-    public class GameModels : IGameModels
+    public class GameModels : IDisposable, IGameModels
     {
         public ICameraModel Camera { get; }
         public IMainMenuModel MainMenu { get; }
@@ -11,6 +12,11 @@ namespace Project.Scripts.Game.Base.GameModels
         {
             Camera = new CameraModel();
             MainMenu = new MainMenuModel();
+        }
+
+        public void Dispose()
+        {
+            MainMenu.MonsterLogicHandlerModel.Dispose();
         }
     }
 }

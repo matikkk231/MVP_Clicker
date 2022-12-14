@@ -1,7 +1,6 @@
 using Project.Scripts.Core.ViewCreate;
 using Project.Scripts.Game.Areas.Camera.View;
 using Project.Scripts.Game.Areas.MainMenu.View;
-using Project.Scripts.Game.Areas.Resource.View;
 using UnityEngine;
 
 namespace Project.Scripts.Game.Base.GameViews

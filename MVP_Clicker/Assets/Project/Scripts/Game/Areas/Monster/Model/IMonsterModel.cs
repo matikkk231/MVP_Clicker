@@ -7,9 +7,9 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         event Action Updated;
         event Action Damaged;
         event Action Died;
-        int CurrentHP { get; set; }
-        int FullHP { get; set; }
-        int RewardForKilling { get; set; }
+        int CurrentHp { get; set; }
+        int FullHp { get; }
+        int RewardForKilling { get; }
 
         void Damage();
         void Die();

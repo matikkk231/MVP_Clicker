@@ -13,7 +13,8 @@ namespace Project.Scripts.Game
 
         private GamePresenter _presenters;
 
-        void Start()
+
+        private void Start()
         {
             _models = new GameModels();
             _presenters = new GamePresenter(_models, _views);
@@ -22,6 +23,7 @@ namespace Project.Scripts.Game
         private void OnDestroy()
         {
             _presenters.Dispose();
+            _models.Dispose();
         }
     }
 }

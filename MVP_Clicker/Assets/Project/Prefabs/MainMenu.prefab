@@ -329,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Colors.m_ColorMultiplier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6634678538018241548, guid: 55f78f7d3a92cc94085cb631208268cf, type: 3}
+      propertyPath: _currentHp
+      value: 
+      objectReference: {fileID: 2686406169140451023}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55f78f7d3a92cc94085cb631208268cf, type: 3}
 --- !u!224 &1404232895525142491 stripped
@@ -336,6 +340,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 2302447220507402717, guid: 55f78f7d3a92cc94085cb631208268cf, type: 3}
   m_PrefabInstance: {fileID: 905005738917387782}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2686406169140451023 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3010429584305064137, guid: 55f78f7d3a92cc94085cb631208268cf, type: 3}
+  m_PrefabInstance: {fileID: 905005738917387782}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &5808558399085896202 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6634678538018241548, guid: 55f78f7d3a92cc94085cb631208268cf, type: 3}

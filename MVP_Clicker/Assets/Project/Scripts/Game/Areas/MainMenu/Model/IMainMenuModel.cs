@@ -7,5 +7,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
     {
         IGameResourcesModel GameResources { get; }
         IMonsterModel Monster { get; }
+
+        MonsterLogicHandlerModel MonsterLogicHandlerModel { get; }
     }
 }

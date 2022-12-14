@@ -8,11 +8,11 @@ namespace Project.Scripts.Game.Areas.Monster.View
     {
         public event Action Damaged;
 
-        [SerializeField] private TextMeshProUGUI _currentHP;
+        [SerializeField] private TextMeshProUGUI _currentHp;
 
-        public void SetCurrentHP(int currentHP)
+        public void SetCurrentHp(int currentHp)
         {
-            _currentHP.text = Convert.ToString(currentHP);
+            _currentHp.text = Convert.ToString(currentHp);
         }
 
         public void Damage()

@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Resource.Model;
 using Project.Scripts.Game.Areas.Resource.View;
 
@@ -7,8 +6,8 @@ namespace Project.Scripts.Game.Areas.Resource.Presenter
 {
     public class GameResourcePresenter : IDisposable
     {
-        private IGameResourceView _view;
-        private IGameResourceModel _model;
+        private readonly IGameResourceView _view;
+        private readonly IGameResourceModel _model;
 
 
         public GameResourcePresenter(IGameResourceView view, IGameResourceModel model)
@@ -24,7 +23,7 @@ namespace Project.Scripts.Game.Areas.Resource.Presenter
             _model.Updated += OnUpdated;
         }
 
-        private void RemoveListers()
+        private void RemoveListeners()
         {
             _model.Updated -= OnUpdated;
         }
@@ -36,7 +35,7 @@ namespace Project.Scripts.Game.Areas.Resource.Presenter
 
         public void Dispose()
         {
-            RemoveListers();
+            RemoveListeners();
         }
     }
 }

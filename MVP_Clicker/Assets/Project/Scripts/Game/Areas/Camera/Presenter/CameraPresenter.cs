@@ -6,8 +6,8 @@ namespace Project.Scripts.Game.Areas.Camera.Presenter
 {
     public class CameraPresenter : IDisposable
     {
-        private IBoxView<ICameraView> _boxViewWithCamera;
-        private ICameraModel _cameraModel;
+        private readonly IBoxView<ICameraView> _boxViewWithCamera;
+        private readonly ICameraModel _cameraModel;
 
         public CameraPresenter(IViewCreator<ICameraView> viewCreator, ICameraModel model)
         {

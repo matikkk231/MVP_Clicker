@@ -6,8 +6,8 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
 {
     public class MonsterPresenter: IDisposable
     {
-        private IMonsterView _view;
-        private IMonsterModel _model;
+        private readonly IMonsterView _view;
+        private readonly IMonsterModel _model;
 
         public MonsterPresenter(IMonsterView view, IMonsterModel model)
         {
@@ -19,7 +19,7 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
 
         private void OnUpdated()
         {
-            _view.SetCurrentHP(_model.CurrentHP);
+            _view.SetCurrentHp(_model.CurrentHp);
         }
 
         private void OnDamaged()

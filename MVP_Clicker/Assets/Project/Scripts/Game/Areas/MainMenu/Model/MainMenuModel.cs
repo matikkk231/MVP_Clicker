@@ -1,23 +1,30 @@
+using System;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Model
 {
-    public class MainMenuModel : IMainMenuModel
+    public class MainMenuModel : IDisposable, IMainMenuModel
     {
         public IGameResourcesModel GameResources { get; }
         public IMonsterModel Monster { get; }
-        private readonly LogicHandler _logicHandler;
+        public MonsterLogicHandlerModel MonsterLogicHandlerModel { get; }
+
 
         public MainMenuModel()
         {
             GameResources = new GameResourcesModel();
 
-            const int startMonsterHP = 3;
+            const int startMonsterHp = 3;
             const int startRewardForKilling = 1;
-            Monster = new MonsterModel(startMonsterHP, startRewardForKilling);
+            Monster = new MonsterModel(startMonsterHp, startRewardForKilling);
 
-            _logicHandler = new LogicHandler(GameResources, Monster);
+            MonsterLogicHandlerModel = new MonsterLogicHandlerModel(GameResources, Monster);
+        }
+
+        public void Dispose()
+        {
+            MonsterLogicHandlerModel.Dispose();
         }
     }
 }
