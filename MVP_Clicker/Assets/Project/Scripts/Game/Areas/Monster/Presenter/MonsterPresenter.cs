@@ -4,7 +4,7 @@ using Project.Scripts.Game.Areas.Monster.View;
 
 namespace Project.Scripts.Game.Areas.Monster.Presenter
 {
-    public class MonsterPresenter: IDisposable
+    public class MonsterPresenter : IDisposable
     {
         private readonly IMonsterView _view;
         private readonly IMonsterModel _model;

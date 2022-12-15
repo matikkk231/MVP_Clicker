@@ -6,6 +6,5 @@ namespace Project.Scripts.Game.Areas.Monster.View
     {
         public event Action Damaged;
         void SetCurrentHp(int currentHp);
-        
     }
 }

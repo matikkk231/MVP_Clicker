@@ -9,8 +9,6 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         public event Action Damaged;
 
         private int _currentHp;
-        private int _fullHp;
-        private int _rewardForKilling;
 
         public int CurrentHp
         {
@@ -22,25 +20,9 @@ namespace Project.Scripts.Game.Areas.Monster.Model
             }
         }
 
-        public int FullHp
-        {
-            get => _fullHp;
-            private set
-            {
-                _fullHp = value;
-                Updated?.Invoke();
-            }
-        }
+        public int FullHp { get; set; }
 
-        public int RewardForKilling
-        {
-            get => _rewardForKilling;
-            private set
-            {
-                _rewardForKilling = value;
-                Updated?.Invoke();
-            }
-        }
+        public int RewardForKilling { get; set; }
 
         public void Damage()
         {
