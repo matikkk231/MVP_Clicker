@@ -16,7 +16,7 @@ namespace Project.Scripts.Game.Base.GameModels
 
         public void Dispose()
         {
-            MainMenu.MonsterLogicHandlerModel.Dispose();
+            MainMenu.MonsterLogicHandler.Dispose();
         }
     }
 }

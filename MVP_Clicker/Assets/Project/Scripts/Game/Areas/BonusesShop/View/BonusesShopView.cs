@@ -1,11 +1,15 @@
+using Project.Scripts.Game.Areas.Bonus.View;
 using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.BonusesShop.View
 {
-    public class BonusesShopView : MonoBehaviour
+    public class BonusesShopView : MonoBehaviour, IBonusesShopView
     {
         [SerializeField] private GameObject _shopMenu;
         [SerializeField] private GameObject _shopMenuOpener;
+        [SerializeField] private BonusView _swordBonus;
+
+        public IBonusView SwordBonus => _swordBonus;
 
         public void OpenShopMenu()
         {
@@ -18,5 +22,6 @@ namespace Project.Scripts.Game.Areas.BonusesShop.View
             _shopMenu.SetActive(false);
             _shopMenuOpener.SetActive(true);
         }
+
     }
 }

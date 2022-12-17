@@ -1,3 +1,4 @@
+using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
@@ -9,7 +10,9 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         IGameResourcesModel GameResources { get; }
         IMonsterModel Monster { get; }
 
-        MonsterLogicHandlerModel MonsterLogicHandlerModel { get; }
+        MonsterLogicHandlerModel MonsterLogicHandler { get; }
         ILevelSystemModel LevelSystem { get; }
+        IBonusesShopModel BonusesShop { get; }
+        
     }
 }
