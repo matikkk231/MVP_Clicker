@@ -13,7 +13,7 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
         public GameResourcesModel()
         {
             Id = new GameResourcesId.Model.GameResourcesId();
-            
+
             int startAmountOfMoney = 0;
             IGameResourceModel money = new GameResourceModel(Id.Money, startAmountOfMoney);
             Collection.Add(Id.Money, money);

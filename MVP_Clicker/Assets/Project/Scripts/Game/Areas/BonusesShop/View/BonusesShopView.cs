@@ -9,7 +9,7 @@ namespace Project.Scripts.Game.Areas.BonusesShop.View
         [SerializeField] private GameObject _shopMenuOpener;
         [SerializeField] private BonusView _swordBonus;
 
-        public IBonusView SwordBonus => _swordBonus;
+        public IBonusView Sword => _swordBonus;
 
         public void OpenShopMenu()
         {
@@ -22,6 +22,5 @@ namespace Project.Scripts.Game.Areas.BonusesShop.View
             _shopMenu.SetActive(false);
             _shopMenuOpener.SetActive(true);
         }
-
     }
 }

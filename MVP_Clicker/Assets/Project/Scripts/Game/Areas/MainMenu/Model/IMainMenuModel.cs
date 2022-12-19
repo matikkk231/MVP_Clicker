@@ -9,10 +9,8 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
     {
         IGameResourcesModel GameResources { get; }
         IMonsterModel Monster { get; }
-
         MonsterLogicHandlerModel MonsterLogicHandler { get; }
         ILevelSystemModel LevelSystem { get; }
         IBonusesShopModel BonusesShop { get; }
-        
     }
 }

@@ -1,10 +1,10 @@
-using System;
+using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Bonus.Model;
 
 namespace Project.Scripts.Game.Areas.BonusesShop.Model
 {
     public interface IBonusesShopModel
     {
-        IBonusModel SwordBonus { get; }
+        Dictionary<string, IBonusModel> Collection { get; }
     }
 }

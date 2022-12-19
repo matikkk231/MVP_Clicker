@@ -5,11 +5,17 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
     public interface IBonusModel
     {
         event Action Updated;
-        event Action UpgradeBought;
+        event Action<string> UpgradeBought ;
         event Action DamagePerTapBonusChanged;
-        int ProvidingDamagePerTapBonus { get; set; }
+
         int BonusLevel { get; set; }
-        int UpgradeValue { get; set; }
+        int UpgradeValue { get; }
+        
+        int ProvidingDamagePerTapBonus { get; set; }
+
         void BuyUpgrade();
+        void UpdateUpgradeValue();
+        void UpdateProvidingBonus();
+        void UpdateBonusLevel();
     }
 }

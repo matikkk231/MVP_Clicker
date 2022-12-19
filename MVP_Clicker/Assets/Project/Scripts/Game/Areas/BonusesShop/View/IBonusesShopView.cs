@@ -4,6 +4,6 @@ namespace Project.Scripts.Game.Areas.BonusesShop.View
 {
     public interface IBonusesShopView
     {
-        IBonusView SwordBonus { get; }
+        IBonusView Sword { get; }
     }
 }

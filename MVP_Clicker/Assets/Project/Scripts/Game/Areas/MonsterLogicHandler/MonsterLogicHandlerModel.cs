@@ -22,9 +22,11 @@ namespace Project.Scripts.Game.Areas
 
         private void OnMonsterDamaged()
         {
-            if (_monster.CurrentHp - _gameResources.Collection[_gameResources.Id.DamagePerTap].Amount > 0)
+            bool hasMonsterEnoughHp =
+                _monster.CurrentHp - _gameResources.Collection[_gameResources.Id.DamagePerTap].Amount > 0;
+            if (hasMonsterEnoughHp)
             {
-                _monster.CurrentHp -= _gameResources.Collection[_gameResources.Id.DamagePerTap].Amount;
+                ReduceMonsterHp();
             }
             else
             {
@@ -32,22 +34,44 @@ namespace Project.Scripts.Game.Areas
             }
         }
 
+        private void ReduceMonsterHp()
+        {
+            _monster.CurrentHp -= _gameResources.Collection[_gameResources.Id.DamagePerTap].Amount;
+        }
+
         private void OnMonsterDied()
         {
-            if (_levelSystem.CurrentExperience++ <= _levelSystem.ExperienceBeforeLeveUp)
+            bool isGettingLevelUpAfterKillingMonster =
+                _levelSystem.CurrentExperience++ <= _levelSystem.ExperienceBeforeLeveUp;
+            if (isGettingLevelUpAfterKillingMonster)
             {
-                _levelSystem.CurrentExperience++;
+                GetExperienceFromMonster();
             }
             else
             {
                 _levelSystem.LevelUp();
             }
 
-            _monster.CurrentHp = _monster.FullHp;
+            BornMonster();
+            GetRewardFromMonster();
+        }
+
+        private void GetExperienceFromMonster()
+        {
+            _levelSystem.CurrentExperience++;
+        }
+
+        private void GetRewardFromMonster()
+        {
             _gameResources.Collection[_gameResources.Id.Money].Amount += _monster.RewardForKilling;
         }
 
-        private void OnLevelUp()
+        private void BornMonster()
+        {
+            _monster.CurrentHp = _monster.FullHp;
+        }
+
+        private void OnGotLevelUp()
         {
             _levelSystem.CurrentLevel++;
             _levelSystem.CurrentExperience = 0;
@@ -61,14 +85,14 @@ namespace Project.Scripts.Game.Areas
         {
             _monster.Damaged += OnMonsterDamaged;
             _monster.Died += OnMonsterDied;
-            _levelSystem.LevelUP += OnLevelUp;
+            _levelSystem.GotLevelUp += OnGotLevelUp;
         }
 
         private void RemoveListeners()
         {
             _monster.Damaged -= OnMonsterDamaged;
             _monster.Died -= OnMonsterDied;
-            _levelSystem.LevelUP -= OnLevelUp;
+            _levelSystem.GotLevelUp -= OnGotLevelUp;
         }
 
         public void Dispose()

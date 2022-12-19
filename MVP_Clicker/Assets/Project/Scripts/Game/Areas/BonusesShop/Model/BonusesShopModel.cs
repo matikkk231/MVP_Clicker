@@ -1,5 +1,7 @@
 using System;
+using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Bonus.Model;
+using Project.Scripts.Game.Areas.BonusId.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.GameResourcesId.Model;
 
@@ -9,48 +11,63 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
     {
         private readonly IGameResourcesModel _gameResources;
         private readonly IGameResourcesId _gameResourcesId;
-        public IBonusModel SwordBonus { get; }
+        private readonly Dictionary<string, IBonusModel> _collection = new();
+        private readonly IBonusId _bonusId;
 
-        public int ReceivedBonusDamagePerTap { get; set; }
+        public Dictionary<string, IBonusModel> Collection => _collection;
 
         public BonusesShopModel(IGameResourcesModel gameResources, IGameResourcesId gameResourcesId)
         {
             _gameResources = gameResources;
             _gameResourcesId = gameResourcesId;
+            _bonusId = new BonusId.Model.BonusId();
 
-            SwordBonus = new BonusModel();
+            _collection.Add(_bonusId.Sword, new BonusModel(_bonusId.Sword));
+
             AddListeners();
         }
 
-        private void OnSwordUpgradeBought()
+        private void OnUpgradeBought(string upgradedBonus)
         {
-            if (_gameResources.Collection[_gameResourcesId.Money].Amount >= SwordBonus.UpgradeValue)
+            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_gameResourcesId.Money].Amount >=
+                                           _collection[upgradedBonus].UpgradeValue;
+            if (isMoneyEnoughForUpgrade)
             {
-                _gameResources.Collection[_gameResourcesId.Money].Amount -= SwordBonus.UpgradeValue;
-
-                SwordBonus.ProvidingDamagePerTapBonus++;
-                SwordBonus.UpgradeValue *= 2;
-                SwordBonus.BonusLevel++;
-
-                _gameResources.Collection[_gameResourcesId.DamagePerTap].Amount = ReceivedBonusDamagePerTap;
+                PayForUpgrade(upgradedBonus);
+                UpdateBonusInfo(upgradedBonus);
+                UpdateDamagePerTapBonus();
             }
         }
 
-        private void OnDamagePerTapBonusChanged()
+        private void UpdateBonusInfo(string upgradedBonus)
         {
-            ReceivedBonusDamagePerTap = SwordBonus.ProvidingDamagePerTapBonus;
+            _collection[upgradedBonus].UpdateProvidingBonus();
+            _collection[upgradedBonus].UpdateUpgradeValue();
+            _collection[upgradedBonus].UpdateBonusLevel();
+        }
+
+        private void PayForUpgrade(string upgradedBonus)
+        {
+            _gameResources.Collection[_gameResourcesId.Money].Amount -= _collection[upgradedBonus].UpgradeValue;
+        }
+
+        private void UpdateDamagePerTapBonus()
+        {
+            int sumDamagePerTapBonusFromAllBonuses = _collection[_bonusId.Sword].ProvidingDamagePerTapBonus;
+            int receivedDamagePerTapBonus = sumDamagePerTapBonusFromAllBonuses;
+            _gameResources.Collection[_gameResourcesId.DamagePerTap].Amount = receivedDamagePerTapBonus;
         }
 
         private void AddListeners()
         {
-            SwordBonus.UpgradeBought += OnSwordUpgradeBought;
-            SwordBonus.DamagePerTapBonusChanged += OnDamagePerTapBonusChanged;
+            _collection[_bonusId.Sword].UpgradeBought += OnUpgradeBought;
+            _collection[_bonusId.Sword].DamagePerTapBonusChanged += UpdateDamagePerTapBonus;
         }
 
         private void RemoveListeners()
         {
-            SwordBonus.UpgradeBought -= OnSwordUpgradeBought;
-            SwordBonus.DamagePerTapBonusChanged -= OnDamagePerTapBonusChanged;
+            _collection[_bonusId.Sword].UpgradeBought -= OnUpgradeBought;
+            _collection[_bonusId.Sword].DamagePerTapBonusChanged -= UpdateDamagePerTapBonus;
         }
 
         public void Dispose()

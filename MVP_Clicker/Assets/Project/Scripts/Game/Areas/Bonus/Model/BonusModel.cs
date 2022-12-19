@@ -5,12 +5,14 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
     public class BonusModel : IBonusModel
     {
         public event Action Updated;
-        public event Action UpgradeBought;
+        public event Action<string> UpgradeBought;
         public event Action DamagePerTapBonusChanged;
 
         private int _providingDamagePerTapBonus;
         private int _bonusLevel;
         private int _upgradeValue;
+
+        private readonly string _id;
 
         public int ProvidingDamagePerTapBonus
         {
@@ -33,11 +35,6 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
             }
         }
 
-        public void BuyUpgrade()
-        {
-            UpgradeBought?.Invoke();
-        }
-
         public int BonusLevel
         {
             get => _bonusLevel;
@@ -48,7 +45,7 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
             }
         }
 
-        public BonusModel()
+        public BonusModel(string id)
         {
             int startBonusLevel = 1;
             BonusLevel = startBonusLevel;
@@ -58,6 +55,28 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
 
             int startProvidingDamagePerTapBonus = 1;
             ProvidingDamagePerTapBonus = startProvidingDamagePerTapBonus;
+
+            _id = id;
+        }
+
+        public void BuyUpgrade()
+        {
+            UpgradeBought?.Invoke(_id);
+        }
+
+        public void UpdateUpgradeValue()
+        {
+            UpgradeValue *= 2;
+        }
+
+        public void UpdateProvidingBonus()
+        {
+            ProvidingDamagePerTapBonus++;
+        }
+
+        public void UpdateBonusLevel()
+        {
+            BonusLevel++;
         }
     }
 }

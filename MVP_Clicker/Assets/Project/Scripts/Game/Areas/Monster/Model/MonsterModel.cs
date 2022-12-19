@@ -24,6 +24,13 @@ namespace Project.Scripts.Game.Areas.Monster.Model
 
         public int RewardForKilling { get; set; }
 
+        public MonsterModel(int fullHp, int rewardForKilling)
+        {
+            FullHp = fullHp;
+            RewardForKilling = rewardForKilling;
+            CurrentHp = FullHp;
+        }
+
         public void Damage()
         {
             Damaged?.Invoke();
@@ -32,14 +39,6 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         public void Die()
         {
             Died?.Invoke();
-        }
-
-
-        public MonsterModel(int fullHp, int rewardForKilling)
-        {
-            FullHp = fullHp;
-            RewardForKilling = rewardForKilling;
-            CurrentHp = FullHp;
         }
     }
 }

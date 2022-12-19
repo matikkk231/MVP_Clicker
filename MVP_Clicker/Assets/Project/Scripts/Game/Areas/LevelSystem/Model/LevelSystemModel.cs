@@ -4,14 +4,12 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Model
 {
     public class LevelSystemModel : ILevelSystemModel
     {
-        public event Action LevelUP;
+        public event Action GotLevelUp;
         public event Action Updated;
 
 
         private int _currentLevel;
-
         public int CurrentExperience { get; set; }
-
         public int ExperienceBeforeLeveUp { get; }
 
         public int CurrentLevel
@@ -24,11 +22,6 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Model
             }
         }
 
-        public void LevelUp()
-        {
-            LevelUP?.Invoke();
-        }
-
         public LevelSystemModel()
         {
             const int startExperience = 0;
@@ -37,6 +30,11 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Model
             int startLevel = 1;
             CurrentLevel = startLevel;
             ExperienceBeforeLeveUp = 3;
+        }
+
+        public void LevelUp()
+        {
+            GotLevelUp?.Invoke();
         }
     }
 }

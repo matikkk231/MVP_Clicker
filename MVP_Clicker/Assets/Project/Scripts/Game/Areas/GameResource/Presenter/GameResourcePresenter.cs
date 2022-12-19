@@ -9,7 +9,6 @@ namespace Project.Scripts.Game.Areas.Resource.Presenter
         private readonly IGameResourceView _view;
         private readonly IGameResourceModel _model;
 
-
         public GameResourcePresenter(IGameResourceView view, IGameResourceModel model)
         {
             _view = view;
