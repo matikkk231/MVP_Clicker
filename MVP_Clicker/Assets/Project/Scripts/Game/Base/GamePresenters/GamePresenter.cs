@@ -11,10 +11,10 @@ namespace Project.Scripts.Game.Base.GamePresenters
     {
         private readonly List<IDisposable> _presenters = new();
 
-        public GamePresenter(IGameModels models, IGameViews views)
+        public GamePresenter(IGameModels models, IGameViews views, GameConfigs.GameConfigs configs)
         {
             _presenters.Add(new CameraPresenter(views.Camera, models.Camera));
-            _presenters.Add(new MainMenuPresenter(views.MainMenu, models.MainMenu));
+            _presenters.Add(new MainMenuPresenter(views.MainMenu, models.MainMenu, configs));
         }
 
         public void Dispose()
