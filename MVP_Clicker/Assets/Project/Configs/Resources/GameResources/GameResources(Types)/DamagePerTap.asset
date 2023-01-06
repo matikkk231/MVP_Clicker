@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: DamagePerTap
   m_EditorClassIdentifier: 
   _startAmount: 0
-  _id: 
+  _id: DamagePerTap

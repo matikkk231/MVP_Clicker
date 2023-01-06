@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b4ab18e980243b4a0e7c6ad5e7c9f3e, type: 3}
   m_Name: GameResourcesCollection
   m_EditorClassIdentifier: 
-  _money: {fileID: 0}
-  _damagePerTap: {fileID: 0}
+  _money: {fileID: 11400000, guid: 54c8f7ac62323cf43b9882a735b822b2, type: 2}
+  _damagePerTap: {fileID: 11400000, guid: ecd777534ae2a704f9886c650e1328b9, type: 2}

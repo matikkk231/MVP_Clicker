@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e690e280-ea3f-4139-8063-b34e85f29dd3" name="Changes" comment="" />
+    <list default="true" id="e690e280-ea3f-4139-8063-b34e85f29dd3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Prefabs/Monster.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Prefabs/Monster.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/MainMenu/Presenter/MainMenuPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/MainMenu/Presenter/MainMenuPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Config/IMonsterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Config/IMonsterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Config/MonsterConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Config/MonsterConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Presenter/MonsterPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/Presenter/MonsterPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/View/IMonsterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/View/IMonsterView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/View/MonsterView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Monster/View/MonsterView.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +18,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5a41d6b7189842eca409fd0b1c3e3dcf17bf78/9e/4a954c5e/IDisposable.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/86acb61e0d2b4b36bc20af11093be9a5157e00/a8/6b9c18e6/Resources.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e9b71fdf5d7d40a3b3ba85664cafc7aa3a00/de/e59ec134/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IBoxView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IViewCreator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -22,21 +32,23 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IcxvEFV6lZUELLO7SJC2CHHpBT" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "settings.editor.selected.configurable": "preferences.editor",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Unity.exe" />
@@ -56,10 +68,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="4316">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="4316" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -112,6 +124,10 @@
       <workItem from="1671114729023" duration="738000" />
       <workItem from="1671115508023" duration="518000" />
       <workItem from="1671260534771" duration="11600000" />
+      <workItem from="1673001575465" duration="50000" />
+      <workItem from="1673001650233" duration="5306000" />
+      <workItem from="1673013843267" duration="3937000" />
+      <workItem from="1673017840359" duration="3204000" />
     </task>
     <servers />
   </component>
@@ -136,6 +152,36 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Base/GameModels/GameModels.cs</url>
+          <line>14</line>
+          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Base\GameModels\GameModels.cs" initialLine="14" containingFunctionPresentation="constructor 'GameModels'">
+            <startOffsets>
+              <option value="422" />
+            </startOffsets>
+            <endOffsets>
+              <option value="460" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/GameResources/Model/GameResourcesModel.cs</url>
+          <line>13</line>
+          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\GameResources\Model\GameResourcesModel.cs" initialLine="13" containingFunctionPresentation="constructor 'GameResourcesModel'">
+            <startOffsets>
+              <option value="445" />
+            </startOffsets>
+            <endOffsets>
+              <option value="579" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
         <PinnedItemInfo parentTag="Frame#Project.Scripts.Game.Areas.Presenters.MoneyPresenter..ctor" memberName="viewBox" />

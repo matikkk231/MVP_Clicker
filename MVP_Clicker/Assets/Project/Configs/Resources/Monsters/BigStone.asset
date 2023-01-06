@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef5a593f92d443a2a13f16f6c8b4237f, type: 3}
   m_Name: BigStone
   m_EditorClassIdentifier: 
-  _startFullHp: 0
-  _startRewardForKilling: 0
+  _startFullHp: 5
+  _startRewardForKilling: 1
+  _monsterImage: {fileID: 28535766, guid: f57059ae11f03c44db970523443a7295, type: 3}
