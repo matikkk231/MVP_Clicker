@@ -3,6 +3,8 @@ using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
+using Project.Scripts.Game.Base.GameConfigs;
+using Unity.VisualScripting;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Model
 {
@@ -14,7 +16,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         public ILevelSystemModel LevelSystem { get; }
         public IBonusesShopModel BonusesShop { get; }
 
-        public MainMenuModel()
+        public MainMenuModel(IGameConfigs configs)
         {
             GameResources = new GameResourcesModel();
             var gameResourcesId = new GameResourcesId.Model.GameResourcesId();
@@ -26,7 +28,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
             LevelSystem = new LevelSystemModel();
             MonsterLogicHandler = new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem);
 
-            BonusesShop = new BonusesShopModel(GameResources, gameResourcesId);
+            BonusesShop = new BonusesShopModel(GameResources, gameResourcesId, configs.BonusesShopConfig);
         }
 
         public void Dispose()

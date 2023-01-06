@@ -1,6 +1,9 @@
+using Project.Scripts.Game.Areas.BonusesShop.Config;
+using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
 using Project.Scripts.Game.Base.GameViews;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Project.Scripts.Game
@@ -13,10 +16,16 @@ namespace Project.Scripts.Game
 
         private GamePresenter _presenters;
 
+        private GameConfigs _configs;
+
 
         private void Start()
         {
-            _models = new GameModels();
+            var bonusesShopScriptableObject = Resources.Load("BonusesShop");
+            var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
+            _configs = new GameConfigs(bonusesShopConfig);
+
+            _models = new GameModels(_configs);
             _presenters = new GamePresenter(_models, _views);
         }
 
@@ -25,5 +34,6 @@ namespace Project.Scripts.Game
             _presenters.Dispose();
             _models.Dispose();
         }
+        
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.Bonus.Config;
 
 namespace Project.Scripts.Game.Areas.Bonus.Model
 {
@@ -45,18 +46,15 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
             }
         }
 
-        public BonusModel(string id)
+        public BonusModel(IBonusConfig config)
         {
-            int startBonusLevel = 1;
-            BonusLevel = startBonusLevel;
+            BonusLevel = config.StartBonusLevel;
 
-            int startUpgradeValue = 20;
-            UpgradeValue = startUpgradeValue;
+            UpgradeValue = config.StartUpgradeValue;
 
-            int startProvidingDamagePerTapBonus = 1;
-            ProvidingDamagePerTapBonus = startProvidingDamagePerTapBonus;
+            ProvidingDamagePerTapBonus = config.StartProvidingDamagePerTapBonus;
 
-            _id = id;
+            _id = config.Id;
         }
 
         public void BuyUpgrade()
