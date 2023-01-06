@@ -18,17 +18,18 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
 
         public MainMenuModel(IGameConfigs configs)
         {
-            GameResources = new GameResourcesModel();
-            var gameResourcesId = new GameResourcesId.Model.GameResourcesId();
+            GameResources = new GameResourcesModel(configs.GameResourcesConfig);
 
             const int startMonsterHp = 3;
             const int startRewardForKilling = 1;
             Monster = new MonsterModel(startMonsterHp, startRewardForKilling);
 
             LevelSystem = new LevelSystemModel();
-            MonsterLogicHandler = new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem);
+            MonsterLogicHandler =
+                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, configs.GameResourcesConfig);
 
-            BonusesShop = new BonusesShopModel(GameResources, gameResourcesId, configs.BonusesShopConfig);
+            BonusesShop = new BonusesShopModel(GameResources, configs.BonusesShopConfig,
+                configs.GameResourcesConfig);
         }
 
         public void Dispose()

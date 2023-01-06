@@ -18,11 +18,11 @@ namespace Project.Scripts.Game.Areas.Resource.Model
             }
         }
 
-        public string ID { get; }
+        public string Id { get; }
 
         public GameResourceModel(string id, int amount)
         {
-            ID = id;
+            Id = id;
             Amount = amount;
         }
     }

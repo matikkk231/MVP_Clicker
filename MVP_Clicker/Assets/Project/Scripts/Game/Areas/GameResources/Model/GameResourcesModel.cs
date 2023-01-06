@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using Project.Scripts.Game.Areas.GameResourcesId.Model;
+using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Resource.Model;
 
 namespace Project.Scripts.Game.Areas.GameResources.Model
@@ -8,19 +8,16 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
     {
         public Dictionary<string, IGameResourceModel> Collection { get; } = new();
 
-        public IGameResourcesId Id { get; }
 
-        public GameResourcesModel()
+        public GameResourcesModel(IGameResourcesConfig gameResourcesConfig)
         {
-            Id = new GameResourcesId.Model.GameResourcesId();
+            IGameResourceModel money =
+                new GameResourceModel(gameResourcesConfig.Money.Id, gameResourcesConfig.Money.StartAmount);
+            Collection.Add(money.Id, money);
 
-            int startAmountOfMoney = 0;
-            IGameResourceModel money = new GameResourceModel(Id.Money, startAmountOfMoney);
-            Collection.Add(Id.Money, money);
-
-            int startAmountOfDamagePerTap = 1;
-            IGameResourceModel damagePerTap = new GameResourceModel(Id.DamagePerTap, startAmountOfDamagePerTap);
-            Collection.Add(damagePerTap.ID, damagePerTap);
+            IGameResourceModel damagePerTap = new GameResourceModel(gameResourcesConfig.DamagePerTap.Id,
+                gameResourcesConfig.DamagePerTap.StartAmount);
+            Collection.Add(damagePerTap.Id, damagePerTap);
         }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.GameResources.View;
 using Project.Scripts.Game.Areas.Resource.Presenter;
@@ -10,11 +11,13 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
     {
         private readonly List<GameResourcePresenter> _gameResourcePresenters = new();
 
-        public GameResourcesPresenter(IGameResourcesView view, IGameResourcesModel model)
+        public GameResourcesPresenter(IGameResourcesView view, IGameResourcesModel model,
+            IGameResourcesConfig gameResourcesConfig)
         {
-            _gameResourcePresenters.Add(new GameResourcePresenter(view.Money, model.Collection[model.Id.Money]));
+            _gameResourcePresenters.Add(new GameResourcePresenter(view.Money,
+                model.Collection[gameResourcesConfig.Money.Id]));
             _gameResourcePresenters.Add(new GameResourcePresenter(view.DamagePerTap,
-                model.Collection[model.Id.DamagePerTap]));
+                model.Collection[gameResourcesConfig.DamagePerTap.Id]));
         }
 
         public void Dispose()

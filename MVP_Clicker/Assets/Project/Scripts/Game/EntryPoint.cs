@@ -1,4 +1,5 @@
 using Project.Scripts.Game.Areas.BonusesShop.Config;
+using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
@@ -21,12 +22,14 @@ namespace Project.Scripts.Game
 
         private void Start()
         {
-            var bonusesShopScriptableObject = Resources.Load("BonusesShop");
+            var bonusesShopScriptableObject = Resources.Load("Bonuses/BonusesShop");
             var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
-            _configs = new GameConfigs(bonusesShopConfig);
+            var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
+            var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
+            _configs = new GameConfigs(bonusesShopConfig, gameResourcesConfig);
 
             _models = new GameModels(_configs);
-            _presenters = new GamePresenter(_models, _views);
+            _presenters = new GamePresenter(_models, _views, _configs);
         }
 
         private void OnDestroy()
@@ -34,6 +37,5 @@ namespace Project.Scripts.Game
             _presenters.Dispose();
             _models.Dispose();
         }
-        
     }
 }
