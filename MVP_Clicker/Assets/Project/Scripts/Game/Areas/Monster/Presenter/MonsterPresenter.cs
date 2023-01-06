@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.Monster.Config;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Areas.Monster.View;
 
@@ -9,10 +10,11 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
         private readonly IMonsterView _view;
         private readonly IMonsterModel _model;
 
-        public MonsterPresenter(IMonsterView view, IMonsterModel model)
+        public MonsterPresenter(IMonsterView view, IMonsterModel model, IMonsterConfig monsterConfig)
         {
             _view = view;
             _model = model;
+            _view.SetMonsterImage(monsterConfig.MonsterImage);
             AddListeners();
             OnUpdated();
         }

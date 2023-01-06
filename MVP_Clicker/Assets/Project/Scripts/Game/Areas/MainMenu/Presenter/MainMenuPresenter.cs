@@ -23,7 +23,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
 
             _presenters.Add(new GameResourcesPresenter(_boxView.View.GameResources, _model.GameResources,
                 configs.GameResourcesConfig));
-            _presenters.Add(new MonsterPresenter(_boxView.View.Monster, _model.Monster));
+            _presenters.Add(new MonsterPresenter(_boxView.View.Monster, _model.Monster, configs.MonsterConfig));
             _presenters.Add(new LevelSystemPresenter(_boxView.View.LevelSystem, _model.LevelSystem));
             _presenters.Add(new BonusesShopPresenter(_boxView.View.BonusesShopView, _model.BonusesShop,
                 configs.BonusesShopConfig));

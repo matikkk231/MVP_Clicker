@@ -7,8 +7,10 @@ namespace Project.Scripts.Game.Areas.Monster.Config
     {
         [SerializeField] private int _startFullHp;
         [SerializeField] private int _startRewardForKilling;
+        [SerializeField] private Sprite _monsterImage;
 
         public int StartFullHp => _startFullHp;
         public int StartRewardForKilling => _startRewardForKilling;
+        public Sprite MonsterImage => _monsterImage;
     }
 }
