@@ -1,5 +1,6 @@
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
+using Project.Scripts.Game.Areas.Monster.Config;
 using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
@@ -26,7 +27,10 @@ namespace Project.Scripts.Game
             var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
             var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
-            _configs = new GameConfigs(bonusesShopConfig, gameResourcesConfig);
+            var monsterScriptableObject = Resources.Load("Monsters/BigStone");
+            var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
+            
+            _configs = new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
 
             _models = new GameModels(_configs);
             _presenters = new GamePresenter(_models, _views, _configs);

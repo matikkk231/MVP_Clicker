@@ -19,9 +19,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         {
             GameResources = new GameResourcesModel(configs.GameResourcesConfig);
 
-            const int startMonsterHp = 3;
-            const int startRewardForKilling = 1;
-            Monster = new MonsterModel(startMonsterHp, startRewardForKilling);
+            Monster = new MonsterModel(configs.MonsterConfig);
 
             LevelSystem = new LevelSystemModel();
             MonsterLogicHandler =
