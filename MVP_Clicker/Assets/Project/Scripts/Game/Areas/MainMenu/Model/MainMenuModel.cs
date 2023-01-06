@@ -4,7 +4,6 @@ using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Base.GameConfigs;
-using Unity.VisualScripting;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Model
 {
