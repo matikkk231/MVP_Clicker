@@ -1,5 +1,6 @@
 using System;
 using Project.Scripts.Game.Areas.MainMenu.Model;
+using Project.Scripts.Game.Base.GameConfigs;
 
 namespace Project.Scripts.Game.Base.GameModels
 {
@@ -8,10 +9,10 @@ namespace Project.Scripts.Game.Base.GameModels
         public ICameraModel Camera { get; }
         public IMainMenuModel MainMenu { get; }
 
-        public GameModels()
+        public GameModels(IGameConfigs configs)
         {
             Camera = new CameraModel();
-            MainMenu = new MainMenuModel();
+            MainMenu = new MainMenuModel(configs);
         }
 
         public void Dispose()

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Camera.Presenter;
 using Project.Scripts.Game.Areas.MainMenu.Presenter;
+using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GameViews;
 
@@ -11,7 +12,7 @@ namespace Project.Scripts.Game.Base.GamePresenters
     {
         private readonly List<IDisposable> _presenters = new();
 
-        public GamePresenter(IGameModels models, IGameViews views, GameConfigs.GameConfigs configs)
+        public GamePresenter(IGameModels models, IGameViews views, IGameConfigs configs)
         {
             _presenters.Add(new CameraPresenter(views.Camera, models.Camera));
             _presenters.Add(new MainMenuPresenter(views.MainMenu, models.MainMenu, configs));

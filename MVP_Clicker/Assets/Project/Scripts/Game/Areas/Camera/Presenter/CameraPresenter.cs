@@ -30,7 +30,7 @@ namespace Project.Scripts.Game.Areas.Camera.Presenter
         {
             _boxViewWithCamera.View.SetPosition(_cameraModel.Position);
         }
-        
+
         public void Dispose()
         {
             RemoveListeners();

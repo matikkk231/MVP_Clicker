@@ -398,3 +398,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _currentHp: {fileID: 3010429584305064137}
+  _monsterImage: {fileID: 7146420928492511037}

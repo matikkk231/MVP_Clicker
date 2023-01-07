@@ -1,6 +1,11 @@
+using Project.Scripts.Game.Areas.BonusesShop.Config;
+using Project.Scripts.Game.Areas.GameResources.Config;
+using Project.Scripts.Game.Areas.Monster.Config;
+using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
 using Project.Scripts.Game.Base.GameViews;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Project.Scripts.Game
@@ -13,11 +18,22 @@ namespace Project.Scripts.Game
 
         private GamePresenter _presenters;
 
+        private GameConfigs _configs;
+
 
         private void Start()
         {
-            _models = new GameModels();
-            _presenters = new GamePresenter(_models, _views);
+            var bonusesShopScriptableObject = Resources.Load("Bonuses/BonusesShop");
+            var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
+            var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
+            var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
+            var monsterScriptableObject = Resources.Load("Monsters/BigStone");
+            var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
+            
+            _configs = new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
+
+            _models = new GameModels(_configs);
+            _presenters = new GamePresenter(_models, _views, _configs);
         }
 
         private void OnDestroy()

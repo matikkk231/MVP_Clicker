@@ -1,35 +1,36 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Bonus.Model;
-using Project.Scripts.Game.Areas.BonusId.Model;
+using Project.Scripts.Game.Areas.BonusesShop.Config;
+using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.GameResources.Model;
-using Project.Scripts.Game.Areas.GameResourcesId.Model;
 
 namespace Project.Scripts.Game.Areas.BonusesShop.Model
 {
     public class BonusesShopModel : IBonusesShopModel, IDisposable
     {
         private readonly IGameResourcesModel _gameResources;
-        private readonly IGameResourcesId _gameResourcesId;
+        private readonly IGameResourcesConfig _gameResourcesConfig;
         private readonly Dictionary<string, IBonusModel> _collection = new();
-        private readonly IBonusId _bonusId;
 
         public Dictionary<string, IBonusModel> Collection => _collection;
 
-        public BonusesShopModel(IGameResourcesModel gameResources, IGameResourcesId gameResourcesId)
+        public BonusesShopModel(IGameResourcesModel gameResources,
+            IBonusesShopConfig configs, IGameResourcesConfig gameResourcesConfig)
         {
             _gameResources = gameResources;
-            _gameResourcesId = gameResourcesId;
-            _bonusId = new BonusId.Model.BonusId();
+            _gameResourcesConfig = gameResourcesConfig;
 
-            _collection.Add(_bonusId.Sword, new BonusModel(_bonusId.Sword));
+
+            _collection.Add(configs.Sword.Id, new BonusModel(configs.Sword));
+            UpdateDamagePerTapBonus();
 
             AddListeners();
         }
 
         private void OnUpgradeBought(string upgradedBonus)
         {
-            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_gameResourcesId.Money].Amount >=
+            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_gameResourcesConfig.Money.Id].Amount >=
                                            _collection[upgradedBonus].UpgradeValue;
             if (isMoneyEnoughForUpgrade)
             {
@@ -48,26 +49,43 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
 
         private void PayForUpgrade(string upgradedBonus)
         {
-            _gameResources.Collection[_gameResourcesId.Money].Amount -= _collection[upgradedBonus].UpgradeValue;
+            _gameResources.Collection[_gameResourcesConfig.Money.Id].Amount -= _collection[upgradedBonus].UpgradeValue;
         }
 
         private void UpdateDamagePerTapBonus()
         {
-            int sumDamagePerTapBonusFromAllBonuses = _collection[_bonusId.Sword].ProvidingDamagePerTapBonus;
+            int sumDamagePerTapBonusFromAllBonuses = CalculateDamagePerTapBonusFromAllBonuses(_collection);
             int receivedDamagePerTapBonus = sumDamagePerTapBonusFromAllBonuses;
-            _gameResources.Collection[_gameResourcesId.DamagePerTap].Amount = receivedDamagePerTapBonus;
+            _gameResources.Collection[_gameResourcesConfig.DamagePerTap.Id].Amount = receivedDamagePerTapBonus;
         }
 
         private void AddListeners()
         {
-            _collection[_bonusId.Sword].UpgradeBought += OnUpgradeBought;
-            _collection[_bonusId.Sword].DamagePerTapBonusChanged += UpdateDamagePerTapBonus;
+            foreach (KeyValuePair<string, IBonusModel> bonus in _collection)
+            {
+                bonus.Value.UpgradeBought += OnUpgradeBought;
+                bonus.Value.DamagePerTapBonusChanged += UpdateDamagePerTapBonus;
+            }
         }
 
         private void RemoveListeners()
         {
-            _collection[_bonusId.Sword].UpgradeBought -= OnUpgradeBought;
-            _collection[_bonusId.Sword].DamagePerTapBonusChanged -= UpdateDamagePerTapBonus;
+            foreach (KeyValuePair<string, IBonusModel> bonus in _collection)
+            {
+                bonus.Value.UpgradeBought -= OnUpgradeBought;
+                bonus.Value.DamagePerTapBonusChanged -= UpdateDamagePerTapBonus;
+            }
+        }
+
+        private int CalculateDamagePerTapBonusFromAllBonuses(Dictionary<string, IBonusModel> bonuses)
+        {
+            int sumOfDamagePerTap = 0;
+            foreach (KeyValuePair<string, IBonusModel> bonus in bonuses)
+            {
+                sumOfDamagePerTap += bonus.Value.ProvidingDamagePerTapBonus;
+            }
+
+            return sumOfDamagePerTap;
         }
 
         public void Dispose()

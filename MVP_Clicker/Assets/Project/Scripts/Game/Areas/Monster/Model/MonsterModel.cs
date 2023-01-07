@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.Monster.Config;
 
 namespace Project.Scripts.Game.Areas.Monster.Model
 {
@@ -24,10 +25,10 @@ namespace Project.Scripts.Game.Areas.Monster.Model
 
         public int RewardForKilling { get; set; }
 
-        public MonsterModel(int fullHp, int rewardForKilling)
+        public MonsterModel(IMonsterConfig monsterConfig)
         {
-            FullHp = fullHp;
-            RewardForKilling = rewardForKilling;
+            FullHp = monsterConfig.StartFullHp;
+            RewardForKilling = monsterConfig.StartRewardForKilling;
             CurrentHp = FullHp;
         }
 

@@ -3,6 +3,7 @@ using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
+using Project.Scripts.Game.Base.GameConfigs;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Model
 {
@@ -14,19 +15,18 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         public ILevelSystemModel LevelSystem { get; }
         public IBonusesShopModel BonusesShop { get; }
 
-        public MainMenuModel()
+        public MainMenuModel(IGameConfigs configs)
         {
-            GameResources = new GameResourcesModel();
-            var gameResourcesId = new GameResourcesId.Model.GameResourcesId();
+            GameResources = new GameResourcesModel(configs.GameResourcesConfig);
 
-            const int startMonsterHp = 3;
-            const int startRewardForKilling = 1;
-            Monster = new MonsterModel(startMonsterHp, startRewardForKilling);
+            Monster = new MonsterModel(configs.MonsterConfig);
 
             LevelSystem = new LevelSystemModel();
-            MonsterLogicHandler = new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem);
+            MonsterLogicHandler =
+                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, configs.GameResourcesConfig);
 
-            BonusesShop = new BonusesShopModel(GameResources, gameResourcesId);
+            BonusesShop = new BonusesShopModel(GameResources, configs.BonusesShopConfig,
+                configs.GameResourcesConfig);
         }
 
         public void Dispose()
