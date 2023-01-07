@@ -23,17 +23,21 @@ namespace Project.Scripts.Game
 
         private void Start()
         {
+            _configs = LoadGameConfigs();
+            _models = new GameModels(_configs);
+            _presenters = new GamePresenter(_models, _views, _configs);
+        }
+
+        private GameConfigs LoadGameConfigs()
+        {
             var bonusesShopScriptableObject = Resources.Load("Bonuses/BonusesShop");
             var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
             var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
             var monsterScriptableObject = Resources.Load("Monsters/BigStone");
             var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
-            
-            _configs = new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
 
-            _models = new GameModels(_configs);
-            _presenters = new GamePresenter(_models, _views, _configs);
+            return new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
         }
 
         private void OnDestroy()
