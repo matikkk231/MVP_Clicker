@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.LevelSystem.Data;
 
 namespace Project.Scripts.Game.Areas.LevelSystem.Model
 {
@@ -30,6 +31,13 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Model
             int startLevel = 1;
             CurrentLevel = startLevel;
             ExperienceBeforeLeveUp = 3;
+        }
+
+        public LevelSystemModel(ILevelSystemData data)
+        {
+            CurrentExperience = data.CurrentExperience;
+            CurrentLevel = data.CurrentLevel;
+            ExperienceBeforeLeveUp = data.ExperienceBeforeLevelUp;
         }
 
         public void LevelUp()

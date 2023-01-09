@@ -2,41 +2,56 @@ using System;
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Bonus.Model;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
-using Project.Scripts.Game.Areas.GameResources.Config;
+using Project.Scripts.Game.Areas.BonusesShop.Data;
 using Project.Scripts.Game.Areas.GameResources.Model;
+using Project.Scripts.Game.Areas.GameResourcesId;
 
 namespace Project.Scripts.Game.Areas.BonusesShop.Model
 {
     public class BonusesShopModel : IBonusesShopModel, IDisposable
     {
         private readonly IGameResourcesModel _gameResources;
-        private readonly IGameResourcesConfig _gameResourcesConfig;
+        private readonly IGameResourcesId _gameResourcesId;
         private readonly Dictionary<string, IBonusModel> _collection = new();
 
         public Dictionary<string, IBonusModel> Collection => _collection;
 
         public BonusesShopModel(IGameResourcesModel gameResources,
-            IBonusesShopConfig configs, IGameResourcesConfig gameResourcesConfig)
+            IBonusesShopConfig configs, IGameResourcesId gameResourcesId)
         {
             _gameResources = gameResources;
-            _gameResourcesConfig = gameResourcesConfig;
-
+            _gameResourcesId = gameResourcesId;
 
             _collection.Add(configs.Sword.Id, new BonusModel(configs.Sword));
-            UpdateDamagePerTapBonus();
+            UpdateDamagePerTapBonus(CalculateDamagePerTapBonusFromAllBonuses(_collection));
+
+            AddListeners();
+        }
+
+        public BonusesShopModel(IGameResourcesModel gameResources,
+            IBonusesShopData bonusesShopData, IGameResourcesId gameResourcesId)
+        {
+            _gameResources = gameResources;
+            _gameResourcesId = gameResourcesId;
+
+            _collection.Add(bonusesShopData.Sword.Id, new BonusModel(bonusesShopData.Sword));
 
             AddListeners();
         }
 
         private void OnUpgradeBought(string upgradedBonus)
         {
-            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_gameResourcesConfig.Money.Id].Amount >=
+            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_gameResourcesId.Money].Amount >=
                                            _collection[upgradedBonus].UpgradeValue;
             if (isMoneyEnoughForUpgrade)
             {
                 PayForUpgrade(upgradedBonus);
+                int providingDamagePerTapBonusBeforeUpgraded = _collection[upgradedBonus].ProvidingDamagePerTapBonus;
                 UpdateBonusInfo(upgradedBonus);
-                UpdateDamagePerTapBonus();
+                int providingDamagePerTapBonusAfterUpgraded = _collection[upgradedBonus].ProvidingDamagePerTapBonus;
+                int increaseDamagePerTapBonus =
+                    providingDamagePerTapBonusAfterUpgraded - providingDamagePerTapBonusBeforeUpgraded;
+                UpdateDamagePerTapBonus(increaseDamagePerTapBonus);
             }
         }
 
@@ -49,14 +64,12 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
 
         private void PayForUpgrade(string upgradedBonus)
         {
-            _gameResources.Collection[_gameResourcesConfig.Money.Id].Amount -= _collection[upgradedBonus].UpgradeValue;
+            _gameResources.Collection[_gameResourcesId.Money].Amount -= _collection[upgradedBonus].UpgradeValue;
         }
 
-        private void UpdateDamagePerTapBonus()
+        private void UpdateDamagePerTapBonus(int increaseDamagePerTapBonus)
         {
-            int sumDamagePerTapBonusFromAllBonuses = CalculateDamagePerTapBonusFromAllBonuses(_collection);
-            int receivedDamagePerTapBonus = sumDamagePerTapBonusFromAllBonuses;
-            _gameResources.Collection[_gameResourcesConfig.DamagePerTap.Id].Amount = receivedDamagePerTapBonus;
+            _gameResources.Collection[_gameResourcesId.DamagePerTap].Amount += increaseDamagePerTapBonus;
         }
 
         private void AddListeners()

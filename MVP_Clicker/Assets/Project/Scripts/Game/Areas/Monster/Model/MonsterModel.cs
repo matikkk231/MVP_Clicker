@@ -1,5 +1,6 @@
 using System;
 using Project.Scripts.Game.Areas.Monster.Config;
+using Project.Scripts.Game.Areas.Monster.Data;
 
 namespace Project.Scripts.Game.Areas.Monster.Model
 {
@@ -30,6 +31,13 @@ namespace Project.Scripts.Game.Areas.Monster.Model
             FullHp = monsterConfig.StartFullHp;
             RewardForKilling = monsterConfig.StartRewardForKilling;
             CurrentHp = FullHp;
+        }
+
+        public MonsterModel(IMonsterData data)
+        {
+            FullHp = data.FullHp;
+            CurrentHp = data.CurrentHp;
+            RewardForKilling = data.RewardForKilling;
         }
 
         public void Damage()
