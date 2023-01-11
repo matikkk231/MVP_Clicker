@@ -23,15 +23,6 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
             _data = new GameResourcesData();
         }
 
-        public GameResourcesPresenter(IGameResourcesView view, IGameResourcesModel model, IGameResourcesData data)
-        {
-            _gameResourcePresenters.Add(new GameResourcePresenter(view.Money,
-                model.Collection[data.Money.Id]));
-            _gameResourcePresenters.Add(new GameResourcePresenter(view.DamagePerTap,
-                model.Collection[data.DamagePerTap.Id]));
-            _data = data;
-        }
-
         public void Dispose()
         {
             foreach (var gameResourcePresenter in _gameResourcePresenters)

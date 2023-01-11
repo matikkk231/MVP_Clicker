@@ -20,15 +20,6 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Presenter
             OnUpdated();
         }
 
-        public LevelSystemPresenter(ILevelSystemView view, ILevelSystemModel model, ILevelSystemData data)
-        {
-            _view = view;
-            _model = model;
-            _data = data;
-            AddListeners();
-            OnUpdated();
-        }
-
         private void OnUpdated()
         {
             _view.SetCurrentLevel(_model.CurrentLevel);

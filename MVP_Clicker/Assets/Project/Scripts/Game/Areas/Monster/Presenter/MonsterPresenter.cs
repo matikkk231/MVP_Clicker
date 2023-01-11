@@ -20,14 +20,6 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
             OnUpdated();
         }
 
-        public MonsterPresenter(IMonsterView view, IMonsterModel model, IMonsterData data)
-        {
-            _view = view;
-            _model = model;
-            AddListeners();
-            OnUpdated();
-        }
-
         private void OnUpdated()
         {
             _view.SetCurrentHp(_model.CurrentHp);

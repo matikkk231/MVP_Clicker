@@ -19,13 +19,6 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Presenter
                 new BonusPresenter(bonusesShopView.Sword, bonusesShopModel.Collection[config.Sword.Id]));
         }
 
-        public BonusesShopPresenter(IBonusesShopView bonusesShopView, IBonusesShopModel bonusesShopModel,
-            IBonusesShopData data)
-        {
-            _bonusPresenters.Add(data.Sword.Id,
-                new BonusPresenter(bonusesShopView.Sword, bonusesShopModel.Collection[data.Sword.Id]));
-        }
-
         public void Dispose()
         {
             foreach (var presenter in _bonusPresenters.Values)

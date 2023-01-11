@@ -20,12 +20,6 @@ namespace Project.Scripts.Game.Base.GamePresenters
             _presenters.Add(new MainMenuPresenter(views.MainMenu, models.MainMenu, configs));
         }
 
-        public GamePresenter(IGameModels models, IGameViews views, IGameData data)
-        {
-            _presenters.Add(new CameraPresenter(views.Camera, models.Camera));
-            _presenters.Add(new MainMenuPresenter(views.MainMenu,models.MainMenu, data));
-        }
-
         public void Dispose()
         {
             foreach (var presenter in _presenters)

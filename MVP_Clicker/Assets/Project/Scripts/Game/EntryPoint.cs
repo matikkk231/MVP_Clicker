@@ -38,7 +38,7 @@ namespace Project.Scripts.Game
             else
             {
                 _models = new GameModels(_data, _configs);
-                _presenters = new GamePresenter(_models, _views, _data);
+                _presenters = new GamePresenter(_models, _views, _configs);
             }
         }
 

@@ -13,9 +13,9 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
 {
     public class MainMenuPresenter : IDisposable
     {
-        private IBoxView<IMainMenuView> _boxView;
-        private IMainMenuModel _model;
-        private List<IDisposable> _presenters = new();
+        private readonly IBoxView<IMainMenuView> _boxView;
+        private readonly IMainMenuModel _model;
+        private readonly List<IDisposable> _presenters = new();
 
         public MainMenuPresenter(IViewCreator<IMainMenuView> viewCreator, IMainMenuModel model, IGameConfigs configs)
         {
@@ -28,19 +28,6 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
             _presenters.Add(new LevelSystemPresenter(_boxView.View.LevelSystem, _model.LevelSystem));
             _presenters.Add(new BonusesShopPresenter(_boxView.View.BonusesShopView, _model.BonusesShop,
                 configs.BonusesShopConfig));
-        }
-
-        public MainMenuPresenter(IViewCreator<IMainMenuView> viewCreator, IMainMenuModel model, IGameData data)
-        {
-            _boxView = viewCreator.CreateObject();
-            _model = model;
-
-            _presenters.Add(new GameResourcesPresenter(_boxView.View.GameResources, _model.GameResources,
-                data.GameResources));
-            _presenters.Add(new MonsterPresenter(_boxView.View.Monster, _model.Monster, data.Monster));
-            _presenters.Add(new LevelSystemPresenter(_boxView.View.LevelSystem, _model.LevelSystem, data.LevelSystem));
-            _presenters.Add(new BonusesShopPresenter(_boxView.View.BonusesShopView, _model.BonusesShop, data.BonusesShop
-            ));
         }
 
         public void Dispose()
