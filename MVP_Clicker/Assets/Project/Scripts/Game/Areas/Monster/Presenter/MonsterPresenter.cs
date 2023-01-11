@@ -10,13 +10,11 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
     {
         private readonly IMonsterView _view;
         private readonly IMonsterModel _model;
-        private IMonsterData _data;
 
         public MonsterPresenter(IMonsterView view, IMonsterModel model, IMonsterConfig monsterConfig)
         {
             _view = view;
             _model = model;
-            _data = new MonsterData();
             _view.SetMonsterImage(monsterConfig.MonsterImage);
             AddListeners();
             OnUpdated();
@@ -26,7 +24,6 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
         {
             _view = view;
             _model = model;
-            _data = data;
             AddListeners();
             OnUpdated();
         }

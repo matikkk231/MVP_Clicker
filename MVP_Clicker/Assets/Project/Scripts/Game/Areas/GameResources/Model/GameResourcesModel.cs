@@ -7,29 +7,46 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
 {
     public class GameResourcesModel : IGameResourcesModel
     {
+        private readonly IGameResourcesData _data;
+        private readonly IGameResourcesConfig _config;
         public Dictionary<string, IGameResourceModel> Collection { get; } = new();
 
 
-        public GameResourcesModel(IGameResourcesConfig gameResourcesConfig)
+        public GameResourcesModel(IGameResourcesData data, IGameResourcesConfig config)
         {
-            IGameResourceModel money =
-                new GameResourceModel(gameResourcesConfig.Money.Id, gameResourcesConfig.Money.StartAmount);
-            Collection.Add(money.Id, money);
+            _data = data;
+            _config = config;
+            if (_data.IsInitialized)
+            {
+                IGameResourceModel money =
+                    new GameResourceModel(_data.Money);
+                Collection[money.Id] = money;
 
-            IGameResourceModel damagePerTap = new GameResourceModel(gameResourcesConfig.DamagePerTap.Id,
-                gameResourcesConfig.DamagePerTap.StartAmount);
-            Collection.Add(damagePerTap.Id, damagePerTap);
+                IGameResourceModel damagePerTap = new GameResourceModel(_data.DamagePerTap);
+                Collection[damagePerTap.Id] = damagePerTap;
+            }
+            else
+            {
+                InitializeData();
+
+                IGameResourceModel money =
+                    new GameResourceModel(_data.Money);
+                Collection[money.Id] = money;
+
+                IGameResourceModel damagePerTap = new GameResourceModel(_data.DamagePerTap);
+                Collection[damagePerTap.Id] = damagePerTap;
+            }
         }
 
-        public GameResourcesModel(IGameResourcesData data)
+        private void InitializeData()
         {
-            IGameResourceModel money =
-                new GameResourceModel(data.Money.Id, data.Money.Amount);
-            Collection[money.Id] = money;
+            _data.Money.Amount = _config.Money.StartAmount;
+            _data.Money.Id = _config.Money.Id;
 
-            IGameResourceModel damagePerTap = new GameResourceModel(data.DamagePerTap.Id,
-                data.DamagePerTap.Amount);
-            Collection[damagePerTap.Id] = damagePerTap;
+            _data.DamagePerTap.Amount = _config.DamagePerTap.StartAmount;
+            _data.DamagePerTap.Id = _config.DamagePerTap.Id;
+
+            _data.IsInitialized = true;
         }
     }
 }

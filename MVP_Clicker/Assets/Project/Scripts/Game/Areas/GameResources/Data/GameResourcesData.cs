@@ -8,6 +8,9 @@ namespace Project.Scripts.Game.Areas.GameResources.Data
         [JsonProperty("MoneyData")] public GameResourceData MoneyValue;
         [JsonProperty("DamagePerTapData")] public GameResourceData DamagePerTapValue;
 
+        [JsonProperty("IsGameResourcesDataInitialized")]
+        public bool IsInitialized { get; set; }
+
         public IGameResourceData Money => MoneyValue;
         public IGameResourceData DamagePerTap => DamagePerTapValue;
 

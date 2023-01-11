@@ -38,10 +38,7 @@ namespace Project.Scripts.Game.Areas.Bonus.Data
 
         public BonusData()
         {
-            BonusLevelData = 0;
-            UpgradeValueData = 0;
-            ProvidingDamagePerTapBonusData = 0;
-            IdData = "Nothing";
+            IdData = "nothing";
         }
     }
 }

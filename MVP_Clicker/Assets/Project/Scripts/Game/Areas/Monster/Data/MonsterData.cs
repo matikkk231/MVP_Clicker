@@ -5,9 +5,13 @@ namespace Project.Scripts.Game.Areas.Monster.Data
     public class MonsterData : IMonsterData
 
     {
+        [JsonProperty("IsMonsterDataInitialized")]
+        public bool IsInitialized { get; set; }
+
         [JsonProperty("CurrentHpData")] public int CurrentHpValue;
         [JsonProperty("FullHpData")] public int FullHpValue;
         [JsonProperty("RewardForKillingData")] public int RewardForKillngValue;
+
 
         public int CurrentHp
         {

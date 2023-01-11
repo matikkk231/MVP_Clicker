@@ -27,17 +27,17 @@ namespace Project.Scripts.Game
 
         private void Start()
         {
+            _configs = LoadGameConfigs();
             _data = SaveSystem.LoadData();
             if (_data == null)
             {
-                _configs = LoadGameConfigs();
-                _models = new GameModels(_configs);
-                _presenters = new GamePresenter(_models, _views, _configs);
                 _data = new GameData();
+                _models = new GameModels(_data, _configs);
+                _presenters = new GamePresenter(_models, _views, _configs);
             }
             else
             {
-                _models = new GameModels(_data);
+                _models = new GameModels(_data, _configs);
                 _presenters = new GamePresenter(_models, _views, _data);
             }
         }
@@ -54,39 +54,8 @@ namespace Project.Scripts.Game
             return new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
         }
 
-        private void OverwriteGameData()
-        {
-            _data.Monster.CurrentHp = _models.MainMenu.Monster.CurrentHp;
-            _data.Monster.FullHp = _models.MainMenu.Monster.FullHp;
-            _data.Monster.RewardForKilling = _models.MainMenu.Monster.RewardForKilling;
-
-
-            _data.GameResources.Money.Amount =
-                _models.MainMenu.GameResources.Collection[_models.MainMenu.GameResourcesId.Money].Amount;
-            _data.GameResources.Money.Id = _models.MainMenu.GameResources
-                .Collection[_models.MainMenu.GameResourcesId.Money].Id;
-
-            _data.GameResources.DamagePerTap.Amount = _models.MainMenu.GameResources
-                .Collection[_models.MainMenu.GameResourcesId.DamagePerTap].Amount;
-            _data.GameResources.DamagePerTap.Id = _models.MainMenu.GameResources
-                .Collection[_models.MainMenu.GameResourcesId.DamagePerTap].Id;
-
-            _data.LevelSystem.CurrentExperience = _models.MainMenu.LevelSystem.CurrentExperience;
-            _data.LevelSystem.CurrentLevel = _models.MainMenu.LevelSystem.CurrentLevel;
-            _data.LevelSystem.ExperienceBeforeLevelUp = _models.MainMenu.LevelSystem.ExperienceBeforeLeveUp;
-
-            _data.BonusesShop.Sword.Id = _models.MainMenu.BonusesShop.Collection[_models.MainMenu.BonusesId.Sword].Id;
-            _data.BonusesShop.Sword.BonusLevel =
-                _models.MainMenu.BonusesShop.Collection[_models.MainMenu.BonusesId.Sword].BonusLevel;
-            _data.BonusesShop.Sword.UpgradeValue = _models.MainMenu.BonusesShop
-                .Collection[_models.MainMenu.BonusesId.Sword].UpgradeValue;
-            _data.BonusesShop.Sword.ProvidingDamagePerTapBonus = _models.MainMenu.BonusesShop
-                .Collection[_models.MainMenu.BonusesId.Sword].ProvidingDamagePerTapBonus;
-        }
-
         private void OnDestroy()
         {
-            OverwriteGameData();
             SaveSystem.SaveData(_data);
             _presenters.Dispose();
             _models.Dispose();

@@ -1,5 +1,4 @@
 using System;
-using Project.Scripts.Game.Areas.Bonus.Config;
 using Project.Scripts.Game.Areas.Bonus.Data;
 
 namespace Project.Scripts.Game.Areas.Bonus.Model
@@ -10,70 +9,50 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
         public event Action<string> UpgradeBought;
         public event Action<int> DamagePerTapBonusChanged;
 
-        private int _providingDamagePerTapBonus;
-        private int _bonusLevel;
-        private int _upgradeValue;
+        private readonly IBonusData _data;
 
-        private readonly string _id;
 
         public int ProvidingDamagePerTapBonus
         {
-            get => _providingDamagePerTapBonus;
+            get => _data.ProvidingDamagePerTapBonus;
             set
             {
-                _providingDamagePerTapBonus = value;
+                _data.ProvidingDamagePerTapBonus = value;
                 Updated?.Invoke();
                 DamagePerTapBonusChanged?.Invoke(0);
             }
         }
 
-        public string Id => _id;
+        public string Id => _data.Id;
 
         public int UpgradeValue
         {
-            get => _upgradeValue;
+            get => _data.UpgradeValue;
             private set
             {
-                _upgradeValue = value;
+                _data.UpgradeValue = value;
                 Updated?.Invoke();
             }
         }
 
         public int BonusLevel
         {
-            get => _bonusLevel;
+            get => _data.BonusLevel;
             set
             {
-                _bonusLevel = value;
+                _data.BonusLevel = value;
                 Updated?.Invoke();
             }
         }
 
-        public BonusModel(IBonusConfig config)
-        {
-            BonusLevel = config.StartBonusLevel;
-
-            UpgradeValue = config.StartUpgradeValue;
-
-            ProvidingDamagePerTapBonus = config.StartProvidingDamagePerTapBonus;
-
-            _id = config.Id;
-        }
-
         public BonusModel(IBonusData data)
         {
-            BonusLevel = data.BonusLevel;
-
-            UpgradeValue = data.UpgradeValue;
-
-            ProvidingDamagePerTapBonus = data.ProvidingDamagePerTapBonus;
-
-            _id = data.Id;
+            _data = data;
         }
 
         public void BuyUpgrade()
         {
-            UpgradeBought?.Invoke(_id);
+            UpgradeBought?.Invoke(_data.Id);
         }
 
         public void UpdateUpgradeValue()

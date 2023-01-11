@@ -1,12 +1,10 @@
 using System;
 using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
-using Project.Scripts.Game.Areas.GameResourcesId;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameData;
-using Project.Scripts.Game.BonusesId;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Model
 {
@@ -17,32 +15,16 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         public MonsterLogicHandlerModel MonsterLogicHandler { get; }
         public ILevelSystemModel LevelSystem { get; }
         public IBonusesShopModel BonusesShop { get; }
-        public IGameResourcesId GameResourcesId { get; }
-        public IBonusesId BonusesId { get; }
 
-        public MainMenuModel(IGameConfigs configs)
-        {
-            GameResources = new GameResourcesModel(configs.GameResourcesConfig);
-            Monster = new MonsterModel(configs.MonsterConfig);
-            LevelSystem = new LevelSystemModel();
-            GameResourcesId = new GameResourcesId.GameResourcesId(configs.GameResourcesConfig);
-            MonsterLogicHandler =
-                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, GameResourcesId);
-            BonusesShop = new BonusesShopModel(GameResources, configs.BonusesShopConfig,
-                GameResourcesId);
-            BonusesId = new BonusesId.BonusesId(configs.BonusesShopConfig.Sword.Id);
-        }
 
-        public MainMenuModel(IGameData data)
+        public MainMenuModel(IGameData data, IGameConfigs configs)
         {
-            GameResourcesId = new GameResourcesId.GameResourcesId(data.GameResources);
-            GameResources = new GameResourcesModel(data.GameResources);
-            Monster = new MonsterModel(data.Monster);
+            GameResources = new GameResourcesModel(data.GameResources, configs.GameResourcesConfig);
+            Monster = new MonsterModel(data.Monster, configs.MonsterConfig);
             LevelSystem = new LevelSystemModel(data.LevelSystem);
-            BonusesShop = new BonusesShopModel(GameResources, data.BonusesShop, GameResourcesId);
+            BonusesShop = new BonusesShopModel(GameResources, data.BonusesShop, configs);
             MonsterLogicHandler =
-                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, GameResourcesId);
-            BonusesId = new BonusesId.BonusesId(data.BonusesShop.Sword.Id);
+                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, configs.GameResourcesConfig);
         }
 
         public void Dispose()

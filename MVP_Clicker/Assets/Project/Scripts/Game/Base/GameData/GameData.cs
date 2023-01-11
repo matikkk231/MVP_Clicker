@@ -8,8 +8,10 @@ namespace Project.Scripts.Game.Base.GameData
 {
     public class GameData : IGameData
     {
-        [JsonProperty("GameResourcesData")] public GameResourcesData GameResourcesDataValue;
+        [JsonProperty("IsGameDataInitialized")]
+        public bool IsDataInitialized { get; set; }
 
+        [JsonProperty("GameResourcesData")] public GameResourcesData GameResourcesDataValue;
         [JsonProperty("MonsterData")] public MonsterData MonsterDataValue;
         [JsonProperty("LevelSystemData")] public LevelSystemData LevelSystemDataValue;
         [JsonProperty("BonusesShopData")] public BonusesShopData BonusesShopDataValue;

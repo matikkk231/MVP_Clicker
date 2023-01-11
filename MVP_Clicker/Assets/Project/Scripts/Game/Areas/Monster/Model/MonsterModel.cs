@@ -10,34 +10,44 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         public event Action Died;
         public event Action Damaged;
 
-        private int _currentHp;
+        private readonly IMonsterData _data;
+        private readonly IMonsterConfig _config;
 
         public int CurrentHp
         {
-            get => _currentHp;
+            get => _data.CurrentHp;
             set
             {
-                _currentHp = value;
+                _data.CurrentHp = value;
                 Updated?.Invoke();
             }
         }
 
-        public int FullHp { get; set; }
-
-        public int RewardForKilling { get; set; }
-
-        public MonsterModel(IMonsterConfig monsterConfig)
+        public int FullHp
         {
-            FullHp = monsterConfig.StartFullHp;
-            RewardForKilling = monsterConfig.StartRewardForKilling;
-            CurrentHp = FullHp;
+            get => _data.FullHp;
+            set => _data.FullHp = value;
         }
 
-        public MonsterModel(IMonsterData data)
+        public int RewardForKilling
         {
-            FullHp = data.FullHp;
-            CurrentHp = data.CurrentHp;
-            RewardForKilling = data.RewardForKilling;
+            get => _data.RewardForKilling;
+            set => _data.RewardForKilling = value;
+        }
+
+        public MonsterModel(IMonsterData data, IMonsterConfig config)
+        {
+            _config = config;
+            _data = data.IsInitialized ? data : InitializeData(data);
+        }
+
+        private IMonsterData InitializeData(IMonsterData data)
+        {
+            data.CurrentHp = _config.StartFullHp;
+            data.FullHp = _config.StartFullHp;
+            data.RewardForKilling = _config.StartRewardForKilling;
+            data.IsInitialized = true;
+            return data;
         }
 
         public void Damage()

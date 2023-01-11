@@ -5,10 +5,15 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Data
     public class LevelSystemData : ILevelSystemData
     {
         [JsonProperty("CurrentLevelData")] public int CurrentLevelValue;
-        [JsonProperty("CurrentExperienceData")] public int CurrentExperienceValue;
+
+        [JsonProperty("CurrentExperienceData")]
+        public int CurrentExperienceValue;
 
         [JsonProperty("ExperienceBeforeLevelUpData")]
         public int ExperienceBeforeLevelUpValue;
+
+        [JsonProperty("IsLevelSystemDataInitialized")]
+        public bool IsInitialized { get; set; }
 
         public int CurrentLevel
         {

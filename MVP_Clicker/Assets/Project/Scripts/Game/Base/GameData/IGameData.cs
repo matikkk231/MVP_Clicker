@@ -10,7 +10,7 @@ namespace Project.Scripts.Game.Base.GameData
         IGameResourcesData GameResources { get; }
         IMonsterData Monster { get; }
         ILevelSystemData LevelSystem{ get; }
-        
         IBonusesShopData BonusesShop { get; }
+        bool IsDataInitialized { get; set; }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using System.Net.NetworkInformation;
 using Project.Scripts.Game.Areas.LevelSystem.Data;
 
 namespace Project.Scripts.Game.Areas.LevelSystem.Model
@@ -8,36 +9,38 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Model
         public event Action GotLevelUp;
         public event Action Updated;
 
+        private readonly ILevelSystemData _data;
 
-        private int _currentLevel;
-        public int CurrentExperience { get; set; }
-        public int ExperienceBeforeLeveUp { get; }
+        public int CurrentExperience
+        {
+            get => _data.CurrentExperience;
+            set => _data.CurrentExperience = value;
+        }
+
+        public int ExperienceBeforeLeveUp => _data.ExperienceBeforeLevelUp;
 
         public int CurrentLevel
         {
-            get => _currentLevel;
+            get => _data.CurrentLevel;
             set
             {
-                _currentLevel = value;
+                _data.CurrentLevel = value;
                 Updated?.Invoke();
             }
         }
 
-        public LevelSystemModel()
-        {
-            const int startExperience = 0;
-            CurrentExperience = startExperience;
-
-            int startLevel = 1;
-            CurrentLevel = startLevel;
-            ExperienceBeforeLeveUp = 3;
-        }
-
         public LevelSystemModel(ILevelSystemData data)
         {
-            CurrentExperience = data.CurrentExperience;
-            CurrentLevel = data.CurrentLevel;
-            ExperienceBeforeLeveUp = data.ExperienceBeforeLevelUp;
+            _data = data.IsInitialized ? data : InitializeData(data);
+        }
+
+        private ILevelSystemData InitializeData(ILevelSystemData data)
+        {
+            data.CurrentExperience = 0;
+            data.CurrentLevel = 1;
+            data.ExperienceBeforeLevelUp = 3;
+            data.IsInitialized = true;
+            return data;
         }
 
         public void LevelUp()

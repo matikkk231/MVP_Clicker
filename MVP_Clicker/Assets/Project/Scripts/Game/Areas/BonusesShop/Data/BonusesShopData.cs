@@ -7,6 +7,9 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Data
     {
         [JsonProperty("SwordData")] public BonusData SwordData;
 
+        [JsonProperty("IsBonusesShopDataInitialized")]
+        public bool IsInitialized { get; set; }
+
         public IBonusData Sword => SwordData;
 
         public BonusesShopData()
