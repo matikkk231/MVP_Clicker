@@ -27,7 +27,7 @@ namespace Project.Scripts.Game.Areas
         private void OnMonsterDamaged()
         {
             bool hasMonsterEnoughHp =
-                _monster.CurrentHp - _gameResources.Collection[_gameResourcesConfig.DamagePerTap.Id].Amount > 0;
+                _monster.CurrentHp - _gameResources.CollectionOfGameResourceModels["DamagePerTap"].Amount > 0;
             if (hasMonsterEnoughHp)
             {
                 ReduceMonsterHp();
@@ -40,7 +40,7 @@ namespace Project.Scripts.Game.Areas
 
         private void ReduceMonsterHp()
         {
-            _monster.CurrentHp -= _gameResources.Collection[_gameResourcesConfig.DamagePerTap.Id].Amount;
+            _monster.CurrentHp -= _gameResources.CollectionOfGameResourceModels["DamagePerTap"].Amount;
         }
 
         private void OnMonsterDied()
@@ -67,7 +67,7 @@ namespace Project.Scripts.Game.Areas
 
         private void GetRewardFromMonster()
         {
-            _gameResources.Collection[_gameResourcesConfig.Money.Id].Amount += _monster.RewardForKilling;
+            _gameResources.CollectionOfGameResourceModels["Money"].Amount += _monster.RewardForKilling;
         }
 
         private void BornMonster()

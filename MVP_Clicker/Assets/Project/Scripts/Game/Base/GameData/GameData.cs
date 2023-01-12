@@ -16,10 +16,10 @@ namespace Project.Scripts.Game.Base.GameData
         [JsonProperty("LevelSystemData")] public LevelSystemData LevelSystemDataValue;
         [JsonProperty("BonusesShopData")] public BonusesShopData BonusesShopDataValue;
 
-        public IGameResourcesData GameResources => GameResourcesDataValue;
-        public IMonsterData Monster => MonsterDataValue;
-        public ILevelSystemData LevelSystem => LevelSystemDataValue;
-        public IBonusesShopData BonusesShop => BonusesShopDataValue;
+        [JsonIgnore] public IGameResourcesData GameResources => GameResourcesDataValue;
+        [JsonIgnore] public IMonsterData Monster => MonsterDataValue;
+        [JsonIgnore] public ILevelSystemData LevelSystem => LevelSystemDataValue;
+        [JsonIgnore] public IBonusesShopData BonusesShop => BonusesShopDataValue;
 
         public GameData()
         {

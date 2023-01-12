@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Project.Scripts.Game.Areas.GameResource.Data;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.GameResources.Data;
 using Project.Scripts.Game.Areas.Resource.Model;
@@ -8,52 +9,42 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
     public class GameResourcesModel : IGameResourcesModel
     {
         private readonly IGameResourcesData _data;
-        private readonly IGameResourcesConfig _config;
-        public Dictionary<string, IGameResourceModel> Collection { get; } = new();
+        private readonly IGameResourcesConfig _configs;
+        public Dictionary<string, IGameResourceModel> CollectionOfGameResourceModels { get; } = new();
 
 
-        public GameResourcesModel(IGameResourcesData data, IGameResourcesConfig config)
+        public GameResourcesModel(IGameResourcesData data, IGameResourcesConfig configs)
         {
             _data = data;
-            _config = config;
+            _configs = configs;
             if (_data.IsInitialized)
             {
-                IGameResourceModel money =
-                    new GameResourceModel(_data.Money);
-                Collection[money.Id] = money;
-
-                IGameResourceModel damagePerTap = new GameResourceModel(_data.DamagePerTap);
-                Collection[damagePerTap.Id] = damagePerTap;
-
-                // foreach (var id in config.Dictionarh.Keys)
-                // {
-                //     var specificConfig = config.Dictionary[id];
-                //     var specificData = data.Dictionarh[id];
-                //     var model = new GameResourceModel(specificConfig, specificData);
-                //     
-                //     Collection[id] = model;
-                // }
+                foreach (var resource in _configs.CollectionOfGameResources)
+                {
+                    CollectionOfGameResourceModels.Add(resource.Value.Id,
+                        new GameResourceModel(_data.CollectionOfGameResources[resource.Value.Id]));
+                }
             }
             else
             {
                 InitializeData();
 
-                IGameResourceModel money =
-                    new GameResourceModel(_data.Money);
-                Collection[money.Id] = money;
-
-                IGameResourceModel damagePerTap = new GameResourceModel(_data.DamagePerTap);
-                Collection[damagePerTap.Id] = damagePerTap;
+                foreach (var resource in _configs.CollectionOfGameResources)
+                {
+                    CollectionOfGameResourceModels.Add(resource.Value.Id,
+                        new GameResourceModel(_data.CollectionOfGameResources[resource.Value.Id]));
+                }
             }
         }
 
         private void InitializeData()
         {
-            _data.Money.Amount = _config.Money.StartAmount;
-            _data.Money.Id = _config.Money.Id;
-
-            _data.DamagePerTap.Amount = _config.DamagePerTap.StartAmount;
-            _data.DamagePerTap.Id = _config.DamagePerTap.Id;
+            foreach (var config in _configs.CollectionOfGameResources)
+            {
+                _data.CollectionOfGameResources.Add(config.Value.Id, new GameResourceData());
+                _data.CollectionOfGameResources[config.Value.Id].Amount = config.Value.StartAmount;
+                _data.CollectionOfGameResources[config.Value.Id].Id = config.Value.Id;
+            }
 
             _data.IsInitialized = true;
         }

@@ -9,12 +9,14 @@ namespace Project.Scripts.Game.Areas.GameResource.Data
         [JsonProperty("AmountData")] public int _amount;
         [JsonProperty("IdData")] public string _id;
 
+        [JsonIgnore]
         public int Amount
         {
             get => _amount;
             set => _amount = value;
         }
 
+        [JsonIgnore]
         public string Id
         {
             get => _id;

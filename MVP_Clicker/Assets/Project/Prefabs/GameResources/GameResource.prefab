@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6922613460028164684}
   - component: {fileID: 7664199640771338991}
   m_Layer: 5
-  m_Name: Money
+  m_Name: GameResource
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 5282648668340200528}
   - component: {fileID: 359998489268653057}
   m_Layer: 5
-  m_Name: MoneyIcon
+  m_Name: Icon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 6032264805993758334}
   - component: {fileID: 4553908388750794002}
   m_Layer: 5
-  m_Name: AmountOfMoney
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

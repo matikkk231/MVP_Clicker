@@ -45,7 +45,7 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
 
         private void OnUpgradeBought(string upgradedBonus)
         {
-            bool isMoneyEnoughForUpgrade = _gameResources.Collection[_configs.GameResourcesConfig.Money.Id].Amount >=
+            bool isMoneyEnoughForUpgrade = _gameResources.CollectionOfGameResourceModels["Money"].Amount >=
                                            _collection[upgradedBonus].UpgradeValue;
             if (isMoneyEnoughForUpgrade)
             {
@@ -68,13 +68,13 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
 
         private void PayForUpgrade(string upgradedBonus)
         {
-            _gameResources.Collection[_configs.GameResourcesConfig.Money.Id].Amount -=
+            _gameResources.CollectionOfGameResourceModels["Money"].Amount -=
                 _collection[upgradedBonus].UpgradeValue;
         }
 
         private void UpdateDamagePerTapBonus(int increaseDamagePerTapBonus)
         {
-            _gameResources.Collection[_configs.GameResourcesConfig.DamagePerTap.Id].Amount += increaseDamagePerTapBonus;
+            _gameResources.CollectionOfGameResourceModels["DamagePerTap"].Amount += increaseDamagePerTapBonus;
         }
 
         private void AddListeners()
