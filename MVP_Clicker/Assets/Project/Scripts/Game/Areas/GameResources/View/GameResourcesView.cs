@@ -10,5 +10,14 @@ namespace Project.Scripts.Game.Areas.GameResources.View
 
         public IGameResourceView Money => _money;
         public IGameResourceView DamagePerTap => _damagePerTap;
+
+        [SerializeField] private GameResourceView _prefab;
+        [SerializeField] private GameObject _resourcesParent;
+        public IGameResourceView CreateView()
+        {
+            var view = Instantiate(_prefab);
+            view.transform.SetParent(_resourcesParent.transform);
+            return view;
+        }
     }
 }

@@ -27,6 +27,7 @@ namespace Project.Scripts.Game
 
         private void Start()
         {
+            SaveSystem.DeleteData();
             _configs = LoadGameConfigs();
             _data = SaveSystem.LoadData();
             if (_data == null)

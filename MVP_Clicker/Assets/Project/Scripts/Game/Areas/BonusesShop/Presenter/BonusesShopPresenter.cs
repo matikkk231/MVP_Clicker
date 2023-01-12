@@ -1,8 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Bonus.Presenter;
+using Project.Scripts.Game.Areas.Bonus.View;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
-using Project.Scripts.Game.Areas.BonusesShop.Data;
 using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.BonusesShop.View;
 
@@ -13,10 +13,17 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Presenter
         private readonly Dictionary<string, IDisposable> _bonusPresenters = new();
 
         public BonusesShopPresenter(IBonusesShopView bonusesShopView, IBonusesShopModel bonusesShopModel,
-            IBonusesShopConfig config)
+            IBonusesShopConfig configs)
         {
-            _bonusPresenters.Add(config.Sword.Id,
-                new BonusPresenter(bonusesShopView.Sword, bonusesShopModel.Collection[config.Sword.Id]));
+            bonusesShopView.CollectionOfBonuses = new Dictionary<string, IBonusView>();
+            foreach (var config in configs.CollectionOfBonuses)
+            {
+                bonusesShopView.CollectionOfBonuses.Add(config.Value.Id, bonusesShopView.CreateBonusView());
+
+                _bonusPresenters.Add(config.Value.Id,
+                    new BonusPresenter(bonusesShopView.CollectionOfBonuses[config.Value.Id],
+                        bonusesShopModel.Collection[config.Value.Id]));
+            }
         }
 
         public void Dispose()

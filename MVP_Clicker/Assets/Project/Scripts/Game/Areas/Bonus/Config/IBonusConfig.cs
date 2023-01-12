@@ -6,5 +6,6 @@ namespace Project.Scripts.Game.Areas.Bonus.Config
         public int StartUpgradeValue { get; }
         public int StartProvidingDamagePerTapBonus { get; }
         public string Id { get; }
+        public string CurrencyForUpgrade { get; }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Project.Scripts.Game.Areas.Bonus.Data;
 using Project.Scripts.Game.Areas.Bonus.Model;
 using Project.Scripts.Game.Areas.BonusesShop.Data;
 using Project.Scripts.Game.Areas.GameResources.Model;
@@ -25,12 +26,18 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
             _data = bonusesShopData;
             if (bonusesShopData.IsInitialized)
             {
-                _collection.Add(bonusesShopData.Sword.Id, new BonusModel(bonusesShopData.Sword));
+                foreach (var bonus in _configs.BonusesShopConfig.CollectionOfBonuses)
+                {
+                    _collection.Add(bonus.Value.Id, new BonusModel(_data.CollectionOfBonuses[bonus.Value.Id]));
+                }
             }
             else
             {
                 InitializeData();
-                _collection.Add(bonusesShopData.Sword.Id, new BonusModel(bonusesShopData.Sword));
+                foreach (var bonus in _configs.BonusesShopConfig.CollectionOfBonuses)
+                {
+                    _collection.Add(bonus.Value.Id, new BonusModel(_data.CollectionOfBonuses[bonus.Value.Id]));
+                }
             }
 
             AddListeners();
@@ -90,10 +97,15 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Model
 
         private void InitializeData()
         {
-            _data.Sword.Id = _configs.BonusesShopConfig.Sword.Id;
-            _data.Sword.BonusLevel = _configs.BonusesShopConfig.Sword.StartBonusLevel;
-            _data.Sword.ProvidingDamagePerTapBonus = _configs.BonusesShopConfig.Sword.StartProvidingDamagePerTapBonus;
-            _data.Sword.UpgradeValue = _configs.BonusesShopConfig.Sword.StartUpgradeValue;
+            foreach (var bonusConfig in _configs.BonusesShopConfig.CollectionOfBonuses)
+            {
+                _data.CollectionOfBonuses.Add(bonusConfig.Value.Id, new BonusData());
+                _data.CollectionOfBonuses[bonusConfig.Value.Id].Id = bonusConfig.Value.Id;
+                _data.CollectionOfBonuses[bonusConfig.Value.Id].BonusLevel = bonusConfig.Value.StartBonusLevel;
+                _data.CollectionOfBonuses[bonusConfig.Value.Id].UpgradeValue = bonusConfig.Value.StartUpgradeValue;
+                _data.CollectionOfBonuses[bonusConfig.Value.Id].ProvidingDamagePerTapBonus =
+                    bonusConfig.Value.StartProvidingDamagePerTapBonus;
+            }
 
             _data.IsInitialized = true;
         }

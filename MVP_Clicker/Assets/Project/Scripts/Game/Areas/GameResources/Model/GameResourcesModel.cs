@@ -24,6 +24,15 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
 
                 IGameResourceModel damagePerTap = new GameResourceModel(_data.DamagePerTap);
                 Collection[damagePerTap.Id] = damagePerTap;
+
+                // foreach (var id in config.Dictionarh.Keys)
+                // {
+                //     var specificConfig = config.Dictionary[id];
+                //     var specificData = data.Dictionarh[id];
+                //     var model = new GameResourceModel(specificConfig, specificData);
+                //     
+                //     Collection[id] = model;
+                // }
             }
             else
             {

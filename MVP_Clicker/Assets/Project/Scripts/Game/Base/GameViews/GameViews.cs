@@ -10,7 +10,9 @@ namespace Project.Scripts.Game.Base.GameViews
         [SerializeField] private CameraView _cameraPrefab;
         [SerializeField] private MainMenuView _mainMenuPrefab;
 
+
         public IViewCreator<ICameraView> Camera => new ViewCreator<CameraView>(_cameraPrefab);
         public IViewCreator<IMainMenuView> MainMenu => new ViewCreator<MainMenuView>(_mainMenuPrefab);
+
     }
 }
