@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startAmount: 0
   _id: Money
+  _gameResourceSprite: {fileID: 21300000, guid: 53eaffa897a3c7346978eb085c7da705, type: 3}

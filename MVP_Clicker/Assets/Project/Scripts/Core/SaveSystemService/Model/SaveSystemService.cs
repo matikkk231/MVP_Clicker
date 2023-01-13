@@ -7,11 +7,11 @@ using Application = UnityEngine.Device.Application;
 
 namespace Project.Scripts.Game.Areas.SaveSystem
 {
-    public static class SaveSystem
+    public class SaveSystemService : ISaveSystemService
     {
-        private static readonly string _pathToData = Application.persistentDataPath + "/gameData";
+        private readonly string _pathToData = Application.persistentDataPath + "/gameData";
 
-        public static void SaveData(IGameData data)
+        public void SaveData(IGameData data)
         {
             string dataJson = JsonConvert.SerializeObject(data);
             BinaryFormatter binaryFormatter = new BinaryFormatter();
@@ -22,7 +22,7 @@ namespace Project.Scripts.Game.Areas.SaveSystem
             fileStream.Close();
         }
 
-        public static GameData LoadData()
+        public IGameData LoadData()
         {
             if (File.Exists(_pathToData))
             {
@@ -36,14 +36,6 @@ namespace Project.Scripts.Game.Areas.SaveSystem
             }
 
             return null;
-        }
-
-        public static void DeleteData()
-        {
-            if (File.Exists(_pathToData))
-            {
-                File.Delete(_pathToData);
-            }
         }
     }
 }

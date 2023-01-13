@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startAmount: 1
   _id: DamagePerTap
+  _gameResourceSprite: {fileID: 21300000, guid: e7d9857cb4a2d454cb1093bbaacaf9bc, type: 3}

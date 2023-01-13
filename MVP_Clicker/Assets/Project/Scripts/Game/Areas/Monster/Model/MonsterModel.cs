@@ -6,12 +6,15 @@ namespace Project.Scripts.Game.Areas.Monster.Model
 {
     public class MonsterModel : IMonsterModel
     {
+        private readonly IMonsterData _data;
+        private readonly IMonsterConfig _config;
+
         public event Action Updated;
         public event Action Died;
         public event Action Damaged;
+        public string ResourceDamagingMonster => _config.ResourceDamagingMonster;
+        public string TypeOfRewardForKilling => _config.TypeOfRewardForKilling;
 
-        private readonly IMonsterData _data;
-        private readonly IMonsterConfig _config;
 
         public int CurrentHp
         {
@@ -34,6 +37,7 @@ namespace Project.Scripts.Game.Areas.Monster.Model
             get => _data.RewardForKilling;
             set => _data.RewardForKilling = value;
         }
+
 
         public MonsterModel(IMonsterData data, IMonsterConfig config)
         {

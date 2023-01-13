@@ -11,6 +11,5 @@ namespace Project.Scripts.Game.Base.GameData
         IMonsterData Monster { get; }
         ILevelSystemData LevelSystem{ get; }
         IBonusesShopData BonusesShop { get; }
-        bool IsDataInitialized { get; set; }
     }
 }

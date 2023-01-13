@@ -24,11 +24,14 @@ namespace Project.Scripts.Game
 
         private IGameData _data;
 
+        private ISaveSystemService _saveSystem;
+
 
         private void Start()
         {
+            _saveSystem = new SaveSystemService();
             _configs = LoadGameConfigs();
-            _data = SaveSystem.LoadData();
+            _data = _saveSystem.LoadData();
             if (_data == null)
             {
                 _data = new GameData();
@@ -56,7 +59,7 @@ namespace Project.Scripts.Game
 
         private void OnDestroy()
         {
-            SaveSystem.SaveData(_data);
+            _saveSystem.SaveData(_data);
             _presenters.Dispose();
             _models.Dispose();
         }

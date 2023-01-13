@@ -17,7 +17,7 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
             foreach (var config in gameResourcesConfig.CollectionOfGameResources)
             {
                 _gameResourcePresenters.Add(new GameResourcePresenter(view.CreateView(),
-                    model.CollectionOfGameResourceModels[config.Value.Id]));
+                    model.CollectionOfGameResourceModels[config.Value.Id], config.Value));
             }
         }
 

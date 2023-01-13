@@ -95,6 +95,7 @@ MonoBehaviour:
   _bonusLevelText: {fileID: 4366830035383133219}
   _damagePerTapBonusText: {fileID: 6187143022446952465}
   _upgradeValueText: {fileID: 3848018420978110983}
+  _bonusImage: {fileID: 7594869667534294429}
 --- !u!1 &4802099746018725088
 GameObject:
   m_ObjectHideFlags: 0

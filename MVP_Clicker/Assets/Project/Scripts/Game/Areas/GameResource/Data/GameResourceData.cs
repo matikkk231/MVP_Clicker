@@ -6,27 +6,21 @@ namespace Project.Scripts.Game.Areas.GameResource.Data
     [Serializable]
     public class GameResourceData : IGameResourceData
     {
-        [JsonProperty("AmountData")] public int _amount;
-        [JsonProperty("IdData")] public string _id;
+        [JsonProperty("AmountData")] public int AmountData;
+        [JsonProperty("IdData")] public string IdData;
 
         [JsonIgnore]
         public int Amount
         {
-            get => _amount;
-            set => _amount = value;
+            get => AmountData;
+            set => AmountData = value;
         }
 
         [JsonIgnore]
         public string Id
         {
-            get => _id;
-            set => _id = value;
-        }
-
-        public GameResourceData()
-        {
-            _amount = 0;
-            _id = "Nothing";
+            get => IdData;
+            set => IdData = value;
         }
     }
 }

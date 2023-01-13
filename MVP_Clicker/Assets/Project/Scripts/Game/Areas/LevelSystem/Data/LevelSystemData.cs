@@ -32,12 +32,5 @@ namespace Project.Scripts.Game.Areas.LevelSystem.Data
             get => ExperienceBeforeLevelUpValue;
             set => ExperienceBeforeLevelUpValue = value;
         }
-
-        public LevelSystemData()
-        {
-            CurrentLevel = 0;
-            CurrentExperience = 0;
-            ExperienceBeforeLevelUp = 0;
-        }
     }
 }

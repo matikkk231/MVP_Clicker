@@ -16,5 +16,6 @@ namespace Project.Scripts.Game.Areas.GameResources.View
             var view = Instantiate(_prefab, _resourcesParent.transform, true);
             return view;
         }
+        
     }
 }

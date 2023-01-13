@@ -10,7 +10,7 @@ namespace Project.Scripts.Game.Areas.Monster.Data
 
         [JsonProperty("CurrentHpData")] public int CurrentHpValue;
         [JsonProperty("FullHpData")] public int FullHpValue;
-        [JsonProperty("RewardForKillingData")] public int RewardForKillngValue;
+        [JsonProperty("RewardForKillingData")] public int RewardForKillingValue;
 
 
         public int CurrentHp
@@ -27,15 +27,8 @@ namespace Project.Scripts.Game.Areas.Monster.Data
 
         public int RewardForKilling
         {
-            get => RewardForKillngValue;
-            set => RewardForKillngValue = value;
-        }
-
-        public MonsterData()
-        {
-            CurrentHpValue = 0;
-            FullHpValue = 0;
-            RewardForKillngValue = 0;
+            get => RewardForKillingValue;
+            set => RewardForKillingValue = value;
         }
     }
 }

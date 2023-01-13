@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.Bonus.Config;
 using Project.Scripts.Game.Areas.Bonus.Model;
 using Project.Scripts.Game.Areas.Bonus.View;
 
@@ -9,10 +10,11 @@ namespace Project.Scripts.Game.Areas.Bonus.Presenter
         private readonly IBonusView _view;
         private readonly IBonusModel _model;
 
-        public BonusPresenter(IBonusView view, IBonusModel model)
+        public BonusPresenter(IBonusView view, IBonusModel model, IBonusConfig config)
         {
             _view = view;
             _model = model;
+            _view.SetBonusSprite(config.BonusSprite);
             AddListeners();
             OnUpdated();
         }
@@ -20,7 +22,7 @@ namespace Project.Scripts.Game.Areas.Bonus.Presenter
         private void OnUpdated()
         {
             _view.SetBonusLevel(_model.BonusLevel);
-            _view.SetDamagePerTapBonus(_model.ProvidingDamagePerTapBonus);
+            _view.SetProvidingBonus(_model.ProvidingBonus);
             _view.SetUpgradeValue(_model.UpgradeValue);
         }
 

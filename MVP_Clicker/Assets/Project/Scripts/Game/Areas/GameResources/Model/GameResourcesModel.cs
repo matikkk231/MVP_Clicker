@@ -11,8 +11,7 @@ namespace Project.Scripts.Game.Areas.GameResources.Model
         private readonly IGameResourcesData _data;
         private readonly IGameResourcesConfig _configs;
         public Dictionary<string, IGameResourceModel> CollectionOfGameResourceModels { get; } = new();
-
-
+        
         public GameResourcesModel(IGameResourcesData data, IGameResourcesConfig configs)
         {
             _data = data;

@@ -8,14 +8,13 @@ namespace Project.Scripts.Game.Areas.GameResources.Data
 {
     public class GameResourcesData : IGameResourcesData
     {
+        private IDictionary<string, IGameResourceData>
+            _dictionaryWithData = new Dictionary<string, IGameResourceData>();
         [JsonProperty("GameResourcesData")] public List<GameResourceData> CollectionOfGameResourcesData { get; set; }
 
         [JsonProperty("IsGameResourcesDataInitialized")]
         public bool IsInitialized { get; set; }
-
-        private IDictionary<string, IGameResourceData>
-            _dictionaryWithData = new Dictionary<string, IGameResourceData>();
-
+        
         [JsonIgnore] public IDictionary<string, IGameResourceData> CollectionOfGameResources => _dictionaryWithData;
 
         [OnSerializing]

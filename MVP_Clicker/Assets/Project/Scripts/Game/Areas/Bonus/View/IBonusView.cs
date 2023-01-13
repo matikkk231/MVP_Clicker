@@ -1,4 +1,5 @@
 using System;
+using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.Bonus.View
 {
@@ -7,7 +8,8 @@ namespace Project.Scripts.Game.Areas.Bonus.View
         event Action BoughtUpgrade;
         
         void SetBonusLevel(int currentBonusLevel);
-        void SetDamagePerTapBonus(int currentDamagePerTapBonus);
+        void SetProvidingBonus(int currentDamagePerTapBonus);
         void SetUpgradeValue(int upgradeValue);
+        void SetBonusSprite(Sprite bonusSprite);
     }
 }

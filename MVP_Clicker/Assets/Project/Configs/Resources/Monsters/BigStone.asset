@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _startFullHp: 5
   _startRewardForKilling: 1
+  _typeOfRewardForKilling: Money
+  _resourceDamagingMonster: DamagePerTap
   _monsterImage: {fileID: 28535766, guid: f57059ae11f03c44db970523443a7295, type: 3}

@@ -22,7 +22,7 @@ namespace Project.Scripts.Game.Areas.BonusesShop.Presenter
 
                 _bonusPresenters.Add(config.Value.Id,
                     new BonusPresenter(bonusesShopView.CollectionOfBonuses[config.Value.Id],
-                        bonusesShopModel.Collection[config.Value.Id]));
+                        bonusesShopModel.Collection[config.Value.Id], config.Value));
             }
         }
 

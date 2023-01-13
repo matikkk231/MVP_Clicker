@@ -7,14 +7,18 @@ namespace Project.Scripts.Game.Areas.Bonus.Config
     {
         [SerializeField] private int _startBonusLevel;
         [SerializeField] private int _startUpgradeValue;
-        [SerializeField] private int _startProvidingDamagePerTapBonus;
+        [SerializeField] private int _startProvidingBonus;
         [SerializeField] private string _id;
         [SerializeField] private string _currencyForUpgrade;
+        [SerializeField] private string _typeOfProvidingBonus;
+        [SerializeField] private Sprite _bonusSprite;
 
+        public string TypeOfProvidingBonus => _typeOfProvidingBonus;
         public string CurrencyForUpgrade => _currencyForUpgrade;
         public int StartBonusLevel => _startBonusLevel;
         public int StartUpgradeValue => _startUpgradeValue;
-        public int StartProvidingDamagePerTapBonus => _startProvidingDamagePerTapBonus;
+        public int StartProvidingBonus => _startProvidingBonus;
         public string Id => _id;
+        public Sprite BonusSprite => _bonusSprite;
     }
 }

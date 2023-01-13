@@ -24,7 +24,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
             LevelSystem = new LevelSystemModel(data.LevelSystem);
             BonusesShop = new BonusesShopModel(GameResources, data.BonusesShop, configs);
             MonsterLogicHandler =
-                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, configs.GameResourcesConfig);
+                new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem);
         }
 
         public void Dispose()

@@ -6,12 +6,11 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
     {
         event Action Updated;
         event Action<string> UpgradeBought;
-        event Action<int> DamagePerTapBonusChanged;
+        event Action<int, string> BonusChanged;
 
-        int BonusLevel { get; set; }
+        int BonusLevel { get; }
         int UpgradeValue { get; }
-        int ProvidingDamagePerTapBonus { get; }
-        string Id { get; }
+        int ProvidingBonus { get; }
 
         void BuyUpgrade();
         void UpdateUpgradeValue();

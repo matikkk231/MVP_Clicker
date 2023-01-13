@@ -1,4 +1,5 @@
 using System;
+using Project.Scripts.Game.Areas.Bonus.Config;
 using Project.Scripts.Game.Areas.Bonus.Data;
 
 namespace Project.Scripts.Game.Areas.Bonus.Model
@@ -7,23 +8,27 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
     {
         public event Action Updated;
         public event Action<string> UpgradeBought;
-        public event Action<int> DamagePerTapBonusChanged;
+        public event Action<int, string> BonusChanged;
 
         private readonly IBonusData _data;
+        private readonly IBonusConfig _config;
 
-
-        public int ProvidingDamagePerTapBonus
+        public BonusModel(IBonusData data, IBonusConfig config)
         {
-            get => _data.ProvidingDamagePerTapBonus;
-            set
-            {
-                _data.ProvidingDamagePerTapBonus = value;
-                Updated?.Invoke();
-                DamagePerTapBonusChanged?.Invoke(0);
-            }
+            _data = data;
+            _config = config;
         }
 
-        public string Id => _data.Id;
+        public int ProvidingBonus
+        {
+            get => _data.ProvidingBonus;
+            private set
+            {
+                _data.ProvidingBonus = value;
+                Updated?.Invoke();
+                BonusChanged?.Invoke(0, _config.Id);
+            }
+        }
 
         public int UpgradeValue
         {
@@ -45,11 +50,6 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
             }
         }
 
-        public BonusModel(IBonusData data)
-        {
-            _data = data;
-        }
-
         public void BuyUpgrade()
         {
             UpgradeBought?.Invoke(_data.Id);
@@ -62,7 +62,7 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
 
         public void UpdateProvidingBonus()
         {
-            ProvidingDamagePerTapBonus++;
+            ProvidingBonus++;
         }
 
         public void UpdateBonusLevel()

@@ -1,5 +1,4 @@
 using System;
-using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
@@ -11,13 +10,11 @@ namespace Project.Scripts.Game.Areas
         private readonly IGameResourcesModel _gameResources;
         private readonly IMonsterModel _monster;
         private readonly ILevelSystemModel _levelSystem;
-        private readonly IGameResourcesConfig _gameResourcesConfig;
 
 
         public MonsterLogicHandlerModel(IGameResourcesModel gameResources, IMonsterModel monster,
-            ILevelSystemModel levelSystem, IGameResourcesConfig gameResourcesConfig)
+            ILevelSystemModel levelSystem)
         {
-            _gameResourcesConfig = gameResourcesConfig;
             _gameResources = gameResources;
             _monster = monster;
             _levelSystem = levelSystem;
@@ -27,7 +24,8 @@ namespace Project.Scripts.Game.Areas
         private void OnMonsterDamaged()
         {
             bool hasMonsterEnoughHp =
-                _monster.CurrentHp - _gameResources.CollectionOfGameResourceModels["DamagePerTap"].Amount > 0;
+                _monster.CurrentHp - _gameResources.CollectionOfGameResourceModels[_monster.ResourceDamagingMonster]
+                    .Amount > 0;
             if (hasMonsterEnoughHp)
             {
                 ReduceMonsterHp();
@@ -40,7 +38,8 @@ namespace Project.Scripts.Game.Areas
 
         private void ReduceMonsterHp()
         {
-            _monster.CurrentHp -= _gameResources.CollectionOfGameResourceModels["DamagePerTap"].Amount;
+            _monster.CurrentHp -=
+                _gameResources.CollectionOfGameResourceModels[_monster.ResourceDamagingMonster].Amount;
         }
 
         private void OnMonsterDied()
@@ -67,7 +66,8 @@ namespace Project.Scripts.Game.Areas
 
         private void GetRewardFromMonster()
         {
-            _gameResources.CollectionOfGameResourceModels["Money"].Amount += _monster.RewardForKilling;
+            _gameResources.CollectionOfGameResourceModels[_monster.TypeOfRewardForKilling].Amount +=
+                _monster.RewardForKilling;
         }
 
         private void BornMonster()
