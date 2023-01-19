@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ede5b46e7a844af8b5c645ecdf676ae, type: 3}
   m_Name: DamagePerTap
   m_EditorClassIdentifier: 
-  _startAmount: 0
+  _startAmount: 1
   _id: DamagePerTap
+  _gameResourceSprite: {fileID: 21300000, guid: e7d9857cb4a2d454cb1093bbaacaf9bc, type: 3}

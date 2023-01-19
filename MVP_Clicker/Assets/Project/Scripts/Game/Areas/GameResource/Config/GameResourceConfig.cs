@@ -7,8 +7,10 @@ namespace Project.Scripts.Game.Areas.GameResource.Config
     {
         [SerializeField] private int _startAmount;
         [SerializeField] private string _id;
+        [SerializeField] private Sprite _gameResourceSprite;
 
         public int StartAmount => _startAmount;
         public string Id => _id;
+        public Sprite GameResourceSprite => _gameResourceSprite;
     }
 }

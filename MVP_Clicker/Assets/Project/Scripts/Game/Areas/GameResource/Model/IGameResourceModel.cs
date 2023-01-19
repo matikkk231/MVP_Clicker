@@ -7,6 +7,5 @@ namespace Project.Scripts.Game.Areas.Resource.Model
         event Action Updated;
 
         int Amount { get; set; }
-        string Id { get; }
     }
 }

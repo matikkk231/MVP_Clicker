@@ -1,5 +1,6 @@
 using System;
 using Project.Scripts.Game.Areas.Monster.Config;
+using Project.Scripts.Game.Areas.Monster.Data;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Areas.Monster.View;
 

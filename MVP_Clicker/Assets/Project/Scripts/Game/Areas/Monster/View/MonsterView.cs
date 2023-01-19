@@ -1,5 +1,4 @@
 using System;
-using Project.Scripts.Game.Areas.Monster.Config;
 using TMPro;
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
@@ -12,8 +11,6 @@ namespace Project.Scripts.Game.Areas.Monster.View
 
         [SerializeField] private TextMeshProUGUI _currentHp;
         [SerializeField] private Image _monsterImage;
-
-        
 
         public void SetCurrentHp(int currentHp)
         {

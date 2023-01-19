@@ -53,6 +53,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _shopMenu: {fileID: 4003520199545713325}
   _shopMenuOpener: {fileID: 6686291893128141381}
+  _bonuses: {fileID: 5160669470583510610}
+  _bonusPrefab: {fileID: 5199873479510036143, guid: a58a9d036ee1d7f48ad2f73e34f30971, type: 3}
 --- !u!1001 &147460834278060357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63,6 +65,14 @@ PrefabInstance:
     - target: {fileID: 3856416844133483496, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
       propertyPath: m_Name
       value: ShopMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367484256761994599, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000005283844
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367484256761994599, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0004938253
       objectReference: {fileID: 0}
     - target: {fileID: 5485125123878164354, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
       propertyPath: m_Pivot.x
@@ -183,6 +193,37 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3856416844133483496, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
   m_PrefabInstance: {fileID: 147460834278060357}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5160669470583510610 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5014058150240216855, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}
+  m_PrefabInstance: {fileID: 147460834278060357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8529219208196780007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5160669470583510610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 0
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 1
+  m_ChildForceExpandHeight: 1
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!224 &5626393301796595399 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5485125123878164354, guid: 3af1fa5723b340a419b734ca7704b651, type: 3}

@@ -12,5 +12,6 @@ namespace Project.Scripts.Game.Base.GameViews
 
         public IViewCreator<ICameraView> Camera => new ViewCreator<CameraView>(_cameraPrefab);
         public IViewCreator<IMainMenuView> MainMenu => new ViewCreator<MainMenuView>(_mainMenuPrefab);
+
     }
 }

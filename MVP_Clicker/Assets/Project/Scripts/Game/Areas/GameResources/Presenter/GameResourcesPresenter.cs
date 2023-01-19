@@ -14,10 +14,11 @@ namespace Project.Scripts.Game.Areas.GameResources.Presenter
         public GameResourcesPresenter(IGameResourcesView view, IGameResourcesModel model,
             IGameResourcesConfig gameResourcesConfig)
         {
-            _gameResourcePresenters.Add(new GameResourcePresenter(view.Money,
-                model.Collection[gameResourcesConfig.Money.Id]));
-            _gameResourcePresenters.Add(new GameResourcePresenter(view.DamagePerTap,
-                model.Collection[gameResourcesConfig.DamagePerTap.Id]));
+            foreach (var config in gameResourcesConfig.CollectionOfGameResources)
+            {
+                _gameResourcePresenters.Add(new GameResourcePresenter(view.CreateView(),
+                    model.CollectionOfGameResourceModels[config.Value.Id], config.Value));
+            }
         }
 
         public void Dispose()

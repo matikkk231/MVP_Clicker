@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fe86958de40421dafb3cc9d243d8268, type: 3}
   m_Name: BonusesShop
   m_EditorClassIdentifier: 
-  _sword: {fileID: 11400000, guid: 2c28babdb249ccc488cc0626c5bb46ba, type: 2}
+  _collectionOfBonuses:
+  - {fileID: 11400000, guid: 2c28babdb249ccc488cc0626c5bb46ba, type: 2}
