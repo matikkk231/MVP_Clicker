@@ -1,3 +1,4 @@
+using DefaultNamespace;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Monster.Config;
@@ -47,11 +48,13 @@ namespace Project.Scripts.Game
 
         private GameConfigs LoadGameConfigs()
         {
-            var bonusesShopScriptableObject = Resources.Load("Bonuses/BonusesShop");
+            ILoadResourcesService loadSystem = new LoadResourcesService();
+
+            var bonusesShopScriptableObject = loadSystem.Load<Object>("Bonuses/BonusesShop");
             var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
-            var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
+            var gameResourcesScriptableObject = loadSystem.Load<Object>("GameResources/GameResourcesCollection");
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
-            var monsterScriptableObject = Resources.Load("Monsters/BigStone");
+            var monsterScriptableObject = loadSystem.Load<Object>("Monsters/BigStone");
             var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
 
             return new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
