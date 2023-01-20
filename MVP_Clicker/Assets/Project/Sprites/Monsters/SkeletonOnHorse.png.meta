@@ -1,0 +1,1421 @@
+fileFormatVersion: 2
+guid: 6c193e15d91f9cc46bdaaf57143adf6e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonOnHorse_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 655
+        width: 119
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4e509cf8d99c742ba5129e65fb9109
+      internalID: 1452009089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 655
+        width: 119
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c585ee455d53384ba0cfcd9a927249e
+      internalID: 538309717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_2
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 655
+        width: 119
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3a6a39abd47e7748bbc266ee5e2680c
+      internalID: 66651428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_3
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 655
+        width: 119
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dc05eccd614da4295ef8ce23f1c8af
+      internalID: -906807143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 503
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d2072c43133834081736cdd2eb311f
+      internalID: -656338290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 503
+        width: 118
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a761af278344334fba6b5804e315c49
+      internalID: -381622232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_6
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 503
+        width: 125
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6465da81d04c6449a28cbdbcc78eaae
+      internalID: 89872075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_7
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 503
+        width: 118
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c178b3d108f373c4894f3a0eb711ec54
+      internalID: -1177282449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_8
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 348
+        width: 123
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837d4e5867df2604ba8331a06c1ad6d8
+      internalID: 1841057567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_9
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 415
+        width: 24
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee57c310d60bf64485c44d67ecaf127
+      internalID: 989916368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_10
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 415
+        width: 28
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d47ce08225d124f9ab2a89f8b5bb8c
+      internalID: -293630434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_11
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 418
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd64aa221c510d042babf80bbeb256cf
+      internalID: -1515688556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_12
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 415
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a116839d20fadcc4ab50549fbc3a8ef7
+      internalID: -1068346007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_13
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 418
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54baccc7d36424b43a8961bd063465a2
+      internalID: -1518391549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_14
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 406
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b864fe56a89f597478c2ac765953c4bb
+      internalID: -708965861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_15
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 399
+        width: 33
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23393206d32088a42a8f52328a5fd67d
+      internalID: 2092354173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_16
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 399
+        width: 47
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9843d883c6dce5e40856478f2b24da71
+      internalID: 719402931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_17
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 399
+        width: 4
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bee482315c85474fbb3b4ac472c9ad9
+      internalID: -1949541736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_18
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 399
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05caf16aa6eb3694d88f9380dea14768
+      internalID: -294165026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_19
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 399
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00ba64dda2067fe49afc25ced3fef609
+      internalID: -1726608974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_20
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 399
+        width: 28
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68f98301313aae44bb3453e972a40a6
+      internalID: 1304811200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_21
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 378
+        width: 38
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0faaae451d6818b46b0c4abe68500005
+      internalID: 1599474841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_22
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 193
+        width: 119
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afae57f50a1edb40a676c9b9e5ba5e5
+      internalID: -1926403621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 193
+        width: 147
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dac16da0729cca042a1a3495fbca4292
+      internalID: -1282493925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_24
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 193
+        width: 150
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a47c3ecc994005645800c8722336fd43
+      internalID: 1674046432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_25
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 193
+        width: 149
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158c31ce81561ee42a566ac2785b8500
+      internalID: 617970304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_26
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 193
+        width: 148
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaacf9121a6629641a7d6e916be2bfc6
+      internalID: 1453014420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_27
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 193
+        width: 149
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eda7613c0d5c5544a416d2e1e5de345
+      internalID: -1332645747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_28
+      rect:
+        serializedVersion: 2
+        x: 1035
+        y: 193
+        width: 150
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfefff8a35d4bc141831b0e6c6a4d95b
+      internalID: -1139729355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_29
+      rect:
+        serializedVersion: 2
+        x: 1209
+        y: 193
+        width: 149
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f006ee927d0d44aafbdd03f6d0bd2d
+      internalID: -730093156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 15
+        width: 123
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9adb490aee16234b99de43885cd0e83
+      internalID: -1302907639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_31
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 15
+        width: 120
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e7dce33f627244d91c99eff11886e1
+      internalID: 1740365708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_32
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 15
+        width: 120
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b4a5a1b0331004cb112753f609a251
+      internalID: 1286002697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_33
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 15
+        width: 120
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb87190b2ce5f254788fab922a510326
+      internalID: -566785633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_34
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 15
+        width: 120
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daaea069dd73b22428fb745aed2a9fc7
+      internalID: 1266415760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_35
+      rect:
+        serializedVersion: 2
+        x: 744
+        y: 15
+        width: 123
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b121550bbf9bdc949b71031acca29486
+      internalID: 1143092677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_36
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 15
+        width: 126
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96ef668b10bde24448c66e084e329103
+      internalID: -1290765916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_37
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 15
+        width: 130
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da376b845c47c294d85699336f6b72ab
+      internalID: -218727637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_38
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 15
+        width: 131
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c685ff95ad8ed74caa01f46b7a0c309
+      internalID: -1855520070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_39
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 15
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b13ab16feb5d034f834305f908e51de
+      internalID: 1483592671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_40
+      rect:
+        serializedVersion: 2
+        x: 1382
+        y: 31
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4416fdb5278d5f94581b7f6f54a0026f
+      internalID: -139134326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_41
+      rect:
+        serializedVersion: 2
+        x: 1395
+        y: 23
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08a568c7fbaf3534fbeb42845aa1fb13
+      internalID: -331192007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_42
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 32
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73700abf8ac6354478a7fc6ff33eb1fe
+      internalID: 879306687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_43
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 30
+        width: 8
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b607f6ed926eb44bb0f2261b7b07321
+      internalID: 1360764900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_44
+      rect:
+        serializedVersion: 2
+        x: 1449
+        y: 33
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2db0ba85645b114d820d7ae0eb99fd7
+      internalID: -750695042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_45
+      rect:
+        serializedVersion: 2
+        x: 1457
+        y: 33
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c8af2cba71d6f442a7e0d8ee07d86be
+      internalID: -237084288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_46
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 26
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b553af67e3afb2848966ef1cd4ec567e
+      internalID: 810789884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_47
+      rect:
+        serializedVersion: 2
+        x: 1510
+        y: 19
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbf9fdc9cd016ef49acb4ccbf0bda1bd
+      internalID: -1951291414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_48
+      rect:
+        serializedVersion: 2
+        x: 1527
+        y: 19
+        width: 68
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 312cd7b4d419cad4eb0ef4c0dc81afdc
+      internalID: -1785321455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_49
+      rect:
+        serializedVersion: 2
+        x: 1604
+        y: 15
+        width: 29
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc504c2c37932394c923d1296290cb6e
+      internalID: -472088880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_50
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d95bde7b74ff59499cd3042da2b19aa
+      internalID: -1356711911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_51
+      rect:
+        serializedVersion: 2
+        x: 1388
+        y: 24
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f77da45865609e4db65d316c0d6ecbb
+      internalID: 327385815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_52
+      rect:
+        serializedVersion: 2
+        x: 1420
+        y: 21
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76ce2452d789fd7458c78d1ea8b31dad
+      internalID: -1482981883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_53
+      rect:
+        serializedVersion: 2
+        x: 1437
+        y: 20
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb76386f91c6e9142aa7cdcbd3681add
+      internalID: -1984460320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_54
+      rect:
+        serializedVersion: 2
+        x: 1444
+        y: 24
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcfbafadb98251478ece2480dc01b29
+      internalID: -2143913304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_55
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 15
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44be7a3b05d887a42825aa3cd22a43cc
+      internalID: 1494332787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_56
+      rect:
+        serializedVersion: 2
+        x: 1452
+        y: 27
+        width: 5
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ec46b3b8262404194a6ea9e026d52d
+      internalID: -445499066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_57
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 18
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299703e2c73e22c48a162f6e738f59a0
+      internalID: -1462043383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonOnHorse_58
+      rect:
+        serializedVersion: 2
+        x: 1466
+        y: 17
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4b456bb256fd240947a183a5e0bdc3
+      internalID: -453058157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      SkeletonOnHorse_16: 719402931
+      SkeletonOnHorse_35: 1143092677
+      SkeletonOnHorse_31: 1740365708
+      SkeletonOnHorse_22: -1926403621
+      SkeletonOnHorse_36: -1290765916
+      SkeletonOnHorse_58: -453058157
+      SkeletonOnHorse_28: -1139729355
+      SkeletonOnHorse_26: 1453014420
+      SkeletonOnHorse_30: -1302907639
+      SkeletonOnHorse_52: -1482981883
+      SkeletonOnHorse_6: 89872075
+      SkeletonOnHorse_42: 879306687
+      SkeletonOnHorse_7: -1177282449
+      SkeletonOnHorse_29: -730093156
+      SkeletonOnHorse_54: -2143913304
+      SkeletonOnHorse_0: 1452009089
+      SkeletonOnHorse_23: -1282493925
+      SkeletonOnHorse_14: -708965861
+      SkeletonOnHorse_18: -294165026
+      SkeletonOnHorse_24: 1674046432
+      SkeletonOnHorse_56: -445499066
+      SkeletonOnHorse_19: -1726608974
+      SkeletonOnHorse_45: -237084288
+      SkeletonOnHorse_47: -1951291414
+      SkeletonOnHorse_27: -1332645747
+      SkeletonOnHorse_2: 66651428
+      SkeletonOnHorse_4: -656338290
+      SkeletonOnHorse_8: 1841057567
+      SkeletonOnHorse_51: 327385815
+      SkeletonOnHorse_15: 2092354173
+      SkeletonOnHorse_1: 538309717
+      SkeletonOnHorse_13: -1518391549
+      SkeletonOnHorse_11: -1515688556
+      SkeletonOnHorse_50: -1356711911
+      SkeletonOnHorse_17: -1949541736
+      SkeletonOnHorse_33: -566785633
+      SkeletonOnHorse_46: 810789884
+      SkeletonOnHorse_21: 1599474841
+      SkeletonOnHorse_9: 989916368
+      SkeletonOnHorse_32: 1286002697
+      SkeletonOnHorse_57: -1462043383
+      SkeletonOnHorse_37: -218727637
+      SkeletonOnHorse_10: -293630434
+      SkeletonOnHorse_41: -331192007
+      SkeletonOnHorse_43: 1360764900
+      SkeletonOnHorse_49: -472088880
+      SkeletonOnHorse_40: -139134326
+      SkeletonOnHorse_25: 617970304
+      SkeletonOnHorse_48: -1785321455
+      SkeletonOnHorse_20: 1304811200
+      SkeletonOnHorse_12: -1068346007
+      SkeletonOnHorse_55: 1494332787
+      SkeletonOnHorse_3: -906807143
+      SkeletonOnHorse_34: 1266415760
+      SkeletonOnHorse_53: -1984460320
+      SkeletonOnHorse_39: 1483592671
+      SkeletonOnHorse_38: -1855520070
+      SkeletonOnHorse_5: -381622232
+      SkeletonOnHorse_44: -750695042
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
