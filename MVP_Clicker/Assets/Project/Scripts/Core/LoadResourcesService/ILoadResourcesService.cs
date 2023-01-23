@@ -1,10 +1,8 @@
-using UnityEngine;
-
-namespace DefaultNamespace
+namespace Project.Scripts.Core.LoadResourcesService
 {
     public interface ILoadResourcesService
     {
-        public Object Load<T>(string path);
-        public void Unload(Object obj);
+        public T Load<T>(string path);
+        public void Unload(string path);
     }
 }
