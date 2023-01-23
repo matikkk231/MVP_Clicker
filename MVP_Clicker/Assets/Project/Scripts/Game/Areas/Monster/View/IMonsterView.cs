@@ -12,7 +12,7 @@ namespace Project.Scripts.Game.Areas.Monster.View
 
         public void SetMonsterImage(Sprite monsterImage);
 
-        public void SetRandomMonsterImage();
+        public void UpdateImageRandomlyFromPull();
 
         public List<Sprite> PullOfMonsterSprites { get; }
     }

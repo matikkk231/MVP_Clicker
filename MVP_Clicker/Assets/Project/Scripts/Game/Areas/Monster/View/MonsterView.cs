@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using Project.Scripts.Game.Areas.Monster.Config;
 using TMPro;
 using UnityEngine;
 using Image = UnityEngine.UI.Image;
@@ -16,7 +15,6 @@ namespace Project.Scripts.Game.Areas.Monster.View
         [SerializeField] private Image _monsterImage;
 
         public List<Sprite> PullOfMonsterSprites { get; } = new();
-        private IMonsterConfig _config;
 
         public void SetCurrentHp(int currentHp)
         {
@@ -29,11 +27,9 @@ namespace Project.Scripts.Game.Areas.Monster.View
             {
                 _monsterImage.sprite = monsterImage;
             }
-
-            SetRandomMonsterImage();
         }
 
-        public void SetRandomMonsterImage()
+        public void UpdateImageRandomlyFromPull()
         {
             var random = new Random();
             int randomInd = random.Next(0, PullOfMonsterSprites.Count);

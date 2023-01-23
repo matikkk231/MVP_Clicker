@@ -14,10 +14,19 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
         {
             _view = view;
             _model = model;
-            _view.SetMonsterImage(monsterConfig.StartMonsterImage);
+            
             foreach (var sprite in monsterConfig.MonsterImages)
             {
                 _view.PullOfMonsterSprites.Add(sprite);
+            }
+
+            if (monsterConfig.StartMonsterImage == null)
+            {
+                _view.UpdateImageRandomlyFromPull();
+            }
+            else
+            {
+                _view.SetMonsterImage(monsterConfig.StartMonsterImage);
             }
 
             AddListeners();
@@ -36,7 +45,7 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
 
         private void OnMonsterDied()
         {
-            _view.SetRandomMonsterImage();
+            _view.UpdateImageRandomlyFromPull();
         }
 
         private void AddListeners()
