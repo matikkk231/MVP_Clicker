@@ -10,7 +10,6 @@ namespace Project.Scripts.Core.LoadResourcesService
 
         public T Load<T>(string path)
         {
-            T resource;
             if (!_callsCounter.ContainsKey(path))
             {
                 _callsCounter.Add(path, 0);
@@ -18,20 +17,15 @@ namespace Project.Scripts.Core.LoadResourcesService
 
             if (_callsCounter[path] == 0)
             {
-                object obj = Resources.Load(path);
-                Object unityObject = (Object)obj;
+                Object unityObject = Resources.Load(path);
                 _resources.Add(path, unityObject);
-                resource = (T)obj;
-                _callsCounter[path]++;
-                return resource;
             }
-            else
-            {
-                _callsCounter[path]++;
-                object obj = _resources[path];
-                resource = (T)obj;
-                return resource;
-            }
+
+            _callsCounter[path]++;
+            object obj = _resources[path];
+            var resource = (T)obj;
+            
+            return resource;
         }
 
         public void Unload(string path)

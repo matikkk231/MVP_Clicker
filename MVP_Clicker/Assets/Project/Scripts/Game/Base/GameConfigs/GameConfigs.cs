@@ -10,7 +10,8 @@ namespace Project.Scripts.Game.Base.GameConfigs
 {
     public class GameConfigs : IGameConfigs, IDisposable
     {
-        private ILoadResourcesService _loadResourcesService;
+        private readonly ILoadResourcesService _loadResourcesService;
+        
         public IBonusesShopConfig BonusesShopConfig { get; }
         public IGameResourcesConfig GameResourcesConfig { get; }
         public IMonsterConfig MonsterConfig { get; }
