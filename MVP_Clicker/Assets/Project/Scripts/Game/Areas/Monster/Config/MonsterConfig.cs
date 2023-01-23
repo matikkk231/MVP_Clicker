@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.Monster.Config
@@ -9,12 +10,14 @@ namespace Project.Scripts.Game.Areas.Monster.Config
         [SerializeField] private int _startRewardForKilling;
         [SerializeField] private string _typeOfRewardForKilling;
         [SerializeField] private string _resourceDamagingMonster;
-        [SerializeField] private Sprite _monsterImage;
+        [SerializeField] private Sprite _startMonsterImage;
+        [SerializeField] private List<Sprite> _monsterImages;
 
         public int StartFullHp => _startFullHp;
         public int StartRewardForKilling => _startRewardForKilling;
-        public Sprite MonsterImage => _monsterImage;
+        public Sprite StartMonsterImage => _startMonsterImage;
         public string ResourceDamagingMonster => _resourceDamagingMonster;
+        public List<Sprite> MonsterImages => _monsterImages;
         public string TypeOfRewardForKilling => _typeOfRewardForKilling;
     }
 }

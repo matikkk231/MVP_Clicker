@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.Monster.Config
@@ -6,8 +7,9 @@ namespace Project.Scripts.Game.Areas.Monster.Config
     {
         public int StartFullHp { get; }
         public int StartRewardForKilling { get; }
-        public Sprite MonsterImage { get; }
+        public Sprite StartMonsterImage { get; }
         public string TypeOfRewardForKilling { get; }
         public string ResourceDamagingMonster { get; }
+        public List<Sprite> MonsterImages { get; }
     }
 }

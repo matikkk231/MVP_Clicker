@@ -1,6 +1,5 @@
 using System;
 using Project.Scripts.Game.Areas.Monster.Config;
-using Project.Scripts.Game.Areas.Monster.Data;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Areas.Monster.View;
 
@@ -15,7 +14,21 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
         {
             _view = view;
             _model = model;
-            _view.SetMonsterImage(monsterConfig.MonsterImage);
+            
+            foreach (var sprite in monsterConfig.MonsterImages)
+            {
+                _view.PullOfMonsterSprites.Add(sprite);
+            }
+
+            if (monsterConfig.StartMonsterImage == null)
+            {
+                _view.UpdateImageRandomlyFromPull();
+            }
+            else
+            {
+                _view.SetMonsterImage(monsterConfig.StartMonsterImage);
+            }
+
             AddListeners();
             OnUpdated();
         }
@@ -30,16 +43,23 @@ namespace Project.Scripts.Game.Areas.Monster.Presenter
             _model.Damage();
         }
 
+        private void OnMonsterDied()
+        {
+            _view.UpdateImageRandomlyFromPull();
+        }
+
         private void AddListeners()
         {
             _model.Updated += OnUpdated;
             _view.Damaged += OnDamaged;
+            _model.Died += OnMonsterDied;
         }
 
         private void RemoveListeners()
         {
             _model.Updated -= OnUpdated;
             _view.Damaged -= OnDamaged;
+            _model.Died -= OnMonsterDied;
         }
 
         public void Dispose()
