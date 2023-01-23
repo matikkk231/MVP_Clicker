@@ -1,3 +1,4 @@
+using Project.Scripts.Core.LoadResourcesService;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Monster.Config;
@@ -30,7 +31,7 @@ namespace Project.Scripts.Game
         private void Start()
         {
             _saveSystem = new SaveSystemService();
-            _configs = LoadGameConfigs();
+            _configs = new GameConfigs(new LoadResourcesService());
             _data = _saveSystem.LoadData();
             if (_data == null)
             {
@@ -45,21 +46,10 @@ namespace Project.Scripts.Game
             }
         }
 
-        private GameConfigs LoadGameConfigs()
-        {
-            var bonusesShopScriptableObject = Resources.Load("Bonuses/BonusesShop");
-            var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
-            var gameResourcesScriptableObject = Resources.Load("GameResources/GameResourcesCollection");
-            var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
-            var monsterScriptableObject = Resources.Load("Monsters/BigStone");
-            var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
-
-            return new GameConfigs(bonusesShopConfig, gameResourcesConfig, monsterConfig);
-        }
-
         private void OnDestroy()
         {
             _saveSystem.SaveData(_data);
+            _configs.Dispose();
             _presenters.Dispose();
             _models.Dispose();
         }
