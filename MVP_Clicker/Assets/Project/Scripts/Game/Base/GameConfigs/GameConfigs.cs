@@ -19,11 +19,11 @@ namespace Project.Scripts.Game.Base.GameConfigs
         public GameConfigs(ILoadResourcesService loadResourcesService)
         {
             _loadResourcesService = loadResourcesService;
-
+            
             var bonusesShopScriptableObject = loadResourcesService.Load<Object>("Bonuses/BonusesShop");
             var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
             var gameResourcesScriptableObject =
-                loadResourcesService.Load<Object>("GameResources/GameResourcesCollection");
+                loadResourcesService.Load<Object>("GameResourcesCollection");
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
             var monsterScriptableObject = loadResourcesService.Load<Object>("Monsters/BigStone");
             var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
@@ -36,7 +36,7 @@ namespace Project.Scripts.Game.Base.GameConfigs
         public void Dispose()
         {
             _loadResourcesService.Unload("Bonuses/BonusesShop");
-            _loadResourcesService.Unload("GameResources/GameResourcesCollection");
+            _loadResourcesService.Unload("GameResourcesCollection");
             _loadResourcesService.Unload("Monsters/BigStone");
         }
     }

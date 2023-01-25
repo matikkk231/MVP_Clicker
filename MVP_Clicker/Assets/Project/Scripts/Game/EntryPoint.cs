@@ -31,7 +31,7 @@ namespace Project.Scripts.Game
         private void Start()
         {
             _saveSystem = new SaveSystemService();
-            _configs = new GameConfigs(new LoadResourcesService());
+            _configs = new GameConfigs(new AddressableLoadResourceService());
             _data = _saveSystem.LoadData();
             if (_data == null)
             {

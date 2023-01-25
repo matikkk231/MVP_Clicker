@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Project.Scripts.Core.LoadResourcesService
 {
-    public class LoadResourcesService : ILoadResourcesService
+    public class AddressableLoadResourceService : ILoadResourcesService
     {
         private readonly Dictionary<string, object> _resources = new();
         private readonly Dictionary<string, int> _callsCounter = new();
@@ -17,15 +17,20 @@ namespace Project.Scripts.Core.LoadResourcesService
 
             if (_callsCounter[path] == 0)
             {
-                object unityObject = Resources.Load(path);
-                _resources.Add(path, unityObject);
+                _callsCounter[path]++;
+                var asset = Addressables.LoadAssetAsync<T>(path);
+                asset.WaitForCompletion();
+                object obj = (object)asset.Result;
+                _resources.Add(path, obj);
+                return (T)asset.Result;
             }
-
-            _callsCounter[path]++;
-            object obj = _resources[path];
-            var resource = (T)obj;
-
-            return resource;
+            else
+            {
+                _callsCounter[path]++;
+                object obj = _resources[path];
+                var resource = (T)obj;
+                return resource;
+            }
         }
 
         public void Unload(string path)
@@ -37,7 +42,7 @@ namespace Project.Scripts.Core.LoadResourcesService
             else
             {
                 object resource = _resources[path];
-                Resources.UnloadAsset((Object)resource);
+                Addressables.Release(resource);
                 _callsCounter[path]--;
             }
         }
