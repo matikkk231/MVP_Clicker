@@ -134,14 +134,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Entry
       objectReference: {fileID: 0}
-    - target: {fileID: 3243334203883666347, guid: ad90fe9b918f59045943b41114c7c3e1, type: 3}
-      propertyPath: _canvasPrefab
-      value: 
-      objectReference: {fileID: 7144099241571969684, guid: 7437a452a9b0a9049bb25f97b58a088b, type: 3}
-    - target: {fileID: 3243334203883666347, guid: ad90fe9b918f59045943b41114c7c3e1, type: 3}
-      propertyPath: mainMenuPrefab
-      value: 
-      objectReference: {fileID: 7144099241571969684, guid: 7437a452a9b0a9049bb25f97b58a088b, type: 3}
     - target: {fileID: 3243334203883666349, guid: ad90fe9b918f59045943b41114c7c3e1, type: 3}
       propertyPath: m_RootOrder
       value: 0

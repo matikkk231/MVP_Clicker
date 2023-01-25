@@ -1,14 +1,10 @@
 using Project.Scripts.Core.LoadResourcesService;
-using Project.Scripts.Game.Areas.BonusesShop.Config;
-using Project.Scripts.Game.Areas.GameResources.Config;
-using Project.Scripts.Game.Areas.Monster.Config;
 using Project.Scripts.Game.Areas.SaveSystem;
 using Project.Scripts.Game.Base.GameConfigs;
 using Project.Scripts.Game.Base.GameData;
 using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
 using Project.Scripts.Game.Base.GameViews;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Project.Scripts.Game
@@ -32,7 +28,7 @@ namespace Project.Scripts.Game
         {
             _saveSystem = new SaveSystemService();
             _configs = new GameConfigs(new LoadResourcesService());
-            _data = _saveSystem.LoadData();
+            _data = _saveSystem.LoadData<GameData>();
             if (_data == null)
             {
                 _data = new GameData();
