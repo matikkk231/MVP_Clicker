@@ -12,11 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
   m_Name: configs
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets
+  m_GroupName: configs
   m_Data:
     m_SerializedData: []
   m_GUID: 5396260641c4d854b804af71b27d69d0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: b1fc35d63580f2c4c9594f0a75a1a2bf
+    m_Address: Bonuses/BonusesShop
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2c28babdb249ccc488cc0626c5bb46ba
+    m_Address: Bonuses/Types/Sword
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6af15208ae7a1d842bdc1e10ab05d790
+    m_Address: GameResourcesCollection
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 54c8f7ac62323cf43b9882a735b822b2
+    m_Address: Types/Money
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ecd777534ae2a704f9886c650e1328b9
+    m_Address: Types/DamagePerTap
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 186775da638bdae40bebd5ff211b1244
+    m_Address: Monsters/BigStone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6b6ca2dc540bcd449be9f5e0428ce049, type: 2}
   m_SchemaSet:
