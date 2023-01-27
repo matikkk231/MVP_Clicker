@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine.AddressableAssets;
 
 namespace Project.Scripts.Core.LoadResourcesService
@@ -8,7 +9,7 @@ namespace Project.Scripts.Core.LoadResourcesService
         private readonly Dictionary<string, object> _resources = new();
         private readonly Dictionary<string, int> _callsCounter = new();
 
-        public T Load<T>(string path)
+        public async Task<T> Load<T>(string path)
         {
             if (!_callsCounter.ContainsKey(path))
             {
@@ -19,7 +20,7 @@ namespace Project.Scripts.Core.LoadResourcesService
             {
                 _callsCounter[path]++;
                 var asset = Addressables.LoadAssetAsync<T>(path);
-                asset.WaitForCompletion();
+                await asset.Task;
                 object obj = (object)asset.Result;
                 _resources.Add(path, obj);
                 return (T)asset.Result;

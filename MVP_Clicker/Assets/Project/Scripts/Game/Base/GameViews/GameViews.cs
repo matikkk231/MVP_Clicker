@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Project.Scripts.Core;
 using Project.Scripts.Core.LoadResourcesService;
@@ -9,7 +10,7 @@ using Object = UnityEngine.Object;
 
 namespace Project.Scripts.Game.Base.GameViews
 {
-    public class GameViews : IGameViews, ILoadable
+    public class GameViews : IGameViews, ILoadable, IDisposable
     {
         private CameraView _cameraPrefab;
         private MainMenuView _mainMenuPrefab;
@@ -23,16 +24,18 @@ namespace Project.Scripts.Game.Base.GameViews
             _loadResourcesService = loadResourcesService;
         }
 
-        public Task LoadAsync()
+        public async Task LoadAsync()
         {
-            Task task = Task.Factory.StartNew(() =>
-            {
-                var cameraObject = _loadResourcesService.Load<Object>("Assets/Project/Prefabs/MainCamera.prefab");
-                _cameraPrefab = cameraObject.ConvertTo<CameraView>();
-                var mainMenuObject = _loadResourcesService.Load<Object>("Assets/Project/Prefabs/MainMenu.prefab");
-                _mainMenuPrefab = mainMenuObject.ConvertTo<MainMenuView>();
-            });
-            return task;
+            var cameraObject = await _loadResourcesService.Load<Object>("Assets/Project/Prefabs/MainCamera.prefab");
+            _cameraPrefab = cameraObject.ConvertTo<CameraView>();
+            var mainMenuObject = await _loadResourcesService.Load<Object>("Assets/Project/Prefabs/MainMenu.prefab");
+            _mainMenuPrefab = mainMenuObject.ConvertTo<MainMenuView>();
+        }
+
+        public void Dispose()
+        {
+            _loadResourcesService.Unload("Assets/Project/Prefabs/MainCamera.prefab");
+            _loadResourcesService.Unload("Assets/Project/Prefabs/MainMenu.prefab");
         }
     }
 }

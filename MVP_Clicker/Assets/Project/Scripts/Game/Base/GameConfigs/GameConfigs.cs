@@ -30,23 +30,19 @@ namespace Project.Scripts.Game.Base.GameConfigs
             _loadResourcesService.Unload("Monsters/BigStone");
         }
 
-        public Task LoadAsync()
+        public async Task LoadAsync()
         {
-            Task task = Task.Factory.StartNew(() =>
-            {
-                var bonusesShopScriptableObject = _loadResourcesService.Load<Object>("Bonuses/BonusesShop");
-                var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
-                var gameResourcesScriptableObject =
-                    _loadResourcesService.Load<Object>("GameResourcesCollection");
-                var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
-                var monsterScriptableObject = _loadResourcesService.Load<Object>("Monsters/BigStone");
-                var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
+            var bonusesShopScriptableObject = await _loadResourcesService.Load<Object>("Bonuses/BonusesShop");
+            var bonusesShopConfig = bonusesShopScriptableObject.ConvertTo<BonusesShopConfig>();
+            var gameResourcesScriptableObject = await
+                _loadResourcesService.Load<Object>("GameResourcesCollection");
+            var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
+            var monsterScriptableObject = await _loadResourcesService.Load<Object>("Monsters/BigStone");
+            var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
 
-                BonusesShopConfig = bonusesShopConfig;
-                GameResourcesConfig = gameResourcesConfig;
-                MonsterConfig = monsterConfig;
-            });
-            return task;
+            BonusesShopConfig = bonusesShopConfig;
+            GameResourcesConfig = gameResourcesConfig;
+            MonsterConfig = monsterConfig;
         }
     }
 }

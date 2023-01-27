@@ -10,16 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
-  m_Name: prefabs
+  m_Name: Prefabs
   m_EditorClassIdentifier: 
-  m_GroupName: Packed Assets
+  m_GroupName: Prefabs
   m_Data:
     m_SerializedData: []
-  m_GUID: 179ab1cfdde0f484ea9f36291d557f15
-  m_SerializeEntries: []
+  m_GUID: 8af5749ca0623d44ea19048c5a0d14ce
+  m_SerializeEntries:
+  - m_GUID: ed6e63ed13052e44f9587f45622a7c84
+    m_Address: Assets/Project/Prefabs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6b6ca2dc540bcd449be9f5e0428ce049, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 148698c809f4ce8438aab3f6385a2217, type: 2}
-    - {fileID: 11400000, guid: b68c82a85d318f64d89083c954ec850b, type: 2}
+    - {fileID: 11400000, guid: 7e0d7eb6541e64c408ca7c461ddbc477, type: 2}
+    - {fileID: 11400000, guid: 88385b25f33f83248abde67400e0f5f5, type: 2}
