@@ -32,7 +32,7 @@ namespace Project.Scripts.Game
             _configs = new GameConfigs(addressableLoadResourceService);
             await _configs.LoadAsync();
             await _views.LoadAsync();
-            _data = _saveSystem.LoadData();
+            _data = _saveSystem.LoadData<GameData>();
             if (_data == null)
             {
                 _data = new GameData();
