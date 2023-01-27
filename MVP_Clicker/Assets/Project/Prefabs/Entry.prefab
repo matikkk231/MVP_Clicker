@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3243334203883666349}
   - component: {fileID: 3243334203883666346}
-  - component: {fileID: 3243334203883666347}
   m_Layer: 0
   m_Name: Entry
   m_TagString: Untagged
@@ -45,18 +44,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcab5d1ca62ce2544a310c756764d9de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _views: {fileID: 3243334203883666347}
---- !u!114 &3243334203883666347
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3243334203883666344}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1acbb51c9bd47bbac653b874f00cc08, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _cameraPrefab: {fileID: 791431491594496277, guid: d519a342070cf4f4ea8a110d0514ea37, type: 3}
-  _mainMenuPrefab: {fileID: 6730409097481518382, guid: 7437a452a9b0a9049bb25f97b58a088b, type: 3}
