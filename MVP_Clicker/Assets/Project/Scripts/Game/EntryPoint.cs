@@ -24,12 +24,14 @@ namespace Project.Scripts.Game
         private ISaveSystemService _saveSystem;
 
 
-        private void Start()
+        private async void Start()
         {
-            var addressableLoadResourceService =  new AddressableLoadResourceService();
+            var addressableLoadResourceService = new AddressableLoadResourceService();
             _views = new GameViews(addressableLoadResourceService);
             _saveSystem = new SaveSystemService();
             _configs = new GameConfigs(addressableLoadResourceService);
+            await _configs.LoadAsync();
+            await _views.LoadAsync();
             _data = _saveSystem.LoadData();
             if (_data == null)
             {
