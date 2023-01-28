@@ -1,7 +1,10 @@
 using System;
+using System.Collections;
+using Project.Scripts.Core.CoroutineStarterService;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
 using Project.Scripts.Game.Areas.Monster.Model;
+using UnityEngine;
 
 namespace Project.Scripts.Game.Areas
 {
@@ -13,12 +16,13 @@ namespace Project.Scripts.Game.Areas
 
 
         public MonsterLogicHandlerModel(IGameResourcesModel gameResources, IMonsterModel monster,
-            ILevelSystemModel levelSystem)
+            ILevelSystemModel levelSystem, ICoroutineStarterService coroutineStarterService)
         {
             _gameResources = gameResources;
             _monster = monster;
             _levelSystem = levelSystem;
             AddListeners();
+            coroutineStarterService.StartCurrentCoroutine(DamageMonsterEverySecond());
         }
 
         private void OnMonsterDamaged()
@@ -97,6 +101,25 @@ namespace Project.Scripts.Game.Areas
             _monster.Damaged -= OnMonsterDamaged;
             _monster.Died -= OnMonsterDied;
             _levelSystem.GotLevelUp -= OnGotLevelUp;
+        }
+
+        private IEnumerator DamageMonsterEverySecond()
+        {
+            while (true)
+            {
+                if (_monster.CurrentHp > _gameResources
+                        .CollectionOfGameResourceModels[_monster.ResourceDamagingMonsterEverySecond].Amount)
+                {
+                    _monster.CurrentHp -= _gameResources
+                        .CollectionOfGameResourceModels[_monster.ResourceDamagingMonsterEverySecond].Amount;
+                }
+                else
+                {
+                    _monster.Die();
+                }
+
+                yield return new WaitForSeconds(1);
+            }
         }
 
         public void Dispose()

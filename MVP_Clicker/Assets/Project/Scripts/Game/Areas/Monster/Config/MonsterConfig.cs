@@ -10,6 +10,7 @@ namespace Project.Scripts.Game.Areas.Monster.Config
         [SerializeField] private int _startRewardForKilling;
         [SerializeField] private string _typeOfRewardForKilling;
         [SerializeField] private string _resourceDamagingMonster;
+        [SerializeField] private string _resourceDamagingMonsterEverySecond;
         [SerializeField] private Sprite _startMonsterImage;
         [SerializeField] private List<Sprite> _monsterImages;
 
@@ -17,6 +18,7 @@ namespace Project.Scripts.Game.Areas.Monster.Config
         public int StartRewardForKilling => _startRewardForKilling;
         public Sprite StartMonsterImage => _startMonsterImage;
         public string ResourceDamagingMonster => _resourceDamagingMonster;
+        public string ResourceDamagingMonsterEverySecond => _resourceDamagingMonsterEverySecond;
         public List<Sprite> MonsterImages => _monsterImages;
         public string TypeOfRewardForKilling => _typeOfRewardForKilling;
     }

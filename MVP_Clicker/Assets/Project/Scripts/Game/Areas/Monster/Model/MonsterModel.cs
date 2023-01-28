@@ -14,6 +14,7 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         public event Action Damaged;
         public string ResourceDamagingMonster => _config.ResourceDamagingMonster;
         public string TypeOfRewardForKilling => _config.TypeOfRewardForKilling;
+        public string ResourceDamagingMonsterEverySecond => _config.ResourceDamagingMonsterEverySecond;
 
 
         public int CurrentHp

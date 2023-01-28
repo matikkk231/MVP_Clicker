@@ -16,6 +16,7 @@ MonoBehaviour:
   _startRewardForKilling: 1
   _typeOfRewardForKilling: Money
   _resourceDamagingMonster: DamagePerTap
+  _resourceDamagingMonsterEverySecond: DamagePerSecond
   _startMonsterImage: {fileID: 28535766, guid: f57059ae11f03c44db970523443a7295, type: 3}
   _monsterImages:
   - {fileID: 1525483932, guid: 1ae851284e1704b419593d9f3f6d559a, type: 3}

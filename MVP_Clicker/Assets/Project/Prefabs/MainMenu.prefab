@@ -349,6 +349,26 @@ PrefabInstance:
       propertyPath: m_fontColor32.rgba
       value: 4278190080
       objectReference: {fileID: 0}
+    - target: {fileID: 8529219208196780007, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
+      propertyPath: m_Spacing
+      value: -200
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529219208196780007, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
+      propertyPath: m_ChildAlignment
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529219208196780007, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529219208196780007, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
+      propertyPath: m_ChildScaleWidth
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8529219208196780007, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
+      propertyPath: m_ChildControlWidth
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d39728e6c7936b4bb7a83e34131ccd2, type: 3}
 --- !u!114 &1460450291683663729 stripped

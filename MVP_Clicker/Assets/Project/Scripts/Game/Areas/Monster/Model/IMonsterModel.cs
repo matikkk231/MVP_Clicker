@@ -12,6 +12,7 @@ namespace Project.Scripts.Game.Areas.Monster.Model
         int FullHp { get; set; }
         int RewardForKilling { get; set; }
         public string ResourceDamagingMonster { get; }
+        public string ResourceDamagingMonsterEverySecond { get; }
         public string TypeOfRewardForKilling { get; }
 
         void Damage();
