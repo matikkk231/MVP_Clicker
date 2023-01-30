@@ -1,3 +1,4 @@
+using Project.Scripts.Core.CoroutineStarterService;
 using Project.Scripts.Core.ViewCreate;
 using Project.Scripts.Game.Areas.Camera.View;
 
@@ -7,5 +8,6 @@ namespace Project.Scripts.Game.Base.GameViews
     {
         IViewCreator<ICameraView> Camera { get; }
         IViewCreator<IMainMenuView> MainMenu { get; }
+        public IViewCreator<CoroutineStarterService> CoroutineStarter { get; }
     }
 }

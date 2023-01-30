@@ -15,3 +15,4 @@ MonoBehaviour:
   _collectionOfGameResourcesConfigs:
   - {fileID: 11400000, guid: 54c8f7ac62323cf43b9882a735b822b2, type: 2}
   - {fileID: 11400000, guid: ecd777534ae2a704f9886c650e1328b9, type: 2}
+  - {fileID: 11400000, guid: c7c40b6098b6ffd438f6a6b628aba0a7, type: 2}

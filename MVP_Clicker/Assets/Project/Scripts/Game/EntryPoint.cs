@@ -36,12 +36,12 @@ namespace Project.Scripts.Game
             if (_data == null)
             {
                 _data = new GameData();
-                _models = new GameModels(_data, _configs);
+                _models = new GameModels(_data, _configs, _views.CoroutineStarter.CreateObject().View);
                 _presenters = new GamePresenter(_models, _views, _configs);
             }
             else
             {
-                _models = new GameModels(_data, _configs);
+                _models = new GameModels(_data, _configs, _views.CoroutineStarter.CreateObject().View);
                 _presenters = new GamePresenter(_models, _views, _configs);
             }
         }

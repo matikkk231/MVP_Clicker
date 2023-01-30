@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 070cd02a72da4631935e2e59a3f661d2, type: 3}
-  m_Name: Sword
+  m_Name: Bow
   m_EditorClassIdentifier: 
-  _startBonusLevel: 29
-  _startUpgradeValue: 15
+  _startBonusLevel: 0
+  _startUpgradeValue: 30
   _startProvidingBonus: 0
-  _id: sword
+  _id: Bow
   _currencyForUpgrade: Money
-  _typeOfProvidingBonus: DamagePerTap
-  _bonusSprite: {fileID: 21300000, guid: dbacc6c18f12cab4f885a0b23fdd1ca8, type: 3}
+  _typeOfProvidingBonus: DamagePerSecond
+  _bonusSprite: {fileID: 21300000, guid: 1c854e2f261098142ab1c2d78888b7a2, type: 3}

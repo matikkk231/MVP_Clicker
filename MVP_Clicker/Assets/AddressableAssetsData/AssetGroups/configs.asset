@@ -65,6 +65,18 @@ MonoBehaviour:
     m_Address: Assets/Project/Prefabs/Bonus.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: c7c40b6098b6ffd438f6a6b628aba0a7
+    m_Address: Assets/Project/Configs/Resources_moved/GameResources_moved/Types/DamagePerSecond.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 634532358a9893e428e179127d20e02d
+    m_Address: Assets/Project/Configs/Resources_moved/Bonuses/Types/Bow.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88eebb653dfda614b9b94f40a88087c2
+    m_Address: Assets/Project/Prefabs/CoroutineStarterService.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6b6ca2dc540bcd449be9f5e0428ce049, type: 2}
   m_SchemaSet:

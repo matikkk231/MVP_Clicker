@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fe86958de40421dafb3cc9d243d8268, type: 3}
-  m_Name: BonusesShop
+  m_Script: {fileID: 11500000, guid: 0ede5b46e7a844af8b5c645ecdf676ae, type: 3}
+  m_Name: DamagePerSecond
   m_EditorClassIdentifier: 
-  _collectionOfBonuses:
-  - {fileID: 11400000, guid: 2c28babdb249ccc488cc0626c5bb46ba, type: 2}
-  - {fileID: 11400000, guid: 634532358a9893e428e179127d20e02d, type: 2}
+  _startAmount: 0
+  _id: DamagePerSecond
+  _gameResourceSprite: {fileID: 21300000, guid: 43757abdcd01ab345ad8a321383bb568, type: 3}
