@@ -6,6 +6,7 @@ using Project.Scripts.Game.Base.GameModels;
 using Project.Scripts.Game.Base.GamePresenters;
 using Project.Scripts.Game.Base.GameViews;
 using UnityEngine;
+using Zenject;
 
 namespace Project.Scripts.Game
 {
@@ -22,14 +23,19 @@ namespace Project.Scripts.Game
         private IGameData _data;
 
         private ISaveSystemService _saveSystem;
+        private ILoadResourcesService _loadResourcesService;
 
+        [Inject]
+        private void Constructor(ILoadResourcesService loadResourcesService, ISaveSystemService saveSystemService)
+        {
+            _loadResourcesService = loadResourcesService;
+            _saveSystem = saveSystemService;
+        }
 
         private async void Start()
         {
-            var addressableLoadResourceService = new AddressableLoadResourceService();
-            _views = new GameViews(addressableLoadResourceService);
-            _saveSystem = new SaveSystemService();
-            _configs = new GameConfigs(addressableLoadResourceService);
+            _views = new GameViews(_loadResourcesService);
+            _configs = new GameConfigs(_loadResourcesService);
             await _configs.LoadAsync();
             await _views.LoadAsync();
             _data = _saveSystem.LoadData<GameData>();
