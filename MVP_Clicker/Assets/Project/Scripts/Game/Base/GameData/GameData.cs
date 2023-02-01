@@ -1,4 +1,5 @@
 using Newtonsoft.Json;
+using Project.Scripts.Game.Areas.Achievements.Data;
 using Project.Scripts.Game.Areas.BonusesShop.Data;
 using Project.Scripts.Game.Areas.GameResources.Data;
 using Project.Scripts.Game.Areas.LevelSystem.Data;
@@ -12,11 +13,13 @@ namespace Project.Scripts.Game.Base.GameData
         [JsonProperty("MonsterData")] public MonsterData MonsterDataValue;
         [JsonProperty("LevelSystemData")] public LevelSystemData LevelSystemDataValue;
         [JsonProperty("BonusesShopData")] public BonusesShopData BonusesShopDataValue;
+        [JsonProperty("AchievementsDataa")] public AchievementsData AchievementsDataValue;
 
         [JsonIgnore] public IGameResourcesData GameResources => GameResourcesDataValue;
         [JsonIgnore] public IMonsterData Monster => MonsterDataValue;
         [JsonIgnore] public ILevelSystemData LevelSystem => LevelSystemDataValue;
         [JsonIgnore] public IBonusesShopData BonusesShop => BonusesShopDataValue;
+        public IAchievementsData AchievementsData => AchievementsDataValue;
 
         public GameData()
         {
@@ -24,6 +27,7 @@ namespace Project.Scripts.Game.Base.GameData
             LevelSystemDataValue = new LevelSystemData();
             GameResourcesDataValue = new GameResourcesData();
             BonusesShopDataValue = new BonusesShopData();
+            AchievementsDataValue = new AchievementsData();
         }
     }
 }

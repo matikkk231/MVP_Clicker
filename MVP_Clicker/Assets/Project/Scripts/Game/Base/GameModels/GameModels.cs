@@ -10,8 +10,7 @@ namespace Project.Scripts.Game.Base.GameModels
     {
         public ICameraModel Camera { get; }
         public IMainMenuModel MainMenu { get; }
-
-        public GameModels(IGameData data, IGameConfigs configs,ICoroutineStarterService coroutineStarterService)
+        public GameModels(IGameData data, IGameConfigs configs, ICoroutineStarterService coroutineStarterService)
         {
             Camera = new CameraModel();
             MainMenu = new MainMenuModel(data, configs, coroutineStarterService);

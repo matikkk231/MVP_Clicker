@@ -17,8 +17,72 @@ MonoBehaviour:
     m_SerializedData: []
   m_GUID: 8af5749ca0623d44ea19048c5a0d14ce
   m_SerializeEntries:
-  - m_GUID: ed6e63ed13052e44f9587f45622a7c84
-    m_Address: Assets/Project/Prefabs
+  - m_GUID: 2ceb2d10486f64f4d92ecf839bfcb531
+    m_Address: Assets/Project/Prefabs/Achievement.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1f92ba90dc621134b8c754e4f420994f
+    m_Address: Assets/Project/Prefabs/Achievements.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a58a9d036ee1d7f48ad2f73e34f30971
+    m_Address: Assets/Project/Prefabs/Bonus.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 88eebb653dfda614b9b94f40a88087c2
+    m_Address: Assets/Project/Prefabs/CoroutineStarterService.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ad90fe9b918f59045943b41114c7c3e1
+    m_Address: Assets/Project/Prefabs/Entry.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa886b72a0e387841868d9870e130c15
+    m_Address: Assets/Project/Prefabs/LevelSystem.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d519a342070cf4f4ea8a110d0514ea37
+    m_Address: Assets/Project/Prefabs/MainCamera.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 7437a452a9b0a9049bb25f97b58a088b
+    m_Address: Assets/Project/Prefabs/MainMenu.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 55f78f7d3a92cc94085cb631208268cf
+    m_Address: Assets/Project/Prefabs/Monster.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c50a3529ce990f448885e95a5d76e383
+    m_Address: Assets/Project/Prefabs/GameResources/GameResource.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e8424ce0d76d22f4b84473d64f26f0f6
+    m_Address: Assets/Project/Prefabs/GameResources/GameResources.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2d39728e6c7936b4bb7a83e34131ccd2
+    m_Address: Assets/Project/Prefabs/BonusesShop/BonusesShop.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3af1fa5723b340a419b734ca7704b651
+    m_Address: Assets/Project/Prefabs/BonusesShop/ShopMenu.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 004c60bc8b46c0b4f8c007d4d3aec1eb
+    m_Address: Assets/Project/Prefabs/BonusesShop/ShopMenuCloser.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a90487f01f9db8f4caebeecc645ea9a4
+    m_Address: Assets/Project/Prefabs/BonusesShop/ShopMenuOpener.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec4f17c0170cd1849ad8f4320138928d
+    m_Address: Assets/Project/Configs/Achievements/StarterMonsterKiller.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 87fe2c5bce2ee5a4d96b0ab43daa1208
+    m_Address: Assets/Project/Configs/Achievements/CollectionOfAchievements.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

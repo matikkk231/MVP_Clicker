@@ -1,3 +1,4 @@
+using Project.Scripts.Game.Areas.Achievements.View;
 using Project.Scripts.Game.Areas.BonusesShop.View;
 using Project.Scripts.Game.Areas.GameResources.View;
 using Project.Scripts.Game.Areas.LevelSystem.View;
@@ -9,4 +10,5 @@ public interface IMainMenuView
     IMonsterView Monster { get; }
     ILevelSystemView LevelSystem { get; }
     IBonusesShopView BonusesShopView { get; }
+    IAchievementsView Achievements { get; }
 }

@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using Project.Scripts.Core.ViewCreate;
+using Project.Scripts.Game.Areas.Achievements.Presenter;
 using Project.Scripts.Game.Areas.BonusesShop.Presenter;
 using Project.Scripts.Game.Areas.GameResources.Presenter;
 using Project.Scripts.Game.Areas.LevelSystem.Presenter;
@@ -27,6 +28,8 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
             _presenters.Add(new LevelSystemPresenter(_boxMainMenuView.View.LevelSystem, _model.LevelSystem));
             _presenters.Add(new BonusesShopPresenter(_boxMainMenuView.View.BonusesShopView, _model.BonusesShop,
                 configs.BonusesShopConfig));
+            _presenters.Add(new AchievementsPresenter(_boxMainMenuView.View.Achievements, model.Achievements,
+                configs.Achievements));
         }
 
         public void Dispose()
