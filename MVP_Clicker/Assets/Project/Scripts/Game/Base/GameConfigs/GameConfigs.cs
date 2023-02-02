@@ -5,6 +5,7 @@ using Project.Scripts.Core.LoadResourcesService;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Monster.Config;
+using Project.Scripts.Game.Areas.SkillMenu.Config;
 using Unity.VisualScripting;
 using Object = UnityEngine.Object;
 
@@ -17,6 +18,7 @@ namespace Project.Scripts.Game.Base.GameConfigs
         public IBonusesShopConfig BonusesShopConfig { get; private set; }
         public IGameResourcesConfig GameResourcesConfig { get; private set; }
         public IMonsterConfig MonsterConfig { get; private set; }
+        public ISkillMenuConfig SkillMenuConfig { get; private set; }
 
         public GameConfigs(ILoadResourcesService loadResourcesService)
         {
@@ -39,6 +41,11 @@ namespace Project.Scripts.Game.Base.GameConfigs
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
             var monsterScriptableObject = await _loadResourcesService.Load<Object>("Monsters/BigStone");
             var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
+            var skillCollectionObject =
+                await _loadResourcesService.Load<Object>(
+                    "Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset");
+            SkillMenuConfig = skillCollectionObject.ConvertTo<SkillMenuConfig>();
+
 
             BonusesShopConfig = bonusesShopConfig;
             GameResourcesConfig = gameResourcesConfig;
