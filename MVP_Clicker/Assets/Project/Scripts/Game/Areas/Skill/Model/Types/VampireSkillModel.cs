@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.Skill.Model
 {
-    public class VampireSkill : ISkillModel
+    public class VampireSkillModel : ISkillModel
     {
         public event Action<float> UpdatedCooldown;
 
@@ -37,7 +37,7 @@ namespace Project.Scripts.Game.Areas.Skill.Model
         private bool SkillReady { get; set; }
         private int BoostValue { get; }
 
-        public VampireSkill(IMonsterModel monster, IGameResourceModel gameResource,
+        public VampireSkillModel(IMonsterModel monster, IGameResourceModel gameResource,
             ICoroutineStarterService coroutineStarterService, ISkillConfig config)
         {
             _gameResource = gameResource;

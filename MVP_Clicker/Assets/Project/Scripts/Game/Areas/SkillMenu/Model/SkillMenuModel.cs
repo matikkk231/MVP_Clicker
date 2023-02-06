@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using Project.Scripts.Core.CoroutineStarterService;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Areas.Resource.Model;
-using Project.Scripts.Game.Areas.Skill.Config;
 using Project.Scripts.Game.Areas.Skill.Model;
 using Project.Scripts.Game.Areas.SkillMenu.Config;
 
@@ -21,9 +20,15 @@ namespace Project.Scripts.Game.Areas.SkillMenu.Model
                 switch (element.Value.Id)
                 {
                     case "VampireSkill":
-                        var skill = new VampireSkill(monsterModel, damagePerTap, coroutineStarterService,
+                        var vampireSkillModel = new VampireSkillModel(monsterModel, damagePerTap,
+                            coroutineStarterService,
                             element.Value);
-                        Collection.Add(skill.Id, skill);
+                        Collection.Add(vampireSkillModel.Id, vampireSkillModel);
+                        break;
+                    case "DoubleRewardSkill":
+                        var doubleRewardSkillModel =
+                            new DoubleRewardSkillModel(monsterModel, coroutineStarterService, element.Value);
+                        Collection.Add(doubleRewardSkillModel.Id, doubleRewardSkillModel);
                         break;
                 }
             }
