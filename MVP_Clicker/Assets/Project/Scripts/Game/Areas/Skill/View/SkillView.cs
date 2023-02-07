@@ -47,8 +47,8 @@ namespace Project.Scripts.Game.Areas.Skill.View
 
         public void SetShadowIntensityOnSkill(float intensityMultiple)
         {
-            float maxIntensity = 200;
-            _cooldownShadow.color = new Color(0, 0, 0, maxIntensity * intensityMultiple);
+            var color = _cooldownShadow.color;
+            _cooldownShadow.color = new Color(color.r, color.g, color.b, intensityMultiple);
         }
     }
 }
