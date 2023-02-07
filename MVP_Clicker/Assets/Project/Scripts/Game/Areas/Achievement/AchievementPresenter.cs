@@ -18,6 +18,7 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
             _view.ImageWhenCompleted = config.CompletedAchievementImage;
             _view.RequiredPointsToComplete = config.RequiredPointsToComplete;
             AddListeners();
+            OnPointsUpdated();
         }
 
         private void OnPointsUpdated()

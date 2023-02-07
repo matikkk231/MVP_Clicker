@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e690e280-ea3f-4139-8063-b34e85f29dd3" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Core/LoadResourcesService/LoadResourcesService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Core/LoadResourcesService/LoadResourcesService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Achievement/AchievementPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Achievement/AchievementPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Achievement/Data/IAchievementData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Achievement/Data/IAchievementData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Base/GameData/GameData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Base/GameData/GameData.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,7 +19,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9aad1b3a47484d63ba2b3985692d80e946a800/44/58910bed/KeyValuePair`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9aad1b3a47484d63ba2b3985692d80e946a800/a1/11dd8067/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e9b71fdf5d7d40a3b3ba85664cafc7aa3a00/de/e59ec134/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/LoadResourcesService/LoadResourcesService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/SaveSystemService/Model/SaveSystemService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IBoxView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IViewCreator.cs" root0="FORCE_HIGHLIGHTING" />
@@ -128,6 +129,7 @@
       <workItem from="1673001650233" duration="5306000" />
       <workItem from="1673013843267" duration="3937000" />
       <workItem from="1673017840359" duration="3204000" />
+      <workItem from="1675764544105" duration="323000" />
     </task>
     <servers />
   </component>

@@ -19,7 +19,7 @@ namespace Project.Scripts.Game.Base.GameData
         [JsonIgnore] public IMonsterData Monster => MonsterDataValue;
         [JsonIgnore] public ILevelSystemData LevelSystem => LevelSystemDataValue;
         [JsonIgnore] public IBonusesShopData BonusesShop => BonusesShopDataValue;
-        public IAchievementsData AchievementsData => AchievementsDataValue;
+        [JsonIgnore] public IAchievementsData AchievementsData => AchievementsDataValue;
 
         public GameData()
         {

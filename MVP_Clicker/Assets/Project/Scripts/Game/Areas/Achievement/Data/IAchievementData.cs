@@ -1,3 +1,5 @@
+using Newtonsoft.Json;
+
 namespace Project.Scripts.Game.Areas.Achievement.Data
 {
     public interface IAchievementData
