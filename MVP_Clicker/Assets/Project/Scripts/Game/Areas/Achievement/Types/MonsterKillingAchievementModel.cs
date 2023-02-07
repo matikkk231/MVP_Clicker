@@ -10,7 +10,7 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
         public event Action AchievementCompleted;
 
         private readonly IMonsterModel _monster;
-        public IAchievementData _data;
+        private readonly IAchievementData _data;
 
         public int RequiredPointsToComplete { get; }
 
@@ -35,7 +35,8 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
 
         private void GetPoint()
         {
-            if (CurrentPoints + 1 >= RequiredPointsToComplete)
+            int pointsBeAfterGettingPoint = CurrentPoints + 1;
+            if (pointsBeAfterGettingPoint >= RequiredPointsToComplete)
             {
                 CompleteAchievement();
             }

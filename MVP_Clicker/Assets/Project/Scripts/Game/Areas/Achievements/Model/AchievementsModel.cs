@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using Project.Scripts.Game.Areas.Achievement;
 using Project.Scripts.Game.Areas.Achievement.Data;
@@ -29,10 +30,12 @@ namespace Project.Scripts.Game.Areas.Achievements.Model
                             data.Collection[achievementConfig.Id]);
                         Collection.Add(achievementConfig.Id, model);
                         break;
+                    default:
+                        throw new Exception("can't create achievement model with such type:" + achievementConfig.Type);
                 }
             }
         }
-        
+
         private void InitializeData(IAchievementsData data, IAchievementsConfig config)
         {
             foreach (var configElement in config.Collection)

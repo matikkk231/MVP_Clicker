@@ -15,10 +15,8 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
         [SerializeField] private TextMeshProUGUI _progress;
         [SerializeField] private TextMeshProUGUI _name;
 
-
         public int RequiredPointsToComplete
         {
-            get => _requiredPointsToComplete;
             set
             {
                 _requiredPointsToComplete = value;
@@ -28,7 +26,6 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
 
         public int CurrentPoints
         {
-            get => _currentPoints;
             set
             {
                 _currentPoints = value;
@@ -38,13 +35,11 @@ namespace Project.Scripts.Game.Areas.Achievement.MonsterKillingAchievement.Model
 
         public string Description
         {
-            get => _description.text;
             set => _description.text = value;
         }
 
         public string Name
         {
-            get => _name.text;
             set => _name.text = value;
         }
 
