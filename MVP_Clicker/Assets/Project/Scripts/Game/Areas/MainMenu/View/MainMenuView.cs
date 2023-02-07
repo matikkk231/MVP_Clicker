@@ -3,7 +3,7 @@ using Project.Scripts.Game.Areas.GameResources.View;
 using Project.Scripts.Game.Areas.LevelSystem.View;
 using Project.Scripts.Game.Areas.Monster.View;
 using Project.Scripts.Game.Areas.SaveSystem;
-using Project.Scripts.Game.Areas.SkillMenu.View;
+using Project.Scripts.Game.Areas.Skills.View;
 using UnityEngine;
 
 namespace Project.Scripts.Game.Areas.MainMenu.View

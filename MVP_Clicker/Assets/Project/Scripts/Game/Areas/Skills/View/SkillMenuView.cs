@@ -1,7 +1,7 @@
 using Project.Scripts.Game.Areas.Skill.View;
 using UnityEngine;
 
-namespace Project.Scripts.Game.Areas.SkillMenu.View
+namespace Project.Scripts.Game.Areas.Skills.View
 {
     public class SkillMenuView : MonoBehaviour, ISkillMenuView
     {

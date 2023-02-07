@@ -3,16 +3,16 @@ using Project.Scripts.Core.CoroutineStarterService;
 using Project.Scripts.Game.Areas.Monster.Model;
 using Project.Scripts.Game.Areas.Resource.Model;
 using Project.Scripts.Game.Areas.Skill.Model;
-using Project.Scripts.Game.Areas.SkillMenu.Config;
+using Project.Scripts.Game.Areas.Skills.Config;
 
-namespace Project.Scripts.Game.Areas.SkillMenu.Model
+namespace Project.Scripts.Game.Areas.Skills.Model
 {
-    public class SkillMenuModel : ISkillMenuModel
+    public class SkillsModel : ISkillsModel
     {
         public Dictionary<string, ISkillModel> Collection { get; set; }
 
-        public SkillMenuModel(IMonsterModel monsterModel, IGameResourceModel damagePerTap,
-            ICoroutineStarterService coroutineStarterService, ISkillMenuConfig config)
+        public SkillsModel(IMonsterModel monsterModel, IGameResourceModel damagePerTap,
+            ICoroutineStarterService coroutineStarterService, ISkillsConfig config)
         {
             Collection = new Dictionary<string, ISkillModel>();
             foreach (var element in config.Collection)

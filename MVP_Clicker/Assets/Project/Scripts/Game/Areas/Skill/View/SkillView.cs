@@ -11,6 +11,7 @@ namespace Project.Scripts.Game.Areas.Skill.View
 
         private float _currentShadowIntensity;
 
+        [SerializeField] private Button _button;
         [SerializeField] private Image _cooldownShadow;
         [SerializeField] private TextMeshProUGUI _description;
         [SerializeField] private TextMeshProUGUI _name;
@@ -19,13 +20,11 @@ namespace Project.Scripts.Game.Areas.Skill.View
 
         public string Description
         {
-            get => _description.text;
             set => _description.text = value;
         }
 
         public string Name
         {
-            get => _name.text;
             set => _name.text = value;
         }
 
@@ -40,7 +39,12 @@ namespace Project.Scripts.Game.Areas.Skill.View
             set => _skillIcon.sprite = value;
         }
 
-        public void ActivateSkill()
+        private void Awake()
+        {
+            _button.onClick.AddListener(ActivateSkill);
+        }
+
+        private void ActivateSkill()
         {
             Activated?.Invoke();
         }
@@ -49,6 +53,11 @@ namespace Project.Scripts.Game.Areas.Skill.View
         {
             var color = _cooldownShadow.color;
             _cooldownShadow.color = new Color(color.r, color.g, color.b, intensityMultiple);
+        }
+
+        private void OnDestroy()
+        {
+            _button.onClick.RemoveListener(ActivateSkill);
         }
     }
 }

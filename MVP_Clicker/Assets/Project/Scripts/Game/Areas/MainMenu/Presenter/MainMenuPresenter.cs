@@ -6,7 +6,7 @@ using Project.Scripts.Game.Areas.GameResources.Presenter;
 using Project.Scripts.Game.Areas.LevelSystem.Presenter;
 using Project.Scripts.Game.Areas.MainMenu.Model;
 using Project.Scripts.Game.Areas.Monster.Presenter;
-using Project.Scripts.Game.Areas.SkillMenu.Presenter;
+using Project.Scripts.Game.Areas.Skills.Presenter;
 using Project.Scripts.Game.Base.GameConfigs;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Presenter
@@ -28,8 +28,8 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
             _presenters.Add(new LevelSystemPresenter(_boxMainMenuView.View.LevelSystem, _model.LevelSystem));
             _presenters.Add(new BonusesShopPresenter(_boxMainMenuView.View.BonusesShop, _model.BonusesShop,
                 configs.BonusesShopConfig));
-            _presenters.Add(new SkillMenuPresenter(model.SkillMenu, _boxMainMenuView.View.SkillMenu,
-                configs.SkillMenuConfig));
+            _presenters.Add(new SkillsPresenter(model.Skills, _boxMainMenuView.View.SkillMenu,
+                configs.SkillsConfig));
         }
 
         public void Dispose()

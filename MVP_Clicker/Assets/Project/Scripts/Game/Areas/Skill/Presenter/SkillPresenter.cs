@@ -24,21 +24,26 @@ namespace Project.Scripts.Game.Areas.Skill.Presenter
             AddListeners();
         }
 
-        private void Activate()
+        private void OnActivated()
         {
-            _model.TryActivate();
+            _model.Activate();
+        }
+
+        private void OnCooldownUpdated(float cooldownRemains)
+        {
+            _view.SetShadowIntensityOnSkill(cooldownRemains);
         }
 
         private void AddListeners()
         {
-            _view.Activated += Activate;
-            _model.UpdatedCooldown += _view.SetShadowIntensityOnSkill;
+            _view.Activated += OnActivated;
+            _model.CooldownUpdated += OnCooldownUpdated;
         }
 
         private void RemoveListeners()
         {
-            _view.Activated -= Activate;
-            _model.UpdatedCooldown -= _view.SetShadowIntensityOnSkill;
+            _view.Activated -= OnActivated;
+            _model.CooldownUpdated -= OnCooldownUpdated;
         }
 
         public void Dispose()

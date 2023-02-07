@@ -9,7 +9,7 @@ namespace Project.Scripts.Game.Areas.Skill.Model
 {
     public class DoubleRewardSkillModel : ISkillModel
     {
-        public event Action<float> UpdatedCooldown;
+        public event Action<float> CooldownUpdated;
 
         private int _damageIncreasedAmount;
         private readonly IMonsterModel _monster;
@@ -17,21 +17,22 @@ namespace Project.Scripts.Game.Areas.Skill.Model
         private float _cooldownRemains;
         private int ActivityDuration { get; }
 
-        public string Id { get; set; }
-
         private float CooldownRemains
         {
             get => _cooldownRemains;
             set
             {
                 _cooldownRemains = value;
-                UpdatedCooldown?.Invoke(_cooldownRemains);
+                CooldownUpdated?.Invoke(_cooldownRemains);
             }
         }
-        
+
         private int RecoveryDuration { get; }
         private bool SkillReady { get; set; }
         private int BoostValue { get; }
+
+        public string Id { get; set; }
+
 
         public DoubleRewardSkillModel(IMonsterModel monster,
             ICoroutineStarterService coroutineStarterService, ISkillConfig config)
@@ -45,15 +46,15 @@ namespace Project.Scripts.Game.Areas.Skill.Model
             Id = config.Id;
         }
 
-        public void TryActivate()
+        public void Activate()
         {
             if (SkillReady)
             {
-                _coroutineStarterService.StartCurrentCoroutine(Activate());
+                _coroutineStarterService.StartCurrentCoroutine(ActivateCoroutine());
             }
         }
 
-        private IEnumerator Activate()
+        private IEnumerator ActivateCoroutine()
         {
             SkillReady = false;
             var rewardIncrease = _monster.RewardForKilling * BoostValue;
