@@ -1,3 +1,4 @@
+using Project.Scripts.Game.Areas.Achievements.View;
 using Project.Scripts.Game.Areas.BonusesShop.View;
 using Project.Scripts.Game.Areas.GameResources.View;
 using Project.Scripts.Game.Areas.LevelSystem.View;
@@ -14,11 +15,14 @@ namespace Project.Scripts.Game.Areas.MainMenu.View
         [SerializeField] private MonsterView _monster;
         [SerializeField] private LevelSystemView _level;
         [SerializeField] private BonusesShopView _bonusesShop;
+        [SerializeField] private AchievementsView _achievements;
         [SerializeField] private SkillMenuView _skills;
 
         public IGameResourcesView GameResources => _gameResources;
         public IMonsterView Monster => _monster;
         public ILevelSystemView LevelSystem => _level;
+        public IBonusesShopView BonusesShopView => _bonusesShop;
+        public IAchievementsView Achievements => _achievements;
         public IBonusesShopView BonusesShop => _bonusesShop;
         public ISkillMenuView SkillMenu => _skills;
     }

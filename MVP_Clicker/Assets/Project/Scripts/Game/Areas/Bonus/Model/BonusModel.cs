@@ -13,11 +13,6 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
         private readonly IBonusData _data;
         private readonly IBonusConfig _config;
 
-        public BonusModel(IBonusData data, IBonusConfig config)
-        {
-            _data = data;
-            _config = config;
-        }
 
         public int ProvidingBonus
         {
@@ -48,6 +43,12 @@ namespace Project.Scripts.Game.Areas.Bonus.Model
                 _data.BonusLevel = value;
                 Updated?.Invoke();
             }
+        }
+        
+        public BonusModel(IBonusData data, IBonusConfig config)
+        {
+            _data = data;
+            _config = config;
         }
 
         public void BuyUpgrade()

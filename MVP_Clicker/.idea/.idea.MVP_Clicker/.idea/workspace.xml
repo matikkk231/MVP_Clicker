@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e690e280-ea3f-4139-8063-b34e85f29dd3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/configs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/configs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/prefabs.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/prefabs.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scenes/GameScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Base/GameConfigs/GameConfigs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Base/GameConfigs/GameConfigs.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,11 +30,28 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9aad1b3a47484d63ba2b3985692d80e946a800/a1/11dd8067/Dictionary`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e06ca00e823e4b1287948da0ef48ae5e6600/fe/95d11366/SubsystemManager.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/e9b71fdf5d7d40a3b3ba85664cafc7aa3a00/de/e59ec134/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Prefabs/MainMenu.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Prefabs/MainMenu.prefab" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scenes/GameScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/SaveSystemService/Model/SaveSystemService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IBoxView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/IViewCreator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Core/ViewCreate/ViewCreator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Model/IMainMenuModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Model/IMainMenuModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Model/MainMenuModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Model/MainMenuModel.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Presenter/MainMenuPresenter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/Presenter/MainMenuPresenter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/View/IMainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/View/IMainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/MainMenu/View/IMainMenuView.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/View/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Areas/MainMenu/View/MainMenuView.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Base/GameConfigs/IGameConfigs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/matik/OneDrive/Документы/GitHub/MVP_Clicker/MVP_Clicker/Assets/Project/Scripts/Game/Base/GameConfigs/IGameConfigs.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.addressables@1.19.19/Editor/Settings/AddressableAssetGroup.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/ExecuteEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/InputModules/StandaloneInputModule.cs" root0="SKIP_HIGHLIGHTING" />
@@ -78,10 +99,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="1252">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="1252" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -138,6 +159,7 @@
       <workItem from="1673001650233" duration="5306000" />
       <workItem from="1673013843267" duration="3937000" />
       <workItem from="1673017840359" duration="3204000" />
+      <workItem from="1675764544105" duration="323000" />
       <workItem from="1675321998834" duration="16076000" />
       <workItem from="1675342597939" duration="5004000" />
       <workItem from="1678000542543" duration="321000" />
@@ -168,17 +190,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Core/SaveSystemService/Model/SaveSystemService.cs</url>
-          <line>27</line>
-          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Core\SaveSystemService\Model\SaveSystemService.cs" initialLine="27" containingFunctionPresentation="method 'LoadData'">
+          <url>file://$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Achievements/Model/AchievementsModel.cs</url>
+          <line>39</line>
+          <properties documentPath="C:\Users\matik\OneDrive\Документы\GitHub\MVP_Clicker\MVP_Clicker\Assets\Project\Scripts\Game\Areas\Achievements\Model\AchievementsModel.cs" initialLine="39" containingFunctionPresentation="method 'InitializeData'">
             <startOffsets>
-              <option value="920" />
+              <option value="1634" />
             </startOffsets>
             <endOffsets>
-              <option value="976" />
+              <option value="1635" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="2" />
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

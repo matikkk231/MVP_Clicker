@@ -23,6 +23,7 @@ namespace Project.Scripts.Game
         private IGameData _data;
 
         private ISaveSystemService _saveSystem;
+
         private ILoadResourcesService _loadResourcesService;
 
         [Inject]

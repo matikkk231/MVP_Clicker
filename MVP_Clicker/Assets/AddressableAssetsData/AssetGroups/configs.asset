@@ -57,6 +57,14 @@ MonoBehaviour:
     m_Address: Assets/Project/Configs/Resources_moved/Skills/Types/VampireSkill.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 87fe2c5bce2ee5a4d96b0ab43daa1208
+    m_Address: igs/Achievements/CollectionOfAchievements.assetfAchievements.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ec4f17c0170cd1849ad8f4320138928d
+    m_Address: Assets/Project/Configs/Achievements/StarterMonsterKiller.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 6b6ca2dc540bcd449be9f5e0428ce049, type: 2}
   m_SchemaSet:

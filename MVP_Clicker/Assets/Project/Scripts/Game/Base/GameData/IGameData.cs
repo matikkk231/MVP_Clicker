@@ -1,3 +1,4 @@
+using Project.Scripts.Game.Areas.Achievements.Data;
 using Project.Scripts.Game.Areas.BonusesShop.Data;
 using Project.Scripts.Game.Areas.GameResources.Data;
 using Project.Scripts.Game.Areas.LevelSystem.Data;
@@ -11,5 +12,6 @@ namespace Project.Scripts.Game.Base.GameData
         IMonsterData Monster { get; }
         ILevelSystemData LevelSystem{ get; }
         IBonusesShopData BonusesShop { get; }
+        IAchievementsData AchievementsData { get; }
     }
 }

@@ -6,5 +6,6 @@ namespace Project.Scripts.Game.Base.GameModels
     {
         ICameraModel Camera { get; }
         IMainMenuModel MainMenu { get; }
+  
     }
 }

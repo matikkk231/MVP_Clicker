@@ -1,5 +1,7 @@
 using System;
 using Project.Scripts.Core.CoroutineStarterService;
+using Project.Scripts.Game.Areas.Achievements.Config;
+using Project.Scripts.Game.Areas.Achievements.Model;
 using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
@@ -18,6 +20,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         public ILevelSystemModel LevelSystem { get; }
         public IBonusesShopModel BonusesShop { get; }
         public ISkillsModel Skills { get; }
+        public IAchievementsModel Achievements { get; }
 
 
         public MainMenuModel(IGameData data, IGameConfigs configs, ICoroutineStarterService coroutineStarterService)
@@ -28,6 +31,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
             BonusesShop = new BonusesShopModel(GameResources, data.BonusesShop, configs);
             MonsterLogicHandler =
                 new MonsterLogicHandlerModel(GameResources, Monster, LevelSystem, coroutineStarterService);
+            Achievements = new AchievementsModel(Monster, configs.Achievements, data.AchievementsData);
             Skills = new SkillsModel(Monster, GameResources.CollectionOfGameResourceModels["DamagePerTap"],
                 coroutineStarterService, configs.SkillsConfig);
         }

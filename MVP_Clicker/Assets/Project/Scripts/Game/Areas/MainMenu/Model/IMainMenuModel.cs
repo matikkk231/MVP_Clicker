@@ -1,3 +1,4 @@
+using Project.Scripts.Game.Areas.Achievements.Model;
 using Project.Scripts.Game.Areas.BonusesShop.Model;
 using Project.Scripts.Game.Areas.GameResources.Model;
 using Project.Scripts.Game.Areas.LevelSystem.Model;
@@ -13,6 +14,7 @@ namespace Project.Scripts.Game.Areas.MainMenu.Model
         MonsterLogicHandlerModel MonsterLogicHandler { get; }
         ILevelSystemModel LevelSystem { get; }
         IBonusesShopModel BonusesShop { get; }
+        IAchievementsModel Achievements { get; }
         ISkillsModel Skills { get; }
     }
 }
