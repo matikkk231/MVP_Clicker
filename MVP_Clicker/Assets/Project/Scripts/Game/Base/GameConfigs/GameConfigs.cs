@@ -2,6 +2,7 @@ using System;
 using System.Threading.Tasks;
 using Project.Scripts.Core;
 using Project.Scripts.Core.LoadResourcesService;
+using Project.Scripts.Game.Areas.Achievements.Config;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Monster.Config;
@@ -14,10 +15,10 @@ namespace Project.Scripts.Game.Base.GameConfigs
     public class GameConfigs : IGameConfigs, IDisposable, ILoadable
     {
         private readonly ILoadResourcesService _loadResourcesService;
-
         public IBonusesShopConfig BonusesShopConfig { get; private set; }
         public IGameResourcesConfig GameResourcesConfig { get; private set; }
         public IMonsterConfig MonsterConfig { get; private set; }
+        public IAchievementsConfig Achievements { get; private set; }
         public ISkillsConfig SkillsConfig { get; private set; }
 
         public GameConfigs(ILoadResourcesService loadResourcesService)
@@ -45,6 +46,8 @@ namespace Project.Scripts.Game.Base.GameConfigs
                 await _loadResourcesService.Load<Object>(
                     "Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset");
             SkillsConfig = skillCollectionObject.ConvertTo<SkillsConfig>();
+            var achievementsScriptableObject = await _loadResourcesService.Load<Object>("igs/Achievements/CollectionOfAchievements.assetfAchievements.asset");
+            Achievements = achievementsScriptableObject.ConvertTo<AchievementsConfig>();
 
 
             BonusesShopConfig = bonusesShopConfig;
