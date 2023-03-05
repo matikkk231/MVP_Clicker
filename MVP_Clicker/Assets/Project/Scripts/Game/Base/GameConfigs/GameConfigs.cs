@@ -2,10 +2,10 @@ using System;
 using System.Threading.Tasks;
 using Project.Scripts.Core;
 using Project.Scripts.Core.LoadResourcesService;
-using Project.Scripts.Game.Areas.Achievements.Config;
 using Project.Scripts.Game.Areas.BonusesShop.Config;
 using Project.Scripts.Game.Areas.GameResources.Config;
 using Project.Scripts.Game.Areas.Monster.Config;
+using Project.Scripts.Game.Areas.Skills.Config;
 using Unity.VisualScripting;
 using Object = UnityEngine.Object;
 
@@ -18,7 +18,7 @@ namespace Project.Scripts.Game.Base.GameConfigs
         public IBonusesShopConfig BonusesShopConfig { get; private set; }
         public IGameResourcesConfig GameResourcesConfig { get; private set; }
         public IMonsterConfig MonsterConfig { get; private set; }
-        public IAchievementsConfig Achievements { get; private set; }
+        public ISkillsConfig SkillsConfig { get; private set; }
 
         public GameConfigs(ILoadResourcesService loadResourcesService)
         {
@@ -30,7 +30,6 @@ namespace Project.Scripts.Game.Base.GameConfigs
             _loadResourcesService.Unload("Bonuses/BonusesShop");
             _loadResourcesService.Unload("GameResourcesCollection");
             _loadResourcesService.Unload("Monsters/BigStone");
-            _loadResourcesService.Unload("Assets/Project/Configs/Achievements/CollectionOfAchievements.asset");
         }
 
         public async Task LoadAsync()
@@ -42,10 +41,11 @@ namespace Project.Scripts.Game.Base.GameConfigs
             var gameResourcesConfig = gameResourcesScriptableObject.ConvertTo<GameResourcesConfig>();
             var monsterScriptableObject = await _loadResourcesService.Load<Object>("Monsters/BigStone");
             var monsterConfig = monsterScriptableObject.ConvertTo<MonsterConfig>();
-            var achievementsObject =
+            var skillCollectionObject =
                 await _loadResourcesService.Load<Object>(
-                    "Assets/Project/Configs/Achievements/CollectionOfAchievements.asset");
-            Achievements = achievementsObject.ConvertTo<IAchievementsConfig>();
+                    "Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset");
+            SkillsConfig = skillCollectionObject.ConvertTo<SkillsConfig>();
+
 
             BonusesShopConfig = bonusesShopConfig;
             GameResourcesConfig = gameResourcesConfig;

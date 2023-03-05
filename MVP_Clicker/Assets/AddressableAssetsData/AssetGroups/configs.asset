@@ -37,6 +37,10 @@ MonoBehaviour:
     m_Address: Types/DamagePerTap
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 186775da638bdae40bebd5ff211b1244
+    m_Address: Monsters/BigStone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   - m_GUID: c7c40b6098b6ffd438f6a6b628aba0a7
     m_Address: Assets/Project/Configs/Resources_moved/GameResources_moved/Types/DamagePerSecond.asset
     m_ReadOnly: 0
@@ -45,12 +49,12 @@ MonoBehaviour:
     m_Address: Assets/Project/Configs/Resources_moved/Bonuses/Types/Bow.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: 186775da638bdae40bebd5ff211b1244
-    m_Address: Monsters/BigStone
+  - m_GUID: dd65af0f358252240ba9f313b70ebcf4
+    m_Address: Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
-  - m_GUID: ec79b8364b907b24da38aaca94cf7b7f
-    m_Address: Assets/Project/Sprites/Achievements/icons8-achievement-96.png
+  - m_GUID: 9692a7d116499d848acd95846e27c379
+    m_Address: Assets/Project/Configs/Resources_moved/Skills/Types/VampireSkill.asset
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

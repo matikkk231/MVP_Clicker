@@ -7,6 +7,7 @@ using Project.Scripts.Game.Areas.GameResources.Presenter;
 using Project.Scripts.Game.Areas.LevelSystem.Presenter;
 using Project.Scripts.Game.Areas.MainMenu.Model;
 using Project.Scripts.Game.Areas.Monster.Presenter;
+using Project.Scripts.Game.Areas.Skills.Presenter;
 using Project.Scripts.Game.Base.GameConfigs;
 
 namespace Project.Scripts.Game.Areas.MainMenu.Presenter
@@ -26,8 +27,10 @@ namespace Project.Scripts.Game.Areas.MainMenu.Presenter
                 configs.GameResourcesConfig));
             _presenters.Add(new MonsterPresenter(_boxMainMenuView.View.Monster, _model.Monster, configs.MonsterConfig));
             _presenters.Add(new LevelSystemPresenter(_boxMainMenuView.View.LevelSystem, _model.LevelSystem));
-            _presenters.Add(new BonusesShopPresenter(_boxMainMenuView.View.BonusesShopView, _model.BonusesShop,
+            _presenters.Add(new BonusesShopPresenter(_boxMainMenuView.View.BonusesShop, _model.BonusesShop,
                 configs.BonusesShopConfig));
+            _presenters.Add(new SkillsPresenter(model.Skills, _boxMainMenuView.View.SkillMenu,
+                configs.SkillsConfig));
             _presenters.Add(new AchievementsPresenter(_boxMainMenuView.View.Achievements, model.Achievements,
                 configs.Achievements));
         }
