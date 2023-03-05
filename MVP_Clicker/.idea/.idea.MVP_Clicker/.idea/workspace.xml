@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e690e280-ea3f-4139-8063-b34e85f29dd3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/DoubleRewardSkillModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/DoubleRewardSkillModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MVP_Clicker/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Configs/Resources_moved/Skills/SkillCollection.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/VampireSkill.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/VampireSkillModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/VampireSkill.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/Skill/Model/Types/VampireSkillModel.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/SkillMenu/Model/SkillMenuModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Project/Scripts/Game/Areas/SkillMenu/Model/SkillMenuModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/SkillIcons/Icon36.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Project/Sprites/SkillIcons/Icon36.png.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,10 +78,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="16712">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16712" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -148,6 +140,7 @@
       <workItem from="1673017840359" duration="3204000" />
       <workItem from="1675321998834" duration="16076000" />
       <workItem from="1675342597939" duration="5004000" />
+      <workItem from="1678000542543" duration="321000" />
     </task>
     <servers />
   </component>
